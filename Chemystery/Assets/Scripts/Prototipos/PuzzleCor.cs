@@ -25,7 +25,7 @@ public class PuzzleCor : MonoBehaviour
         }
 
 
-        if(contador >= 5) {
+        if(contador >= 6) {
 
             Debug.Log("Terminou o puzzle");
 

@@ -7,6 +7,10 @@ TagManager:
   - CinemachineTarget
   - Item
   - ItemCor
+  - Vermelho
+  - CuboVazio
+  - PuzzlesCubos
+  - PosCuboVazio
   layers:
   - Default
   - TransparentFX
