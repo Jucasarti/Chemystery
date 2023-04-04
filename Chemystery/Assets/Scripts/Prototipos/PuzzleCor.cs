@@ -25,7 +25,7 @@ public class PuzzleCor : MonoBehaviour
         }
 
 
-        if(contador >= 6) {
+        if(contador == 6) {
 
             Debug.Log("Terminou o puzzle");
 
@@ -40,7 +40,7 @@ public class PuzzleCor : MonoBehaviour
 
     }
 
-    void Update() {
+    /*void Update() {
 
     if (Input.GetMouseButtonDown(0)) {
 
@@ -57,6 +57,6 @@ public class PuzzleCor : MonoBehaviour
 
         }
 
-    }
+    }*/
 
 }
