@@ -722,44 +722,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
   posFinal: {x: 5, y: 5, z: 5}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &132077957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1120,7 +1090,7 @@ GameObject:
   - component: {fileID: 176728434}
   - component: {fileID: 176728436}
   m_Layer: 0
-  m_Name: Interacao
+  m_Name: Manager
   m_TagString: PuzzlesCubos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,21 +1149,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 176728432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b163376b25f4a4479ea6b5231e50072, type: 3}
+  m_Script: {fileID: 11500000, guid: 1950c0e85fe49a34fa219f90fa20b738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abrirPuzzle: 0
+  pertoPuzzle: 0
   olhandoPuzzle: 0
+  modoPuzzle: 0
+  fimPuzzle: 0
+  cubos:
+  - {fileID: 1543457492}
+  - {fileID: 2091487070}
+  - {fileID: 651141777}
+  - {fileID: 1784832067}
+  - {fileID: 132077956}
+  - {fileID: 1920819186}
+  - {fileID: 1015553428}
+  - {fileID: 1642383734}
   texto: {fileID: 1558438649}
-  interagindo:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
+  cuboVazio: {fileID: 350352574}
+  player: {fileID: 5393215579111688472}
+  cinemachine: {fileID: 60889539378096551}
 --- !u!1 &191454561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,44 +2454,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
   posFinal: {x: 5, y: 5, z: 5}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &651141778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3347,44 +3292,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
   posFinal: {x: 5, y: 5, z: 5}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &1015553429
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3723,7 +3638,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1120548432}
-  - component: {fileID: 1120548433}
   m_Layer: 0
   m_Name: Quadrados
   m_TagString: Untagged
@@ -3756,28 +3670,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1120548433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120548431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d820e0c7ddb9f64e8953d3faff7ecb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cubos:
-  - {fileID: 1543457492}
-  - {fileID: 2091487070}
-  - {fileID: 651141777}
-  - {fileID: 1784832067}
-  - {fileID: 132077956}
-  - {fileID: 1920819186}
-  - {fileID: 1015553428}
-  - {fileID: 1642383734}
-  cuboVazio: {fileID: 350352574}
 --- !u!1 &1163207384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4832,7 +4724,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543457487}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -4915,44 +4807,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
-  posFinal: {x: 61.064, y: 1.5, z: 34.54}
+  posFinal: {x: 61.064, y: 1.37, z: 34.539997}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &1543457493
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5375,7 +5237,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642383729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -5458,44 +5320,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
-  posFinal: {x: 61.064, y: 1.24, z: 34.8}
+  posFinal: {x: 61.064, y: 1.37, z: 34.8}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &1642383735
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6211,7 +6043,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784832062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -6294,44 +6126,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
-  posFinal: {x: 61.064, y: 1.37, z: 34.8}
+  posFinal: {x: 61.064, y: 1.37, z: 34.67}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &1784832068
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6705,7 +6507,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920819181}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -6788,44 +6590,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
-  posFinal: {x: 61.064, y: 1.37, z: 34.67}
+  posFinal: {x: 61.064, y: 1.5, z: 34.67}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &1920819187
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7631,7 +7403,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091487065}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -7714,44 +7486,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a4e3ae86972334c84ae99fae990c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoPuzzle: 0
+  posFim: 0
   contatoCCV: 0
-  modPuzzle: 0
-  ct1: 0
-  ct2: 0
-  ct3: 0
-  ct4: 0
-  ct5: 0
-  posX: 0
-  posY: 0
-  posZ: 0
-  vel: 0.25
-  cuboVazio: {fileID: 350352572}
-  c1: {fileID: 0}
-  c2: {fileID: 0}
-  c3: {fileID: 0}
-  c4: {fileID: 0}
-  c5: {fileID: 0}
-  Interage: {fileID: 176728432}
-  Player: {fileID: 1179049887}
-  cancelando:
-  - {fileID: 1543457487}
-  - {fileID: 2091487065}
-  - {fileID: 651141772}
-  - {fileID: 1784832062}
-  - {fileID: 132077951}
-  - {fileID: 1920819181}
-  - {fileID: 1015553423}
-  - {fileID: 1642383729}
-  texto: {fileID: 1558438649}
-  cameraTransform: {fileID: 60889539378096552}
-  fimPuzzle: 0
-  abrirPuzzle: 0
-  cancelaPuzzle: 0
-  cinemachine: {fileID: 60889539378096551}
-  posFinal: {x: 61.064, y: 1.5, z: 34.67}
+  posFinal: {x: 61.064, y: 1.5, z: 34.539997}
   posInicial: {x: 0, y: 0, z: 0}
-  fim: 0
-  verificaCubos: {fileID: 1120548433}
+  vel: 0.25
+  cuboVazio: {fileID: 350352574}
+  managerPuzzleCubo: {fileID: 176728436}
 --- !u!54 &2091487071
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8033,12 +7775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &60889539378096552 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
-    type: 3}
-  m_PrefabInstance: {fileID: 60889539378096550}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &65761957010435649
 Transform:
   m_ObjectHideFlags: 0
@@ -12064,6 +11800,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: andar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_Name
@@ -12126,6 +11867,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+--- !u!114 &5393215579111688472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    type: 3}
+  m_PrefabInstance: {fileID: 5393215579111688471}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179049887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &5478034060460499242
 MeshRenderer:
   m_ObjectHideFlags: 0
