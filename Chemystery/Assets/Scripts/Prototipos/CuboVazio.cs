@@ -11,6 +11,8 @@ public class CuboVazio : MonoBehaviour
     //Lados do cubo vazio
     public GameObject lado1, lado2, lado3, lado4;
 
+    public Vector3 posInicial;
+
     //Atualizando posição do cubo vazio
     public void AtualizaPos(float posX, float posY, float posZ)
     {
@@ -18,7 +20,7 @@ public class CuboVazio : MonoBehaviour
         if (cooldown == false)
         {
             //Invocando Cooldown
-            Invoke("ResetCooldown", 0.5f);
+            Invoke("ResetCooldown", 0.7f);
             cooldown = true;
         }
     }
@@ -27,5 +29,10 @@ public class CuboVazio : MonoBehaviour
     void ResetCooldown()
     {
         cooldown = false;
+    }
+
+    private void Start()
+    {
+        posInicial = gameObject.transform.position;
     }
 }

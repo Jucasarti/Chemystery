@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Interage : MonoBehaviour
 {
-    public bool abrirPuzzle, modPuzzle;
+    public bool abrirPuzzle, olhandoPuzzle;
     public Text texto;
     public GameObject[] interagindo;
     Collider colisao;
@@ -22,13 +22,14 @@ public class Interage : MonoBehaviour
         {
             //Definindo que o player pode abirir o puzzle ao entrar no raio de interação com o puzzle
             abrirPuzzle = true;
-            modPuzzle = true;
             texto.enabled = true;
 
             for(int i = 0; i < interagindo.Length; i++)
             {
                 interagindo[i].GetComponent<PuzzleCubos>().Interagindo();
             }
+
+
         }
     }
 
@@ -38,7 +39,6 @@ public class Interage : MonoBehaviour
         {
             //Definindo que o player não pode abirir o puzzle ao sair no raio de interação com o puzzle
             abrirPuzzle = false;
-            modPuzzle = false;
             texto.enabled = false;
 
             colisao.enabled = true;
