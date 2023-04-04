@@ -25,7 +25,7 @@ public class ManagerPuzzleCubo : MonoBehaviour
     [Header("Outros")]
     public Text texto;
     public CuboVazio cuboVazio;
-    public FirstPersonController player;
+    public ManagerPlayer player;
     public CinemachineBrain cinemachine;
     Collider colisao;
     PuzzleCubos olhandoPuzzleCubo;
@@ -39,7 +39,7 @@ public class ManagerPuzzleCubo : MonoBehaviour
         rotCam = new Vector3(0f, 90f, 0f);
 
         //posição do player
-        posJog = new Vector3(58.83f, 0f, 34.52f);
+        posJog = new Vector3(58.83f, 1f, 34.52f);
     }
 
     void Update()
@@ -84,17 +84,16 @@ public class ManagerPuzzleCubo : MonoBehaviour
                     SairPuzzle();
                 }
             }
-
-            if(!modoPuzzle && olhandoPuzzle)
-            {
-                //Habilitando texto de ajuda
-                texto.enabled = true;
-            }
-            else
-            {
-                //Desabilitando texto de ajuda
-                texto.enabled = false;
-            }
+        }
+        if (pertoPuzzle && !modoPuzzle && olhandoPuzzle)
+        {
+            //Habilitando texto de ajuda
+            texto.enabled = true;
+        }
+        else
+        {
+            //Desabilitando texto de ajuda
+            texto.enabled = false;
         }
     }
 

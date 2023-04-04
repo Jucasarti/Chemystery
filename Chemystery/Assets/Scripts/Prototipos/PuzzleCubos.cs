@@ -11,7 +11,9 @@ using UnityEngine.UI;
 
 public class PuzzleCubos : MonoBehaviour
 {
-    [Header("Variaveis Booleanas")]
+    #region Variáveis
+
+    [Header("Variáveis Booleanas")]
     //Variaveis de verificação de cooldown do click do mouse;
     private bool coooldown;
 
@@ -37,6 +39,8 @@ public class PuzzleCubos : MonoBehaviour
     //Outros scripts
     public CuboVazio cuboVazio;
     public ManagerPuzzleCubo managerPuzzleCubo;
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()

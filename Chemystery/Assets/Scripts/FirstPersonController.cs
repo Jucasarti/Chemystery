@@ -203,14 +203,6 @@ namespace StarterAssets
 			}
 		}
 
-		public void Andando()
-		{
-			if (andar)
-				andar = false;
-			else
-				andar = true;
-		}
-
 		private void JumpAndGravity()
 		{
 			if (Grounded)
