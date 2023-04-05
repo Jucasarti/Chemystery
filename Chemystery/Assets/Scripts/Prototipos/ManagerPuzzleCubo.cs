@@ -8,6 +8,8 @@ using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class ManagerPuzzleCubo : MonoBehaviour
 {
+    #region Variáveis
+
     [Header("Vector3")]
     Vector3 posCam, rotCam, posJog;
 
@@ -18,17 +20,23 @@ public class ManagerPuzzleCubo : MonoBehaviour
 
     [Header("Variavéis Inteiras")]
     int jogadas = 5, contador = 0;
+    int luzAtual = 0;
 
     [Header("Arrays")]
     public PuzzleCubos[] cubos;
+    public GameObject[] luzes;
+    //public Material[] materialLuz;
 
     [Header("Outros")]
     public Text texto;
     public CuboVazio cuboVazio;
     public ManagerPlayer player;
     public CinemachineBrain cinemachine;
+    public Color corInicial, corFinal;
     Collider colisao;
     PuzzleCubos olhandoPuzzleCubo;
+
+    #endregion
 
     void Start()
     {
@@ -180,6 +188,7 @@ public class ManagerPuzzleCubo : MonoBehaviour
     public void VerificaFim()
     {
         jogadas--;
+        Luzes();
         if (jogadas == 0)
         {
             for (int i = 0; i < cubos.Length; i++)
@@ -223,6 +232,13 @@ public class ManagerPuzzleCubo : MonoBehaviour
             cubos[i].posFim = false;
         }
 
+        for(int i = 0; i < luzes.Length; i++)
+        {
+            luzes[i].gameObject.SetActive(false);
+        }
+
+        luzAtual = 0;
+
         SairPuzzle();
     }
 
@@ -250,6 +266,13 @@ public class ManagerPuzzleCubo : MonoBehaviour
 
         //Destruindo colisão com o player e finalizando o puzzle
         Destroy(gameObject);
+    }
+
+    //Função para acender as luzes do painel
+    void Luzes()
+    {
+        luzes[luzAtual].gameObject.SetActive(true);
+        luzAtual++;
     }
 
 }
