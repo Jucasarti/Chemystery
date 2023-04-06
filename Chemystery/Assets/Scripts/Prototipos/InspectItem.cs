@@ -7,49 +7,59 @@ public class InspectItem : MonoBehaviour
     public float rotateSpeed = 10f;
     private bool isRotating = false;
 
-    private Vector3 posicaoInicialItem;
-    public Transform posicaoParaRotacao;
+    private bool podeRotar = false;
 
-    private GameObject item;
+    private Vector3 posicaoInicialItem;
+    private Quaternion posRot;
+
+
+
+    void Start() {
+
+        posicaoInicialItem = transform.position;
+        posRot = Quaternion.identity;
+
+    }
+
 
     void Update()
-    {
+    {   
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.collider.gameObject.CompareTag("Item"))
-                {
-                    isRotating = true;
-                    item = hit.collider.gameObject;
-                    posicaoInicialItem = item.transform.position;
-                    item.transform.position = posicaoParaRotacao.position;
-                }
-            }
+            isRotating = true;
         }
+
 
         if (Input.GetMouseButtonUp(0))
         {
             isRotating = false;
-            if(item != null){
-
-                item.transform.position = posicaoInicialItem;
-                item.transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
         }
 
-        if (isRotating)
+
+        if (isRotating && podeRotar)
         {
             float rotX = Input.GetAxis("Mouse X") * rotateSpeed ;
             float rotY = Input.GetAxis("Mouse Y") * rotateSpeed;
 
-            item.transform.Rotate(Vector3.up, -rotX);
-            item.transform.Rotate(Vector3.right, rotY);
+            transform.Rotate(Vector3.up, -rotX);
+            transform.Rotate(Vector3.right, rotY);
 
         }
     
     }
-}
+
+    public void PodeRotacionar () {
+
+        podeRotar = !podeRotar;
+
+    }
+
+
+    public void VoltarPosOriginal () {
+
+        transform.position = posicaoInicialItem;
+        transform.rotation = posRot;
+        PodeRotacionar();
+
+    }
+} 

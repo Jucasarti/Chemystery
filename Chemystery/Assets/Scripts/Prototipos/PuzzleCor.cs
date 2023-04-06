@@ -10,6 +10,10 @@ public class PuzzleCor : MonoBehaviour
 
     public TrocarCor[] quadrados;
 
+    public ManagerPlayer player;
+
+
+
     public void ConferirPuzzle () {
 
 
@@ -28,6 +32,8 @@ public class PuzzleCor : MonoBehaviour
         if(contador == 6) {
 
             Debug.Log("Terminou o puzzle");
+            this.gameObject.SetActive(false);
+            player.TravaCamera();
 
         } else {
 
@@ -36,27 +42,10 @@ public class PuzzleCor : MonoBehaviour
 
         }
     
-
-
     }
 
-    /*void Update() {
+    
 
-    if (Input.GetMouseButtonDown(0)) {
-
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit)) {
-                if (hit.collider.gameObject.CompareTag("ItemCor")) {
-
-                    item = hit.collider.GetComponent<TrocarCor>();
-                    item.TrocaCor();
-                }
-            }       
-
-        }
-
-    }*/
+    
 
 }

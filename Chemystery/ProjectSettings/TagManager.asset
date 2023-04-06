@@ -11,6 +11,7 @@ TagManager:
   - CuboVazio
   - PuzzlesCubos
   - PosCuboVazio
+  - PuzzleCor
   layers:
   - Default
   - TransparentFX
