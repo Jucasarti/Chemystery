@@ -24,35 +24,31 @@ public class TrocarCor : MonoBehaviour
         puzzleCor = FindObjectOfType<PuzzleCor>();
     }
 
-     
 
-    public void TrocaCor () {
 
+    public void TrocaCor()
+    {
         currentColorIndex++; // Incrementar o índice da cor atual
 
         if (currentColorIndex >= colors.Length) // Verificar se o índice está fora do alcance do array de cores
         {
             currentColorIndex = 0; // Voltar para a primeira cor
         }
-            objectImage.color = colors[currentColorIndex]; // Definir a nova cor do objeto
+        objectImage.color = colors[currentColorIndex]; // Definir a nova cor do objeto
 
-            if(numeroCerto == currentColorIndex) {
-                
-                Debug.Log("Cor certa");
-                
-                corCerta = true;
-                puzzleCor.ConferirPuzzle();
-
-            } else {
-                
-                Debug.Log("Cor errada");
-                corCerta = false;
-            }
+        if (numeroCerto == currentColorIndex)
+        {
+            Debug.Log("Cor certa");
+            corCerta = true;
+            puzzleCor.ConferirPuzzle();
         }
-
-
-
+        else
+        {
+            Debug.Log("Cor errada");
+            corCerta = false;
+        }
     }
+}
 
 
 

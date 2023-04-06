@@ -27,7 +27,6 @@ public class ManagerPlayer : MonoBehaviour
     CharacterController controller;
     Vector3 movimento = Vector3.zero;
     public GameObject objeto;
-    Quaternion rotCam;
     Camera cam;
 
     [Header("Inspeção dos Itens")]
@@ -105,18 +104,6 @@ public class ManagerPlayer : MonoBehaviour
             }
 
         }
-
-        //if(puzzleCorAtivo) {
-
-            if(Input.GetKeyDown(KeyCode.E)) {
-
-                puzzleCor.SetActive(true);
-                TravaCamera();
-
-            }
-
-
-        //}
     }
 
     void InspecionarItem (InspectItem itemAtual) {
@@ -167,12 +154,10 @@ public class ManagerPlayer : MonoBehaviour
             Cursor.visible = false;
 
             canvasInspectItens.gameObject.SetActive(false);
-
         }
 
 
     }
-
 
     public void Andando()
     {
@@ -227,36 +212,10 @@ public class ManagerPlayer : MonoBehaviour
         {
             cinemachine.enabled = true;
             Andando();
+
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
-
-
-    void OnTriggerStay(Collider collision) {
-
-        if(collision.gameObject.CompareTag("PuzzleCor")) {
-
-            puzzleCorAtivo = true;
-
-        }
-
-
-    }
-
-    void OnTriggerExit(Collider collision ) {
-
-        if(collision.gameObject.CompareTag("PuzzleCor")) {
-
-            puzzleCorAtivo = false;
-
-        }
-
-
-    }
-
-
-
-
 
 }
