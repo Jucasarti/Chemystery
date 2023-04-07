@@ -21,9 +21,11 @@ public class PuzzleCor : MonoBehaviour
 
     public Text texto;
 
+    
+
     void Start()
     {
-        colisao = GetComponent<Collider>();
+        colisao = this.gameObject.GetComponent<Collider>();
     }
 
     void Update()
@@ -55,17 +57,17 @@ public class PuzzleCor : MonoBehaviour
             //Verificando se a tecla E foi pressionada
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //Verificando se o player está andando e se está em contato com o puzzle para abri-lo
+                //Verificando se o player estï¿½ andando e se estï¿½ em contato com o puzzle para abri-lo
                 if (!modoPuzzle && olhandoPuzzle)
                 {
-                    //Chamando função que inicia os puzzles
+                    //Chamando funï¿½ï¿½o que inicia os puzzles
                     Puzzle();
                 }
 
-                //Verificando se o player não esta andando e não pode abrir puzzles, significanfo que ele já está em um puzzle, logo, ele fecha o puzzle
+                //Verificando se o player nï¿½o esta andando e nï¿½o pode abrir puzzles, significanfo que ele jï¿½ estï¿½ em um puzzle, logo, ele fecha o puzzle
                 else if (modoPuzzle)
                 {
-                    //Chamando a função que fecha os puzzles
+                    //Chamando a funï¿½ï¿½o que fecha os puzzles
                     SairPuzzle();
                 }
             }
@@ -86,7 +88,7 @@ public class PuzzleCor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //Habilitando distância minima para acionamento do puzzle
+            //Habilitando distï¿½ncia minima para acionamento do puzzle
             pertoPuzzle = true;
         }
     }
@@ -95,7 +97,7 @@ public class PuzzleCor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //Desabilitando distância minima para acionamento do puzzle
+            //Desabilitando distï¿½ncia minima para acionamento do puzzle
             pertoPuzzle = false;
         }
     }
@@ -113,21 +115,23 @@ public class PuzzleCor : MonoBehaviour
         //Desabilitando texto de ajuda
         texto.enabled = false;
 
-        //Não permitindo o player andar enquanto estiver no puzzle
+        //Nï¿½o permitindo o player andar enquanto estiver no puzzle
         player.Andando();
 
         player.TravaCamera();
 
-        //Desabilitando a colisão com o player
+        //Desabilitando a colisï¿½o com o player
         colisao.enabled = false;
     }
 
-    void SairPuzzle()
+    public void SairPuzzle()
     {
         for (int i = 0; i < quadrados.Length; i++)
         {
             quadrados[i].gameObject.SetActive(false);
         }
+
+        
 
         //Habilitando o modo puzzle
         modoPuzzle = false;
@@ -135,12 +139,12 @@ public class PuzzleCor : MonoBehaviour
         //Desabilitando texto de ajuda
         texto.enabled = true;
 
-        //Não permitindo o player andar enquanto estiver no puzzle
+        //Nï¿½o permitindo o player andar enquanto estiver no puzzle
         player.Andando();
 
         player.TravaCamera();
 
-        //Desabilitando a colisão com o player
+        //Desabilitando a colisï¿½o com o player
         colisao.enabled = true;
     }
 
@@ -172,7 +176,8 @@ public class PuzzleCor : MonoBehaviour
 
     public void FimPuzzle()
     {
-        //Definindo que ele não pode abrir puzzle
+
+        //Definindo que ele nï¿½o pode abrir puzzle
         pertoPuzzle = false;
 
         //Desabilitando o texto de ajuda
@@ -191,6 +196,11 @@ public class PuzzleCor : MonoBehaviour
             quadrados[i].gameObject.SetActive(false);
         }
 
-        colisao.enabled = false;
+        //colisao.enabled = false;
+
+
+        Destroy(this.gameObject);
+
+        
     }
 }
