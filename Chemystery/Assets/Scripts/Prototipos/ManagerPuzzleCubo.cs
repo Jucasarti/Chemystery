@@ -35,6 +35,7 @@ public class ManagerPuzzleCubo : MonoBehaviour
     public Color corInicial, corFinal;
     Collider colisao;
     PuzzleCubos olhandoPuzzleCubo;
+    public GameObject puzzleCor;
 
     #endregion
 
@@ -43,11 +44,11 @@ public class ManagerPuzzleCubo : MonoBehaviour
         colisao = gameObject.GetComponent<Collider>();
 
         //Posição e rotação da camera ao iniciar o puzzle
-        posCam = new Vector3(60.35f, 1.38f, 34.67f);
-        rotCam = new Vector3(0f, 90f, 0f);
+        posCam = new Vector3(111.988f, 1.415f, 7.209f);
+        rotCam = new Vector3(0f, 180f, 0f);
 
         //posição do player
-        posJog = new Vector3(58.83f, 1f, 34.52f);
+        posJog = new Vector3(112.013f, 1f, 7.717f);
     }
 
     void Update()
@@ -204,6 +205,7 @@ public class ManagerPuzzleCubo : MonoBehaviour
             if (contador == 5)
             {
                 FimPuzzle();
+                puzzleCor.SetActive(true);
                 Debug.Log("Ganhei");
             }
             else

@@ -21,6 +21,8 @@ public class PuzzleCor : MonoBehaviour
 
     public Text texto;
 
+    public GameObject background;
+
     
 
     void Start()
@@ -109,6 +111,8 @@ public class PuzzleCor : MonoBehaviour
             quadrados[i].gameObject.SetActive(true);
         }
 
+        background.SetActive(true);
+
         //Habilitando o modo puzzle
         modoPuzzle = true;
 
@@ -131,7 +135,7 @@ public class PuzzleCor : MonoBehaviour
             quadrados[i].gameObject.SetActive(false);
         }
 
-        
+        background.SetActive(false);
 
         //Habilitando o modo puzzle
         modoPuzzle = false;
@@ -195,6 +199,8 @@ public class PuzzleCor : MonoBehaviour
         {
             quadrados[i].gameObject.SetActive(false);
         }
+
+        background.SetActive(false);
 
         //colisao.enabled = false;
 
