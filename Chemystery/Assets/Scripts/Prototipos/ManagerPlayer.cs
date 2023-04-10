@@ -10,10 +10,10 @@ using UnityEngine.Rendering.Universal.Internal;
 public class ManagerPlayer : MonoBehaviour
 {
     [Header("Variaveis Booleanas")]
-    public bool andar;
+    bool andar = true;
     public bool pegouChave = false;
 
-    bool puzzleCorAtivo = false;
+    
 
     [Header("Variaveis Float")]
     public float velRotacao;
@@ -36,8 +36,11 @@ public class ManagerPlayer : MonoBehaviour
 
     bool estaRotacionando = false;
 
-    [Header("PuzzleCor")] 
-    public GameObject puzzleCor;
+    public GameObject notinha;
+
+    bool notinhaAtiva = false;
+
+
 
 
     // Start is called before the first frame update
@@ -74,7 +77,7 @@ public class ManagerPlayer : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if(Physics.Raycast(ray, out hit)) {
+            if(Physics.Raycast(ray, out hit, 3f)) {
 
                 if(hit.collider.gameObject.CompareTag("Item")) {
                     
@@ -84,6 +87,16 @@ public class ManagerPlayer : MonoBehaviour
 
                         InspecionarItem(inspectItem);
                     }
+
+                }
+
+                if(hit.collider.gameObject.CompareTag("Nota")) {
+
+                    notinha.SetActive(true);
+                    notinhaAtiva = true;
+
+                    TravaCamera();
+                    
 
                 }
 
@@ -103,6 +116,20 @@ public class ManagerPlayer : MonoBehaviour
                 NaoPegouItem();
             }
 
+        }
+
+        if(notinhaAtiva) {
+
+            if(Input.GetKeyDown(KeyCode.E)) {
+
+                notinha.SetActive(false);
+                notinhaAtiva = false;
+
+                TravaCamera();
+                
+
+            }
+            
         }
     }
 

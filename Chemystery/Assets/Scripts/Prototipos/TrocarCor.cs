@@ -22,6 +22,7 @@ public class TrocarCor : MonoBehaviour
         objectImage = GetComponent<Image>(); // Obter o componente Image do objeto
         objectImage.color = colors[corInicial]; // Definir a cor inicial do objeto
         puzzleCor = FindObjectOfType<PuzzleCor>();
+        currentColorIndex = corInicial;
     }
 
 
