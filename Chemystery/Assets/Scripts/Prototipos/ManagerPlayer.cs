@@ -38,7 +38,11 @@ public class ManagerPlayer : MonoBehaviour
 
     public GameObject notinha;
 
+    public GameObject porta;
+
     bool notinhaAtiva = false;
+
+    public bool pertoPorta = false;
 
 
 
@@ -130,6 +134,17 @@ public class ManagerPlayer : MonoBehaviour
 
             }
             
+        }
+
+        if (pertoPorta)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (pegouChave)
+                {
+                    Destroy(porta);
+                }
+            }
         }
     }
 
@@ -245,4 +260,19 @@ public class ManagerPlayer : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Porta"))
+        {
+            pertoPorta = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Porta"))
+        {
+            pertoPorta = false;
+        }
+    }
 }

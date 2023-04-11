@@ -13,6 +13,7 @@ TagManager:
   - PosCuboVazio
   - PuzzleCor
   - Nota
+  - Porta
   layers:
   - Default
   - TransparentFX
