@@ -39,8 +39,6 @@ public class Computador : MonoBehaviour
 
         mostrarConteudo.text = "";
 
-        AtribuirFuncaoAoBotao();
-
 
         for(int i = 0; i < titulosDasMensagens.Length; i++) {
 
@@ -51,25 +49,26 @@ public class Computador : MonoBehaviour
         }
 
 
+        AtribuirFuncaoAoBotao();
+
+
     }
 
     void AtribuirFuncaoAoBotao () {
 
         for(int i = 0; i < titulosDasMensagens.Length; i++) {
 
-            Debug.Log("I antes:" + i);
 
-            slotsMSG[i].onClick.AddListener(() => CliqueNaMensagem(i));
+            int aux = i;
 
-            Debug.Log("I depois:" + i);
+            slotsMSG[i].onClick.AddListener(() => CliqueNaMensagem(aux));
+
 
         }
 
     }
 
     public void CliqueNaMensagem (int numeroDaMensagem) {
-
-        Debug.Log("Numero da msg:" + numeroDaMensagem);
 
         mostrarConteudo.text = textoDasMensagens[numeroDaMensagem];
 

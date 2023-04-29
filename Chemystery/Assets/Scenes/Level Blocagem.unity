@@ -22265,46 +22265,54 @@ MonoBehaviour:
   - {fileID: 1540697467}
   textoSlots:
   - {fileID: 293448150}
-  - {fileID: 1127834519}
+  - {fileID: 513558308}
   - {fileID: 1127834519}
   - {fileID: 1935639536}
   nomeDoUsuarioDoPc: 
   titulosDasMensagens:
   - TESTANDOOOOO
+  - AUUUUU
+  - XESQUEDELE
+  - MAMAS
   textoDasMensagens:
-  - "Para: Eu  Assunto;Di\xE1rio      Hoje foi mais um dia na empresa e eu passei
-    grande parte do tempo observando-a, minha colega de trabalho, do setor de Administra\xE7\xE3o,
-    a vigio pelas c\xE2meras da recep\xE7\xE3o, ela est\xE1 sempre linda quando passa
-    por mim, resolvi registrar nesse Email para mim mesmo meus pensamentos sobre
-    ela enquanto estou livre de meus afazeres.       Dia 1:    Ela \xE9 t\xE3o linda,
-    com aquele sorriso doce e olhos brilhantes que me encantam toda vez que a vejo.
-    Eu sinto meu cora\xE7\xE3o bater mais forte sempre que ela passa pela bancada
-    da recep\xE7\xE3o, e fico imaginando o que ela estaria pensando enquanto se concentra
-    em suas tarefas, ela sempre parece tensa quando v\xEA o chefe.   Dia 5:   Eu
-    n\xE3o consigo me concentrar em nada quando ela est\xE1 por perto. Seus cabelos
-    ondulados e sedosos. Ela \xE9 sempre t\xE3o profissional no trabalho, mas eu
-    a vejo relaxando de vez em quando, rindo com seus amigos de trabalho, e me pergunto
-    o que ela faz quando n\xE3o est\xE1 no escrit\xF3rio, reparei que ela sempre
-    vai as tr\xEAs e quinze da tarde, pouco depois da hora do almo\xE7o para a sala
-    do chefe.   Dia 10:   A cada dia que passa, me sinto mais atra\xEDdo por ela. 
-    Eu costumava a ver sempre sorrindo, mas de uns dias pra c\xE1 ela tem estado
-    com uma cara de um pouco preocupada, tentei falar com ela hoje, mas ela me pareceu
-    muito distra\xEDda.  Eu ainda n\xE3o tenho coragem de perguntar para ela o motivo,
-    n\xE3o somos pr\xF3ximos.   Dia 15:   Eu acho que fiz algo errado, sinto como
-    se tivesse estragado tudo. Finalmente tomei coragem e pedi para almo\xE7ar com
-    ela hoje. Foi um momento m\xE1gico. Conversamos sobre nossos gostos, nossos sonhos,
-    e rimos juntos...at\xE9 que eu perguntei sobre o chefe. O clima ficou esquisito,
-    ela mudou de assunto e ficou dif\xEDcil conversar depois disso, n\xE3o devia
-    ter tocado no assunto Mathew seu idiota.   Dia 20:   N\xE3o acreditei, mas ela
-    me chamou quando chegou hoje para almo\xE7ar hoje.  N\xF3s almo\xE7amos juntos
-    novamente hoje. Eu disse para ela como me sinto, ela pareceu surpresa, mas n\xE3o
-    desagradada. Ela disse que n\xE3o tinha percebido que eu a via dessa maneira,
-    mas que estava feliz por termos nos conhecido melhor. Eu espero que possamos
-    continuar nos conhecendo e quem sabe, ela se abra comigo, fiquei feliz pois trocamos
-    n\xFAmeros de celular. N\xE3o consegui deixar de reparar que ela estava com bastante
-    olheiras. Tenho que parar de observar ela pelas c\xE2meras, estou ficando paranoico.
-    ela entrou na sala do chefe e saiu depois pelo elevador da recep\xE7\xE3o, esquisito
-    demais... tenho que parar de ficar acompanhando ela o dia todo, n\xE3o sou assim."
+  - "Para: Eu  Assunto;Di\xE1rio                                                                                                                                                                                   
+    Hoje foi mais um dia na empresa e eu passei grande parte do tempo observando-a,
+    minha colega de trabalho, do setor de Administra\xE7\xE3o, a vigio pelas c\xE2meras
+    da recep\xE7\xE3o, ela est\xE1 sempre linda quando passa por mim, resolvi registrar
+    nesse Email para mim mesmo meus pensamentos sobre ela enquanto estou livre de
+    meus afazeres.       Dia 1:    Ela \xE9 t\xE3o linda, com aquele sorriso doce
+    e olhos brilhantes que me encantam toda vez que a vejo. Eu sinto meu cora\xE7\xE3o
+    bater mais forte sempre que ela passa pela bancada da recep\xE7\xE3o, e fico
+    imaginando o que ela estaria pensando enquanto se concentra em suas tarefas,
+    ela sempre parece tensa quando v\xEA o chefe.   Dia 5:   Eu n\xE3o consigo me
+    concentrar em nada quando ela est\xE1 por perto. Seus cabelos ondulados e sedosos.
+    Ela \xE9 sempre t\xE3o profissional no trabalho, mas eu a vejo relaxando de vez
+    em quando, rindo com seus amigos de trabalho, e me pergunto o que ela faz quando
+    n\xE3o est\xE1 no escrit\xF3rio, reparei que ela sempre vai as tr\xEAs e quinze
+    da tarde, pouco depois da hora do almo\xE7o para a sala do chefe.   Dia 10:  
+    A cada dia que passa, me sinto mais atra\xEDdo por ela.  Eu costumava a ver sempre
+    sorrindo, mas de uns dias pra c\xE1 ela tem estado com uma cara de um pouco preocupada,
+    tentei falar com ela hoje, mas ela me pareceu muito distra\xEDda.  Eu ainda n\xE3o
+    tenho coragem de perguntar para ela o motivo, n\xE3o somos pr\xF3ximos.   Dia
+    15:   Eu acho que fiz algo errado, sinto como se tivesse estragado tudo. Finalmente
+    tomei coragem e pedi para almo\xE7ar com ela hoje. Foi um momento m\xE1gico.
+    Conversamos sobre nossos gostos, nossos sonhos, e rimos juntos...at\xE9 que eu
+    perguntei sobre o chefe. O clima ficou esquisito, ela mudou de assunto e ficou
+    dif\xEDcil conversar depois disso, n\xE3o devia ter tocado no assunto Mathew
+    seu idiota.   Dia 20:   N\xE3o acreditei, mas ela me chamou quando chegou hoje
+    para almo\xE7ar hoje.  N\xF3s almo\xE7amos juntos novamente hoje. Eu disse para
+    ela como me sinto, ela pareceu surpresa, mas n\xE3o desagradada. Ela disse que
+    n\xE3o tinha percebido que eu a via dessa maneira, mas que estava feliz por termos
+    nos conhecido melhor. Eu espero que possamos continuar nos conhecendo e quem
+    sabe, ela se abra comigo, fiquei feliz pois trocamos n\xFAmeros de celular. N\xE3o
+    consegui deixar de reparar que ela estava com bastante olheiras. Tenho que parar
+    de observar ela pelas c\xE2meras, estou ficando paranoico. ela entrou na sala
+    do chefe e saiu depois pelo elevador da recep\xE7\xE3o, esquisito demais... tenho
+    que parar de ficar acompanhando ela o dia todo, n\xE3o sou assim. "
+  - TESTE                                                                                                  
+    TESTE
+  - ' Teste '
+  - "\xC9 OQ?"
 --- !u!4 &476652641
 Transform:
   m_ObjectHideFlags: 0
