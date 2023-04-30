@@ -20,6 +20,7 @@ public class Computador : MonoBehaviour
 
     [SerializeField] string[] titulosDasMensagens;
 
+    [TextArea(10, 7)]
     [SerializeField] string[] textoDasMensagens;
 
     //[Header("Outras variáveis")]
