@@ -22311,8 +22311,8 @@ MonoBehaviour:
     tenho que parar de ficar acompanhando ela o dia todo, n\xE3o sou assim. "
   - TESTE                                                                                                  
     TESTE
-  - ' Teste '
-  - "\xC9 OQ?"
+  - " Teste \n\n\n\nTEEEEEEEEEEEEESTANDO"
+  - "\xC9 OQ?\n\n\n\n\n\n\n\n\nISSO \xC9 UM TESTE HEIN"
 --- !u!4 &476652641
 Transform:
   m_ObjectHideFlags: 0
