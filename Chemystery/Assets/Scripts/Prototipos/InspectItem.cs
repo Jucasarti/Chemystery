@@ -2,22 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InspectItem : MonoBehaviour
+public class InspectItem : MonoBehaviour, IInteractable
 {
     public float rotateSpeed = 10f;
     private bool isRotating = false;
 
     private bool podeRotar = false;
 
-    private Vector3 posicaoInicialItem;
-    private Quaternion posRot;
+    ManagerPlayer player;
+
+    [SerializeField] private GameObject canvasInspectItem;
+
+
+    public void Interagir() {
+
+        Inspecionar();
+
+    }
 
 
 
-    void Start() {
+    void Awake() {
 
-        posicaoInicialItem = transform.position;
-        posRot = Quaternion.identity;
+        player = FindObjectOfType<ManagerPlayer>();
+
+    }
+
+    void Inspecionar() {
+
+        transform.position = player.objeto.transform.position;
+        
+        PodeRotacionar();
+
+        canvasInspectItem.SetActive(true);
+
+        player.TravaCamera();
+        
+
+    }
+
+    void PegarItem() {
+
+        canvasInspectItem.SetActive(false);
+        player.TravaCamera();
+        player.EstaInspecionando();
+        
+
+        Destroy(gameObject);
+
+
 
     }
 
@@ -45,6 +78,16 @@ public class InspectItem : MonoBehaviour
             transform.Rotate(Vector3.right, rotY);
 
         }
+
+        if(podeRotar) {
+
+            if(Input.GetKeyDown(KeyCode.Space)) {
+
+                PegarItem();
+            }
+
+
+        }
     
     }
 
@@ -54,12 +97,4 @@ public class InspectItem : MonoBehaviour
 
     }
 
-
-    public void VoltarPosOriginal () {
-
-        transform.position = posicaoInicialItem;
-        transform.rotation = posRot;
-        PodeRotacionar();
-
-    }
 } 

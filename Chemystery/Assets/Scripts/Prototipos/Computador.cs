@@ -4,12 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class Computador : MonoBehaviour
+public class Computador : MonoBehaviour, IInteractable
 {
 
     [SerializeField] GameObject pcUI;
-
     [SerializeField] TextMeshProUGUI mostrarConteudo;
+    
+
+    [SerializeField] Button botaoFecharPC;
 
     [Header("Slot das mensagens")]
     [SerializeField] Button[] slotsMSG;
@@ -23,11 +25,19 @@ public class Computador : MonoBehaviour
     [TextArea(10, 7)]
     [SerializeField] string[] textoDasMensagens;
 
-    //[Header("Outras variáveis")]
+    [Header("Outras variáveis")]
 
+    [SerializeField] TextMeshProUGUI nomeNoPCText;
+
+    private ManagerPlayer player;
+
+    void Awake() {
+
+        player = FindObjectOfType<ManagerPlayer>();
+
+    }
     
-
-    void Start() {
+    public void Interagir() {
 
         AbrirPC();
 
@@ -36,9 +46,13 @@ public class Computador : MonoBehaviour
 
     public void AbrirPC () {
 
+        player.TravaCamera();
+
         pcUI.SetActive(true);
 
         mostrarConteudo.text = "";
+
+        nomeNoPCText.text = nomeDoUsuarioDoPc;
 
 
         for(int i = 0; i < titulosDasMensagens.Length; i++) {
@@ -67,12 +81,43 @@ public class Computador : MonoBehaviour
 
         }
 
+        botaoFecharPC.onClick.AddListener(() => FecharPC());
+
     }
 
     public void CliqueNaMensagem (int numeroDaMensagem) {
 
         mostrarConteudo.text = textoDasMensagens[numeroDaMensagem];
 
+    }
+
+    void FecharPC() {
+
+        RetirarFuncaoDoBotao();
+
+        for(int i = 0; i < titulosDasMensagens.Length; i++) {
+
+            slotsMSG[i].gameObject.SetActive(false);
+
+        }
+
+        pcUI.SetActive(false);
+
+        player.TravaCamera();
+        player.EstaInspecionando();
+
+
+    }
+
+    void RetirarFuncaoDoBotao() {
+
+        for(int i = 0; i < titulosDasMensagens.Length; i++) {
+
+            slotsMSG[i].onClick.RemoveAllListeners();
+
+        }
+
+        botaoFecharPC.onClick.RemoveAllListeners();
     }
 
 

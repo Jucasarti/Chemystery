@@ -12,6 +12,7 @@ public class ManagerPlayer : MonoBehaviour
     [Header("Variaveis Booleanas")]
     bool andar = true;
     public bool pegouChave = false;
+    public bool jaEstaInspecionando = false;
 
     
 
@@ -20,6 +21,7 @@ public class ManagerPlayer : MonoBehaviour
     public float vel;
     public float correr;
     public float correndo;
+    float raycastRange = 3f;
 
     [Header("Outros")]
     public Transform cameraTransform;
@@ -29,20 +31,17 @@ public class ManagerPlayer : MonoBehaviour
     public GameObject objeto;
     Camera cam;
 
+    public LayerMask interactableMask;
+
     [Header("Inspeção dos Itens")]
-    InspectItem inspectItem;
-
-    public GameObject canvasInspectItens;
-
-    bool estaRotacionando = false;
 
     public GameObject notinha;
-
     public GameObject porta;
-
     bool notinhaAtiva = false;
-
     public bool pertoPorta = false;
+
+    [Header("UI")]
+    public GameObject interagirUI;
 
 
 
@@ -65,6 +64,38 @@ public class ManagerPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(jaEstaInspecionando == false) {
+        //Criando Raycast
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        //Verificando se o raycast atingiu um objeto, dentro da layermask
+        if(Physics.Raycast(ray, out hit, raycastRange, interactableMask)) {
+
+            //Ativando UI 
+            interagirUI.SetActive(true);
+
+            //Verificando se o player apertou E
+            if(Input.GetKeyDown(KeyCode.E)) {
+
+                //Pegando o objeto selecionado e ativando sua função de interagir
+                IInteractable itemInteractable = hit.collider.GetComponent<IInteractable>();
+
+                itemInteractable.Interagir();
+                EstaInspecionando();
+
+            }
+
+        } else {
+
+            //Desativando a UI
+            interagirUI.SetActive(false);
+
+            }
+
+        }
+
         //Verificando se o player pode andar
         if (andar)
         {
@@ -76,51 +107,6 @@ public class ManagerPlayer : MonoBehaviour
             TravaCamera();
         }
 
-        if(Input.GetMouseButton(0)) {
-
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if(Physics.Raycast(ray, out hit, 3f)) {
-
-                if(hit.collider.gameObject.CompareTag("Item")) {
-                    
-                    if(estaRotacionando == false) {
-
-                        inspectItem = hit.collider.gameObject.GetComponent<InspectItem>();
-
-                        InspecionarItem(inspectItem);
-                    }
-
-                }
-
-                if(hit.collider.gameObject.CompareTag("Nota")) {
-
-                    notinha.SetActive(true);
-                    notinhaAtiva = true;
-
-                    TravaCamera();
-                    
-
-                }
-
-            }
-
-        }
-
-        if(estaRotacionando) {
-
-            if(Input.GetKeyDown(KeyCode.E)) {
-
-                PegouItem();
-            }
-
-            if(Input.GetKeyDown(KeyCode.Space)) {
-
-                NaoPegouItem();
-            }
-
-        }
 
         if(notinhaAtiva) {
 
@@ -130,7 +116,6 @@ public class ManagerPlayer : MonoBehaviour
                 notinhaAtiva = false;
 
                 TravaCamera();
-                
 
             }
             
@@ -148,62 +133,22 @@ public class ManagerPlayer : MonoBehaviour
         }
     }
 
-    void InspecionarItem (InspectItem itemAtual) {
-
-        estaRotacionando = true;
-
-        TravaCamera();
-
-        Cursor.lockState = CursorLockMode.Confined;
-
-        itemAtual.gameObject.transform.position = objeto.transform.position;
-
-        canvasInspectItens.gameObject.SetActive(true);
-
-        itemAtual.PodeRotacionar();
-
-    }
-
-    void PegouItem () {
-
-        if(inspectItem != null) {
-
-            Destroy(inspectItem.gameObject);
-            pegouChave = true;
-            inspectItem = null;
-
-            estaRotacionando = false;
-            canvasInspectItens.gameObject.SetActive(false);
-
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-
-            TravaCamera();
-
-        }
-    } 
-
-    void NaoPegouItem () {
-
-        if(inspectItem != null) {
-
-            inspectItem.VoltarPosOriginal();
-            TravaCamera();
-            inspectItem = null;
-            estaRotacionando = false;
-
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-
-            canvasInspectItens.gameObject.SetActive(false);
-        }
-
-
-    }
 
     public void Andando()
     {
         andar = !andar;
+    }
+
+    public void EstaInspecionando() {
+
+        jaEstaInspecionando = !jaEstaInspecionando;
+
+        if(jaEstaInspecionando == true) {
+
+            interagirUI.SetActive(false);
+
+        }
+
     }
 
     void Movimentacao()
