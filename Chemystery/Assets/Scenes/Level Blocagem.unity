@@ -30497,7 +30497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aperte "E" para sair
+  m_text: "Aperte \"Espa\xE7o\" para sair"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -46808,7 +46808,8 @@ GameObject:
   - component: {fileID: 1408965197}
   - component: {fileID: 1408965196}
   - component: {fileID: 1408965195}
-  m_Layer: 0
+  - component: {fileID: 1408965199}
+  m_Layer: 11
   m_Name: Notinha
   m_TagString: Nota
   m_Icon: {fileID: 0}
@@ -46826,8 +46827,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.2026016, z: 1.2871274}
+  m_Center: {x: 0.000011514663, y: 0.10130045, z: 0.005873714}
 --- !u!23 &1408965196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46893,6 +46894,19 @@ Transform:
   m_Father: {fileID: 294933828}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 26.398, z: 0}
+--- !u!114 &1408965199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408965194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe516de028bf26640928861283709ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  docUI: {fileID: 144201627}
 --- !u!1001 &1409132137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56811,9 +56825,6 @@ MonoBehaviour:
   interactableMask:
     serializedVersion: 2
     m_Bits: 2048
-  notinha: {fileID: 144201627}
-  porta: {fileID: 89845402}
-  pertoPorta: 0
   interagirUI: {fileID: 1985535520}
 --- !u!136 &1739552093
 CapsuleCollider:

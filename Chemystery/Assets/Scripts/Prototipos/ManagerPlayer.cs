@@ -30,15 +30,7 @@ public class ManagerPlayer : MonoBehaviour
     Vector3 movimento = Vector3.zero;
     public GameObject objeto;
     Camera cam;
-
     public LayerMask interactableMask;
-
-    [Header("Inspeção dos Itens")]
-
-    public GameObject notinha;
-    public GameObject porta;
-    bool notinhaAtiva = false;
-    public bool pertoPorta = false;
 
     [Header("UI")]
     public GameObject interagirUI;
@@ -105,21 +97,6 @@ public class ManagerPlayer : MonoBehaviour
         {
             TravaCamera();
         }
-
-
-        if(notinhaAtiva) {
-
-            if(Input.GetKeyDown(KeyCode.E)) {
-
-                notinha.SetActive(false);
-                notinhaAtiva = false;
-
-                TravaCamera();
-
-            }
-            
-        }
-
     }
 
 
