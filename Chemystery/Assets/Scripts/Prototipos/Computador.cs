@@ -66,6 +66,8 @@ public class Computador : MonoBehaviour, IInteractable
 
         AtribuirFuncaoAoBotao();
 
+        player.EstaInspecionando();
+
 
     }
 

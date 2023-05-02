@@ -13,6 +13,10 @@ public class InspectItem : MonoBehaviour, IInteractable
 
     [SerializeField] private GameObject canvasInspectItem;
 
+    [SerializeField] private string qualObjeto;
+
+    Chave chave;
+
 
     public void Interagir() {
 
@@ -26,6 +30,12 @@ public class InspectItem : MonoBehaviour, IInteractable
 
         player = FindObjectOfType<ManagerPlayer>();
 
+        if(qualObjeto == "Chave") {
+
+            chave = GetComponent<Chave>();
+
+        }
+
     }
 
     void Inspecionar() {
@@ -37,6 +47,7 @@ public class InspectItem : MonoBehaviour, IInteractable
         canvasInspectItem.SetActive(true);
 
         player.TravaCamera();
+        player.EstaInspecionando();
         
 
     }
@@ -47,6 +58,12 @@ public class InspectItem : MonoBehaviour, IInteractable
         player.TravaCamera();
         player.EstaInspecionando();
         
+        if(chave != null) {
+
+            chave.PegarChave();
+
+        }
+
 
         Destroy(gameObject);
 

@@ -83,7 +83,6 @@ public class ManagerPlayer : MonoBehaviour
                 IInteractable itemInteractable = hit.collider.GetComponent<IInteractable>();
 
                 itemInteractable.Interagir();
-                EstaInspecionando();
 
             }
 
@@ -121,16 +120,6 @@ public class ManagerPlayer : MonoBehaviour
             
         }
 
-        if (pertoPorta)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (pegouChave)
-                {
-                    Destroy(porta);
-                }
-            }
-        }
     }
 
 
@@ -202,22 +191,6 @@ public class ManagerPlayer : MonoBehaviour
 
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Porta"))
-        {
-            pertoPorta = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Porta"))
-        {
-            pertoPorta = false;
         }
     }
 }
