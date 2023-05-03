@@ -31,10 +31,9 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
     public Color corInicial, corFinal;
 
     ManagerPlayer player;
-
     Collider colisao;
 
-    public GameObject puzzleCor;
+    private PuzzleCor puzzleCor;
 
     #endregion
 
@@ -43,6 +42,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
         player = FindObjectOfType<ManagerPlayer>();
 
         colisao = GetComponent<Collider>();
+
+        puzzleCor = FindObjectOfType<PuzzleCor>();
 
     }
 
@@ -143,7 +144,7 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
             if (contador == 5)
             {
                 FimPuzzle();
-                puzzleCor.SetActive(true);
+                puzzleCor.energiaAtivada = true;
                 Debug.Log("Ganhei");
             }
             else

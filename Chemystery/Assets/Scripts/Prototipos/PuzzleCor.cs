@@ -13,8 +13,21 @@ public class PuzzleCor : MonoBehaviour, IInteractable
     Collider colisao;
     public GameObject background;
 
+    private Aviso aviso;
+
+    public bool energiaAtivada = false;
+
     public void Interagir() {
-        Puzzle();
+
+        if(energiaAtivada) {
+
+            Puzzle();
+
+        } else {
+
+            aviso.AvisoDoPc();
+
+        }
     }
 
     void Awake () {
@@ -22,6 +35,8 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         player = FindObjectOfType<ManagerPlayer>();
 
         colisao = GetComponent<Collider>();
+
+        aviso = FindObjectOfType<Aviso>();
     }
 
     void Update()

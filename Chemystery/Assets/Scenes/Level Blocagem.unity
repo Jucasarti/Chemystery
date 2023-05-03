@@ -6020,7 +6020,6 @@ MonoBehaviour:
   cinemachine: {fileID: 60889539378096551}
   corInicial: {r: 0.28627452, g: 0.28627452, b: 0.28627452, a: 1}
   corFinal: {r: 0.123716116, g: 1, b: 0, a: 1}
-  puzzleCor: {fileID: 1014055869}
 --- !u!4 &176866352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52fa410c4df0d3c4bb960424e3edb647,
@@ -36157,7 +36156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1014055870
 Transform:
   m_ObjectHideFlags: 0
@@ -36195,6 +36194,7 @@ MonoBehaviour:
   - {fileID: 348097422}
   modoPuzzle: 0
   background: {fileID: 1522638728}
+  energiaAtivada: 0
 --- !u!54 &1014055872
 Rigidbody:
   m_ObjectHideFlags: 0

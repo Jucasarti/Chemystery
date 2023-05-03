@@ -28,12 +28,14 @@ public class Computador : MonoBehaviour, IInteractable
     [Header("Outras variáveis")]
 
     [SerializeField] TextMeshProUGUI nomeNoPCText;
-
     private ManagerPlayer player;
+
+    private Aviso aviso;
 
     void Awake() {
 
         player = FindObjectOfType<ManagerPlayer>();
+        aviso = FindObjectOfType<Aviso>();
 
     }
     
