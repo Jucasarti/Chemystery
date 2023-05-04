@@ -29,7 +29,7 @@ public class Computador : MonoBehaviour, IInteractable
 
     [SerializeField] TextMeshProUGUI nomeNoPCText;
 
-    [SerializeField] private Crosshair crosshair;
+    private Crosshair crosshair;
     private ManagerPlayer player;
 
     private Aviso aviso;
