@@ -17,11 +17,15 @@ public class PuzzleCor : MonoBehaviour, IInteractable
 
     public bool energiaAtivada = false;
 
+    private Crosshair crosshair;
+
     public void Interagir() {
 
         if(energiaAtivada) {
 
             Puzzle();
+
+            crosshair.DesativarCrosshair();
 
         } else {
 
@@ -37,6 +41,8 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         colisao = GetComponent<Collider>();
 
         aviso = FindObjectOfType<Aviso>();
+
+        crosshair = FindObjectOfType<Crosshair>();
     }
 
     void Update()
@@ -76,6 +82,8 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         }
 
         background.SetActive(false);
+
+        crosshair.AtivarCrosshair();
 
         //Habilitando o modo puzzle
         modoPuzzle = false;

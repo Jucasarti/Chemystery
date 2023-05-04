@@ -28,6 +28,8 @@ public class Computador : MonoBehaviour, IInteractable
     [Header("Outras variáveis")]
 
     [SerializeField] TextMeshProUGUI nomeNoPCText;
+
+    [SerializeField] private Crosshair crosshair;
     private ManagerPlayer player;
 
     private Aviso aviso;
@@ -37,11 +39,15 @@ public class Computador : MonoBehaviour, IInteractable
         player = FindObjectOfType<ManagerPlayer>();
         aviso = FindObjectOfType<Aviso>();
 
+        crosshair = FindObjectOfType<Crosshair>();
+
     }
     
     public void Interagir() {
 
         AbrirPC();
+
+        crosshair.DesativarCrosshair();
 
     }
 
@@ -106,6 +112,8 @@ public class Computador : MonoBehaviour, IInteractable
         }
 
         pcUI.SetActive(false);
+
+        crosshair.AtivarCrosshair();
 
         player.TravaCamera();
         player.EstaInspecionando();

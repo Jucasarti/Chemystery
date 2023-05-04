@@ -35,6 +35,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
 
     private PuzzleCor puzzleCor;
 
+    private Crosshair crosshair;
+
     #endregion
 
     void Awake() {
@@ -44,6 +46,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
         colisao = GetComponent<Collider>();
 
         puzzleCor = FindObjectOfType<PuzzleCor>();
+
+        crosshair = FindObjectOfType<Crosshair>();
 
     }
 
@@ -63,6 +67,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
     public void Interagir() {
 
         Puzzle();
+
+        crosshair.DesativarCrosshair();
 
     }
 
@@ -114,6 +120,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
         modoPuzzle = false;
 
         colisao.enabled = true;
+
+        crosshair.AtivarCrosshair();
 
         //Desabilitando o modo puzzle nos cubos
         for (int i = 0; i < cubos.Length; i++) {

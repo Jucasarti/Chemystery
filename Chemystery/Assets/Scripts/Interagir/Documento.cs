@@ -7,6 +7,8 @@ public class Documento : MonoBehaviour, IInteractable
     [SerializeField] private GameObject docUI;
     private ManagerPlayer player;
 
+    private Crosshair crosshair;
+
     private bool docAtivado = false;
 
     public void Interagir() {
@@ -17,11 +19,15 @@ public class Documento : MonoBehaviour, IInteractable
 
         docAtivado = true;
 
+        crosshair.DesativarCrosshair();
+
     }
 
     void Awake() {
 
         player = FindObjectOfType<ManagerPlayer>();
+
+        crosshair = FindObjectOfType<Crosshair>();
 
     }
 
@@ -37,6 +43,8 @@ public class Documento : MonoBehaviour, IInteractable
                 player.TravaCamera();
 
                 docAtivado = false;
+
+                crosshair.AtivarCrosshair();
 
             }
 

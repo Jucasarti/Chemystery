@@ -17,10 +17,13 @@ public class InspectItem : MonoBehaviour, IInteractable
 
     Chave chave;
 
+    private Crosshair crosshair;
 
     public void Interagir() {
 
         Inspecionar();
+
+
 
     }
 
@@ -29,6 +32,8 @@ public class InspectItem : MonoBehaviour, IInteractable
     void Awake() {
 
         player = FindObjectOfType<ManagerPlayer>();
+
+        crosshair = FindObjectOfType<Crosshair>();
 
         if(qualObjeto == "Chave") {
 
@@ -46,6 +51,8 @@ public class InspectItem : MonoBehaviour, IInteractable
 
         canvasInspectItem.SetActive(true);
 
+        crosshair.DesativarCrosshair();
+
         player.TravaCamera();
         player.EstaInspecionando();
         
@@ -57,6 +64,8 @@ public class InspectItem : MonoBehaviour, IInteractable
         canvasInspectItem.SetActive(false);
         player.TravaCamera();
         player.EstaInspecionando();
+
+        crosshair.AtivarCrosshair();
         
         if(chave != null) {
 

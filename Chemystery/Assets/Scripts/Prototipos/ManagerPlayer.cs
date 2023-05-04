@@ -35,6 +35,14 @@ public class ManagerPlayer : MonoBehaviour
     [Header("UI")]
     public GameObject interagirUI;
 
+    private Crosshair crosshair;
+
+
+    void Awake () {
+
+        crosshair = FindObjectOfType<Crosshair>();
+
+    }
 
 
 
@@ -68,6 +76,8 @@ public class ManagerPlayer : MonoBehaviour
             //Ativando UI 
             interagirUI.SetActive(true);
 
+            crosshair.CrosshairInteracao();
+
             //Verificando se o player apertou E
             if(Input.GetKeyDown(KeyCode.E)) {
 
@@ -82,6 +92,8 @@ public class ManagerPlayer : MonoBehaviour
 
             //Desativando a UI
             interagirUI.SetActive(false);
+
+            crosshair.CrosshairNormal();
 
             }
 
