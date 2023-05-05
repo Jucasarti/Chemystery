@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PuzzleMaleta : MonoBehaviour, IInteractable
 {
@@ -10,6 +11,16 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
     [SerializeField] private TextMeshProUGUI textoVisor;
 
     [SerializeField] private GameObject puzzle;
+
+    [SerializeField] private Image background;
+
+    [SerializeField] Color vermelho;
+
+    [SerializeField] Color verde;
+
+    [SerializeField] Color corInicial;
+ 
+    [SerializeField] private float intervalo = 0.2f;
 
     private ManagerPlayer player;
 
@@ -64,17 +75,56 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
         if(textoVisor.text == senhaCorreta) {
 
-            AcertouSenha();
+            StartCoroutine(AcertouSenha());
 
         } else {
 
-            ErrouSenha();
+            StartCoroutine(ErrouSenha());
 
         }
 
     }
 
-    private void AcertouSenha () {
+    //private void AcertouSenha () {
+
+        //Debug.Log("Acertou a senha");
+
+        //puzzle.SetActive(false);
+
+        //player.EstaInspecionando();
+
+        //player.TravaCamera();
+//
+        //crosshair.AtivarCrosshair();
+
+    //}
+
+    private IEnumerator AcertouSenha() {
+
+        //tocar um audio
+
+        
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = verde;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = corInicial;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = verde;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = corInicial;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = verde;
+
+        yield return new WaitForSeconds(2);
 
         Debug.Log("Acertou a senha");
 
@@ -88,13 +138,49 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
     }
 
-    private void ErrouSenha() {
+    private IEnumerator ErrouSenha () {
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = vermelho;
+
+        Debug.Log("Alo");
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = corInicial;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = vermelho;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = corInicial;
+
+        yield return new WaitForSeconds(intervalo);
+
+        background.color = vermelho;
+
+        yield return new WaitForSeconds(2);
 
         contadorSenha = 0;
 
         textoVisor.text = "";
 
+        background.color = corInicial;
+
+
     }
+
+
+    //private void ErrouSenha() {
+
+        //contadorSenha = 0;
+
+        //textoVisor.text = "";
+
+    //}
 
     void Update () {
 
@@ -102,7 +188,9 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
             if(Input.GetKeyDown(KeyCode.Space)) {
 
-                ErrouSenha();
+                contadorSenha = 0;
+
+                textoVisor.text = "";
 
                 puzzle.SetActive(false);
 

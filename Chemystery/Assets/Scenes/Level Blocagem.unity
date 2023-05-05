@@ -43333,6 +43333,11 @@ MonoBehaviour:
   senhaCorreta: 040103
   textoVisor: {fileID: 1103548039}
   puzzle: {fileID: 1496015250}
+  background: {fileID: 1775314275}
+  vermelho: {r: 1, g: 0, b: 0, a: 1}
+  verde: {r: 0.092196584, g: 1, b: 0, a: 1}
+  corInicial: {r: 0.31764707, g: 0.7686275, b: 0.34117648, a: 1}
+  intervalo: 0.2
 --- !u!65 &1220807080
 BoxCollider:
   m_ObjectHideFlags: 0
