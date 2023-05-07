@@ -107,7 +107,7 @@ public class InspectItem : MonoBehaviour, IInteractable
 
         if(podeRotar) {
 
-            if(Input.GetKeyDown(KeyCode.Space)) {
+            if(Input.GetKeyDown(KeyCode.Space) && MenuPausa.jogoPausado == false) {
 
                 PegarItem();
             }

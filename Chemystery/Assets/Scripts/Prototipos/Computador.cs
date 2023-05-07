@@ -12,6 +12,14 @@ public class Computador : MonoBehaviour, IInteractable
     
 
     [SerializeField] Button botaoFecharPC;
+    
+    [Header("Audios")]
+
+    [SerializeField] AudioSource sfxClickMouse;
+
+    [SerializeField] AudioSource sfxLigarPc;
+ 
+
 
     [Header("Slot das mensagens")]
     [SerializeField] Button[] slotsMSG;
@@ -62,6 +70,8 @@ public class Computador : MonoBehaviour, IInteractable
 
         nomeNoPCText.text = nomeDoUsuarioDoPc;
 
+        //sfxLigarPc.PlayOneShot(sfxLigarPc.clip);
+
 
         for(int i = 0; i < titulosDasMensagens.Length; i++) {
 
@@ -98,6 +108,8 @@ public class Computador : MonoBehaviour, IInteractable
     public void CliqueNaMensagem (int numeroDaMensagem) {
 
         mostrarConteudo.text = textoDasMensagens[numeroDaMensagem];
+
+        sfxClickMouse.PlayOneShot(sfxClickMouse.clip);
 
     }
 

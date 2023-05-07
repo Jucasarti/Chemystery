@@ -34,7 +34,7 @@ public class Documento : MonoBehaviour, IInteractable
 
     void Update() {
 
-        if(docAtivado) {
+        if(docAtivado && MenuPausa.jogoPausado == false) {
 
             if(Input.GetKeyDown(KeyCode.Space)) {
 

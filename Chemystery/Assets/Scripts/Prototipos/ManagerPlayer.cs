@@ -65,7 +65,7 @@ public class ManagerPlayer : MonoBehaviour
     void Update()
     {
 
-        if(jaEstaInspecionando == false) {
+        if(jaEstaInspecionando == false && MenuPausa.jogoPausado == false) {
         //Criando Raycast
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

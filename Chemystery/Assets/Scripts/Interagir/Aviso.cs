@@ -6,27 +6,12 @@ using TMPro;
 public class Aviso : MonoBehaviour
 {
     [SerializeField] TMP_Text textAviso;
-    [SerializeField] private float intervalo = .2f;
-    private Animator animator;
-    private Color corInicial;
-
+    [SerializeField] private float intervalo = .05f;
     private int totalCaracteres;
 
     [Header("Textos dos avisos")]
     [SerializeField] private string avisoDaPorta;
     [SerializeField] private string avisoDoPc;
-
-    void Awake() {
-
-        animator = GetComponentInChildren<Animator>();
-
-        corInicial = textAviso.color;
-
-    }
-
-
-
-
 
     public void AvisoDaPorta() {
 
@@ -61,11 +46,7 @@ public class Aviso : MonoBehaviour
             yield return new WaitForSeconds (intervalo);
             textAviso.maxVisibleCharacters++;
 
-            Debug.Log("Mais uma letra");
-
         }
-
-        Debug.Log("Sai do loop hein");
 
         yield return new WaitForSeconds (3f);
 
