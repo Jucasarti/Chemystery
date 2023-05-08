@@ -61882,10 +61882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pegouChave: 0
   jaEstaInspecionando: 0
-  velRotacao: 500
-  vel: 4
-  correr: 4
-  correndo: 0
+  velJogadorNormal: 4
+  velJogadorCorrendo: 8
   cameraTransform: {fileID: 60889539378096555}
   cinemachine: {fileID: 60889539378096551}
   objeto: {fileID: 1986304037}

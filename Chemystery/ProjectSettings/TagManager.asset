@@ -15,6 +15,7 @@ TagManager:
   - Nota
   - Porta
   - PCUI
+  - AtivaSmoke
   layers:
   - Default
   - TransparentFX

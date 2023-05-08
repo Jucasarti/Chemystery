@@ -9,34 +9,34 @@ using UnityEngine.Rendering.Universal.Internal;
 
 public class ManagerPlayer : MonoBehaviour
 {
+    #region Variavéis
     [Header("Variaveis Booleanas")]
     bool andar = true;
     public bool pegouChave = false;
     public bool jaEstaInspecionando = false;
 
-    
-
-    [Header("Variaveis Float")]
-    public float velRotacao;
-    public float vel;
-    public float correr;
-    public float correndo;
+    [Header("Movimentação do Player")]
+    [SerializeField] private float velJogadorNormal;
+    [SerializeField] private float velJogadorCorrendo;
+    CharacterController characterController;
+    private Vector3 entradasJogador;
+    private Transform myCamera;
+    private float vel;
     float raycastRange = 3f;
 
     [Header("Outros")]
     public Transform cameraTransform;
     public CinemachineBrain cinemachine;
-    CharacterController controller;
-    Vector3 movimento = Vector3.zero;
     public GameObject objeto;
     Camera cam;
     public LayerMask interactableMask;
+    public Cut cutscene;
 
     [Header("UI")]
     public GameObject interagirUI;
 
     private Crosshair crosshair;
-
+    #endregion
 
     void Awake () {
 
@@ -50,15 +50,14 @@ public class ManagerPlayer : MonoBehaviour
     void Start()
     {
         //Ativando o controlller do personagem
-        controller = GetComponent<CharacterController>();
+        characterController = GetComponent<CharacterController>();
 
         //Desativando o cursor e travando a tela
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
         cam = Camera.main;
-
-        correndo = vel * correr;
+        myCamera = Camera.main.transform;
     }
 
     // Update is called once per frame
@@ -131,35 +130,21 @@ public class ManagerPlayer : MonoBehaviour
 
     void Movimentacao()
     {
-        //Capturando inputs do jogador
-        movimento = transform.right * Input.GetAxisRaw("Horizontal");
-        movimento += transform.forward * Input.GetAxisRaw("Vertical");
- 
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, myCamera.eulerAngles.y, transform.eulerAngles.z);
 
-        //Evitando multiplica��o no valor de movimento, ao andar em diagonal
-        movimento = movimento.normalized;
+        entradasJogador = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        entradasJogador = transform.TransformDirection(entradasJogador);
 
-        //Movendo personagem
-        controller.Move(movimento * Time.deltaTime * vel);
-
-        //Detectando se est� correndo ou n�o
-        if (Input.GetButtonDown("Correr"))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            //Aumentando a velocidade caso esteja
-            vel *= correr;          
-            if (vel > correndo)
-            {
-                vel = correndo;
-            }
+            vel = velJogadorCorrendo;
         }
-        else if (Input.GetButtonUp("Correr"))
+        else
         {
-            //Diminuindo a velocidade caso n�o estejas
-            vel /= 4;
+            vel = velJogadorNormal;
         }
 
-        //Rota��o do personagem
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, cameraTransform.eulerAngles.y, 0), velRotacao * Time.deltaTime);
+        characterController.Move(entradasJogador * Time.deltaTime * vel);
     }
 
     public void TravaCamera()
@@ -180,6 +165,14 @@ public class ManagerPlayer : MonoBehaviour
 
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("AtivaSmoke"))
+        {
+            cutscene.AtivaCutscene();
         }
     }
 }
