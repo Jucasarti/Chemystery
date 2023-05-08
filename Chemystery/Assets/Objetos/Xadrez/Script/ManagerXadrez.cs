@@ -3,24 +3,46 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Android;
+using Cinemachine;
+using TMPro;
 
-public class ManagerXadrez : MonoBehaviour
+public class ManagerXadrez : MonoBehaviour, IInteractable
 {
     private bool cooldown;
-    public bool fim;
+    private bool comeco;
+    public bool aberto;
     private float pecasCertas;
+
     Selecionado selecionado;
     Collider colisao;
+    ManagerPlayer player;
+    Crosshair crosshair;
+
+    public bool fim;
+    public Vector3 posPlayer;
     public Pecas[] pecas;
+    public CinemachineVirtualCamera[] cameras;
 
     private void Awake()
     {
+        crosshair = FindObjectOfType<Crosshair>();
+        player = FindObjectOfType<ManagerPlayer>();
+
         selecionado = FindObjectOfType<Selecionado>();
         selecionado.casa = FindObjectOfType<MeshRenderer>();
-        selecionado.pecaSelecionada = FindObjectOfType<GameObject>();
         colisao = gameObject.GetComponent<Collider>();
+        comeco = true;
+        aberto = false;
         DesativaSelecionado();
         fim = false;
+    }
+
+    public void Interagir()
+    {
+        if (!aberto)
+        {
+            AtivaSelecionado();
+        }
     }
 
     private void Update()
@@ -30,9 +52,12 @@ public class ManagerXadrez : MonoBehaviour
             DesabilitaPuzzleXadrez();
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (aberto)
         {
-            AtivaSelecionado();
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                DesativaSelecionado();
+            }
         }
     }
 
@@ -47,10 +72,23 @@ public class ManagerXadrez : MonoBehaviour
             DesativaSelecionado();
         }
         selecionado.gameObject.transform.position = selecionado.posInicial;
+
+        crosshair.DesativarCrosshair();
+
+        cameras[0].enabled = false;
+        cameras[1].enabled = true;
+
+        player.EstaInspecionando();
+        player.Andando();
+
+        selecionado.mexerSelecionado = true;
+        player.gameObject.transform.position = posPlayer;
+        aberto = true;
     }
 
     public void DesativaSelecionado()
     {
+        selecionado.mexerSelecionado = false;
         if (selecionado.pegouPeca)
         {
             selecionado.sair = true;
@@ -62,6 +100,22 @@ public class ManagerXadrez : MonoBehaviour
         }
         selecionado.gameObject.GetComponent<MeshRenderer>().material.color = selecionado.casa.GetComponent<MeshRenderer>().material.color;
         selecionado.pegouPeca = false;
+
+        if (!comeco)
+        {
+            crosshair.AtivarCrosshair();
+
+            cameras[1].enabled = false;
+            cameras[0].enabled = true;
+
+            player.EstaInspecionando();
+            player.Andando();
+        }
+        else
+        {
+            comeco = false;
+        }
+
         if (fim)
         {
             Invoke("ResetCooldown", 0.5f);
@@ -71,12 +125,13 @@ public class ManagerXadrez : MonoBehaviour
         {
             Invoke("ResetCooldown", 1.1f);
             cooldown = false;
-        }
+            selecionado.trocarCamera = false;
+        } 
     }
 
     void ResetCooldown()
     {
-        cooldown = true;
+        cooldown = true; 
     }
 
     void DesabilitaPuzzleXadrez()
@@ -87,6 +142,7 @@ public class ManagerXadrez : MonoBehaviour
         }
         cooldown = false;
         selecionado.casa.enabled = true;
+        aberto = false;
         selecionado.gameObject.SetActive(false);
     }
 

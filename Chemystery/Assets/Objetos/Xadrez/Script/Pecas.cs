@@ -37,7 +37,6 @@ public class Pecas : MonoBehaviour
     {
         if (other.CompareTag("CasaXadrez"))
         {
-            Debug.Log(other);
             casaAtual = other.GetComponent<GameObject>();
             for (int i = 0; i < casasCerta.Length; i++)
             {

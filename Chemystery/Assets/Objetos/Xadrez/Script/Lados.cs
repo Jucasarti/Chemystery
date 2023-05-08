@@ -13,7 +13,6 @@ public class Lados : MonoBehaviour
         {
             //E alterando o valor
             podeAndar = true;
-            Debug.Log("passei");
         }
     }
     //Verificando se o cubo deixou de ter contato com o cubo vazio
@@ -23,7 +22,6 @@ public class Lados : MonoBehaviour
         {
             //E alterando o valor
             podeAndar = false;
-            Debug.Log("passei2");
         }
     }
 }

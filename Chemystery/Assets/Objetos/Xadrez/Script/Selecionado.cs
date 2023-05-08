@@ -36,38 +36,48 @@ public class Selecionado : MonoBehaviour
     public bool trocarPecas;
     public bool mexerSelecionado;
     private bool pegarPeca;
+    public bool trocarCamera;
 
     #endregion
 
+    private void Awake()
+    {
+        posInicial = gameObject.transform.position;
+    }
+
     void Update()
     {
-        if (mexerSelecionado /*&& Cooldown na troca de Camera*/)
+        if (mexerSelecionado)
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if (lados[0].podeAndar == true)
-                    AtualizaPos(gameObject.transform.position.x, transform.position.y, transform.position.z + 0.1f);
+                    AtualizaPos(gameObject.transform.position.x, transform.position.y, transform.position.z - 0.1f);
             }
             if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 if (lados[1].podeAndar == true)
-                    AtualizaPos(gameObject.transform.position.x, transform.position.y, transform.position.z - 0.1f);
+                    AtualizaPos(gameObject.transform.position.x, transform.position.y, transform.position.z + 0.1f);
             }
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (lados[2].podeAndar == true)
-                    AtualizaPos(gameObject.transform.position.x - 0.1f, transform.position.y, transform.position.z);
+                    AtualizaPos(gameObject.transform.position.x + 0.1f, transform.position.y, transform.position.z);
             }
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 if (lados[3].podeAndar == true)
-                    AtualizaPos(gameObject.transform.position.x + 0.1f, transform.position.y, transform.position.z);
+                    AtualizaPos(gameObject.transform.position.x - 0.1f, transform.position.y, transform.position.z);
             }
         }
-        if (pegarPeca /*&& Cooldown na troca de Camera*/)
+        if (pegarPeca)
         {
             if (Input.GetKeyDown(KeyCode.Space))
-            {                
+            {
+                pegarPeca = false;
+                mexerSelecionado = false;
+                sair = false;
+
                 pecaAnterior = pecaSelecionada;     
                 posPecasAnterior = posPecasSelecionada;
 
@@ -91,10 +101,6 @@ public class Selecionado : MonoBehaviour
 
                 posPecasSelecionada = posPecas ? posPecas : posPecasAnterior;
                 posPecasSelecionada.AtualizaPos();
-
-                mexerSelecionado = false;
-                pegarPeca = false;
-                sair = false;
                 pegouPeca = !pegouPeca;
 
                 
