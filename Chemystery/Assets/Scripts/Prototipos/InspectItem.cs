@@ -72,11 +72,15 @@ public class InspectItem : MonoBehaviour, IInteractable
             chave.PegarChave();
 
         }
+        
+        if(qualObjeto == "Valvula") {
+
+            player.ColetarValvula();
+
+        }
 
 
         Destroy(gameObject);
-
-
 
     }
 

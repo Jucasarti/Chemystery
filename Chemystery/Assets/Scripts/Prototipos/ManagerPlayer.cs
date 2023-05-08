@@ -32,6 +32,8 @@ public class ManagerPlayer : MonoBehaviour
     public LayerMask interactableMask;
     public Cut cutscene;
 
+    public int numeroDeValvulas = 0;
+
     [Header("UI")]
     public GameObject interagirUI;
 
@@ -41,6 +43,8 @@ public class ManagerPlayer : MonoBehaviour
     void Awake () {
 
         crosshair = FindObjectOfType<Crosshair>();
+
+        numeroDeValvulas = 0;
 
     }
 
@@ -125,6 +129,22 @@ public class ManagerPlayer : MonoBehaviour
             interagirUI.SetActive(false);
 
         }
+
+    }
+
+    public void ColetarValvula() {
+
+        numeroDeValvulas++;
+
+        //Atualizar UI
+
+    }
+
+    public void RetirarValvula () {
+
+        numeroDeValvulas--;
+
+        //Atualizar UI
 
     }
 
