@@ -16,6 +16,9 @@ TagManager:
   - Porta
   - PCUI
   - AtivaSmoke
+  - CasaXadrez
+  - CasaSelecionada
+  - PecasXadrez
   layers:
   - Default
   - TransparentFX
