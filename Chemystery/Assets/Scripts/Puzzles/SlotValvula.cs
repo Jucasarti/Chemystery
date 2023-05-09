@@ -16,6 +16,8 @@ public class SlotValvula : MonoBehaviour, IInteractable
 
     Aviso aviso;
 
+    AudioSource source;
+
 
     void Awake () {
 
@@ -26,6 +28,8 @@ public class SlotValvula : MonoBehaviour, IInteractable
         valvulaModelo = GetComponent<MeshRenderer>();
 
         aviso = FindObjectOfType<Aviso>();
+
+        source = GetComponent<AudioSource>();
     }
 
     public void Interagir() {
@@ -40,6 +44,8 @@ public class SlotValvula : MonoBehaviour, IInteractable
 
             temValvula = false;
 
+            source.PlayOneShot(source.clip);
+
 
         } else if (player.numeroDeValvulas > 0) {
 
@@ -50,6 +56,8 @@ public class SlotValvula : MonoBehaviour, IInteractable
             ColocarValvula();
 
             temValvula = true;
+
+            source.PlayOneShot(source.clip);
 
         } else {
 

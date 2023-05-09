@@ -44,6 +44,8 @@ public class ManagerPlayer : MonoBehaviour
 
     [SerializeField ] AudioSource sourceCorrendo;
 
+    [SerializeField] AudioSource sourceMorte;
+
     #endregion
 
     void Awake () {
@@ -245,7 +247,18 @@ public class ManagerPlayer : MonoBehaviour
 
     public void Morrer () {
 
+        StartCoroutine(AnimMorte());
+
+    }
+
+    IEnumerator AnimMorte () {
+
+        sourceMorte.PlayOneShot(sourceMorte.clip);
+
+        yield return new WaitForSeconds(2);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
 
     }
 

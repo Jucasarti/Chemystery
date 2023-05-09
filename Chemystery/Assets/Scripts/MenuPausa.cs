@@ -16,6 +16,7 @@ public class MenuPausa : MonoBehaviour
         if(instance == null) {
 
             instance = this;
+            DontDestroyOnLoad(gameObject);
 
         } else {
 
@@ -23,9 +24,6 @@ public class MenuPausa : MonoBehaviour
             return;
 
         }
-
-
-
     }
 
 
