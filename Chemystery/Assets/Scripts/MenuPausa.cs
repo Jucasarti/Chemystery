@@ -58,9 +58,9 @@ public class MenuPausa : MonoBehaviour
 
     public void BotaoMainMenu () {
 
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
 
-        //SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
 
     }
 
