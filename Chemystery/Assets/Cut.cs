@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 public class Cut : MonoBehaviour
 {
     public CinemachineVirtualCamera [] camerasCutscene;
-    public GameObject [] cutsceneSmoke;
+    public GameObject cutsceneSmoke;
     public GameObject managerCutscene;
     public ManagerPlayer player;
 
@@ -17,18 +17,16 @@ public class Cut : MonoBehaviour
         camerasCutscene[0].gameObject.SetActive(false);
         camerasCutscene[1].gameObject.SetActive(true);
         player.gameObject.SetActive(false);
+        player.gameObject.transform.position = new Vector3(76.5200043f, player.gameObject.transform.position.y, 35.159996f);
         managerCutscene.SetActive(true);
     }
 
     public void DesativaCutscene()
     {
+        cutsceneSmoke.SetActive(true);
+        player.gameObject.SetActive(true);
         camerasCutscene[0].gameObject.SetActive(true);
         camerasCutscene[1].gameObject.SetActive(false);
-        player.gameObject.SetActive(true);
-        for (int i = 0; i < cutsceneSmoke.Length; i++)
-        {
-            cutsceneSmoke[i].SetActive(true);
-        }
         managerCutscene.SetActive(false);
     }
 }
