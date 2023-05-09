@@ -6,9 +6,15 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 {
     [SerializeField] GameObject gases1, gases2, gases3, gases4;
 
-    [SerializeField] GameObject valvula1Modelo, valvula2Modelo, valvula3Modelo, valvula4Modelo;
+    Chave chave;
 
     private int hubValvulas1 = 0, hubValvulas2 = 0, hubValvulas3 = 0, hubValvulas4 = 0;
+
+    void Awake () {
+
+        chave = FindObjectOfType<Chave>();
+
+    }
 
 
     public void ColocarValvula1 () {
@@ -16,6 +22,8 @@ public class ManagerPuzzleValvulas : MonoBehaviour
         hubValvulas1++;
 
         gases1.SetActive(false);
+
+        VerificarFim();
 
 
     }
@@ -34,9 +42,11 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
     public void ColocarValvula2 () {
 
-        hubValvulas1++;
+        hubValvulas2++;
 
-        gases1.SetActive(false);
+        gases2.SetActive(false);
+
+        VerificarFim();
 
 
     }
@@ -47,7 +57,7 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
         if(hubValvulas2 <= 0) {
 
-            gases1.SetActive(true);
+            gases2.SetActive(true);
 
         }
 
@@ -57,7 +67,9 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
         hubValvulas3++;
 
-        gases1.SetActive(false);
+        gases3.SetActive(false);
+
+        VerificarFim();
 
 
     }
@@ -68,7 +80,7 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
         if(hubValvulas3 <= 0) {
 
-            gases1.SetActive(true);
+            gases3.SetActive(true);
 
         }
 
@@ -78,7 +90,9 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
         hubValvulas4++;
 
-        gases1.SetActive(false);
+        gases4.SetActive(false);
+
+        VerificarFim();
 
 
     }
@@ -89,10 +103,21 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
         if(hubValvulas4 <= 0) {
 
-            gases1.SetActive(true);
+            gases4.SetActive(true);
 
         }
 
+    }
+
+    void VerificarFim () {
+
+        if(hubValvulas1 > 0 && hubValvulas2 > 0 && hubValvulas3 > 0 && hubValvulas4 > 0) {
+
+            chave.PegarChave();
+
+            Debug.Log("Abriu a porta final");
+
+        }
     }
 
 

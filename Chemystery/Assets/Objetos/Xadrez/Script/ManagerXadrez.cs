@@ -67,7 +67,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         selecionado.gameObject.GetComponent<MeshRenderer>().material.color = selecionado.cores[0];
         if (fim)
         {
-            ResetarPeças();
+            ResetarPecas();
             fim = false;
             DesativaSelecionado();
         }
@@ -169,7 +169,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         DesativaSelecionado();
     }
 
-    public void ResetarPeças()
+    public void ResetarPecas()
     {
         for(int i = 0; i < pecas.Length; i++)
         {

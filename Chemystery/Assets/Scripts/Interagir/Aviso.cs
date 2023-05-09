@@ -13,6 +13,8 @@ public class Aviso : MonoBehaviour
     [SerializeField] private string avisoDaPorta;
     [SerializeField] private string avisoDoPc;
 
+    private string avisoDaValvula = "Você não tem nenhuma válvula";
+
     public void AvisoDaPorta() {
 
         textAviso.text = avisoDaPorta;
@@ -28,6 +30,16 @@ public class Aviso : MonoBehaviour
         textAviso.text = avisoDoPc;
 
         totalCaracteres = avisoDoPc.Length;
+
+        StartCoroutine(EscreverTexto());
+
+    }
+
+    public void AvisoDaValvula () {
+
+        textAviso.text = avisoDaValvula;
+
+        totalCaracteres = avisoDaValvula.Length;
 
         StartCoroutine(EscreverTexto());
 

@@ -4,10 +4,30 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuPausa : MonoBehaviour
-{
+{       
+    public static MenuPausa instance;
+
     [SerializeField] GameObject menuPausa;
 
     public static bool jogoPausado = false;
+
+    void Awake() {
+
+        if(instance == null) {
+
+            instance = this;
+
+        } else {
+
+            Destroy(gameObject);
+            return;
+
+        }
+
+
+
+    }
+
 
     public void PausarJogo() {
 

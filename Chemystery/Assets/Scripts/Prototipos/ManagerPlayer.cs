@@ -6,6 +6,7 @@ using static UnityEngine.UI.GridLayoutGroup;
 using UnityEngine.InputSystem.XR;
 using Cinemachine;
 using UnityEngine.Rendering.Universal.Internal;
+using UnityEngine.SceneManagement;
 
 public class ManagerPlayer : MonoBehaviour
 {
@@ -36,8 +37,13 @@ public class ManagerPlayer : MonoBehaviour
 
     [Header("UI")]
     public GameObject interagirUI;
-
     private Crosshair crosshair;
+
+    [Header("Audio")]
+    [SerializeField ] AudioSource sourceAndando;
+
+    [SerializeField ] AudioSource sourceCorrendo;
+
     #endregion
 
     void Awake () {
@@ -153,18 +159,59 @@ public class ManagerPlayer : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, myCamera.eulerAngles.y, transform.eulerAngles.z);
 
         entradasJogador = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        entradasJogador = transform.TransformDirection(entradasJogador);
+        entradasJogador = transform.TransformDirection(entradasJogador).normalized;
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
             vel = velJogadorCorrendo;
+            
+            TestandoCorrer();
+            //SomCorrer();
         }
         else
         {
             vel = velJogadorNormal;
+           
+            TestandoAndar();
+            //SomAndar();
         }
 
+        
+
         characterController.Move(entradasJogador * Time.deltaTime * vel);
+    }
+
+    void TestandoCorrer () {
+
+        if(entradasJogador.x != 0 || entradasJogador.z != 0) {
+
+            sourceAndando.enabled = false;
+            sourceCorrendo.enabled = true;
+
+        } else {
+
+            sourceAndando.enabled = false;
+            sourceCorrendo.enabled = false;
+        
+        }
+
+    }
+
+    void TestandoAndar () {
+
+        if(entradasJogador.x != 0 || entradasJogador.z != 0) {
+
+            sourceAndando.enabled = true;
+            sourceCorrendo.enabled = false;
+
+        } else {
+
+            sourceAndando.enabled = false;
+            sourceCorrendo.enabled = false;
+        
+        }
+
+
     }
 
     public void TravaCamera()
@@ -195,4 +242,11 @@ public class ManagerPlayer : MonoBehaviour
             cutscene.AtivaCutscene();
         }
     }
+
+    public void Morrer () {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
 }

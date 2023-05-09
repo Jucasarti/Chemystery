@@ -12,7 +12,9 @@ public class SlotValvula : MonoBehaviour, IInteractable
 
     [SerializeField] int qualSlot;
 
-    [SerializeField] GameObject valvulaModelo;
+    MeshRenderer valvulaModelo;
+
+    Aviso aviso;
 
 
     void Awake () {
@@ -21,13 +23,16 @@ public class SlotValvula : MonoBehaviour, IInteractable
 
         puzzleValvulas = FindObjectOfType<ManagerPuzzleValvulas>();
 
+        valvulaModelo = GetComponent<MeshRenderer>();
+
+        aviso = FindObjectOfType<Aviso>();
     }
 
     public void Interagir() {
 
         if(temValvula) {
 
-            valvulaModelo.SetActive(false);
+            valvulaModelo.enabled = false;
 
             player.ColetarValvula();
 
@@ -38,7 +43,7 @@ public class SlotValvula : MonoBehaviour, IInteractable
 
         } else if (player.numeroDeValvulas > 0) {
 
-            valvulaModelo.SetActive(true);
+            valvulaModelo.enabled = true;
 
             player.RetirarValvula();
 
@@ -49,6 +54,7 @@ public class SlotValvula : MonoBehaviour, IInteractable
         } else {
 
             //aviso de que nao tem valvulas
+            aviso.AvisoDaValvula();
 
         }
 
