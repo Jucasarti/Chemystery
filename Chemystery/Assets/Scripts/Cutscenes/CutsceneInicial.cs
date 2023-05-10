@@ -53,7 +53,7 @@ public class CutsceneInicial : MonoBehaviour
 
     void EscreverTexto() {
 
-        if(textosDaCutscene[textoArrayIndex] == null) {
+        if(textoArrayIndex >= textosDaCutscene.Length) {
 
             IrProximaCena();
             return;

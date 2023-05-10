@@ -10,9 +10,7 @@ public class MenuInicial : MonoBehaviour
 
     public void BotaoJogar() {
 
-        //Carregar Nova cena
-
-        Debug.Log("Iniciando Jogo");
+        SceneManager.LoadScene("CutsceneInicial");
 
     }
 

@@ -16338,8 +16338,8 @@ Transform:
   - {fileID: 1698829420}
   - {fileID: 169794329}
   - {fileID: 1279610082}
-  - {fileID: 1091477457}
   - {fileID: 1103793932}
+  - {fileID: 1091477457}
   - {fileID: 7724229509337527178}
   - {fileID: 6296807432729284991}
   m_Father: {fileID: 1364528051}
@@ -21592,16 +21592,15 @@ MonoBehaviour:
     dicas: \r\n\r\nVerde n\xE3o est\xE1 \xE0 frente do azul \r\n\r\nMarrom fica ao
     lado do amarelo \r\n\r\nRoxo e verde est\xE3o frente a frente \r\n\r\nVermelho
     fica em uma ponta \r\n\r\nVerde e amarelo est\xE3o na mesma linha \r\n\r\nAzul
-    e vermelho est\xE3o lado a lado \r\n\r\nMe responda assim que poss\xEDvel. \r\n\r\n
-    \r\n\r\nData: 25/09/1984 \r\n \r\nAssunto: RE - Vou atrasar hoje \r\n\r\nPara:
-    Paul Pascal \r\n\r\nDe: John Jughes \r\n\r\nEst\xE1 certo j\xE1, estou no meu
-    posto, esses CDFs s\xE3o um saco sempre chegam na hora, minuto e segundo certo.
-    Vou indo pra sua sala, voc\xEA me deve uma. \r\n\r\n \r\n\r\nData: 25/09/1984
-    \r\n \r\nAssunto: Re - Vou atrasar hoje \r\n\r\nPara: John Jughes \r\n\r\nDe:
-    Paul Pascal \r\n\r\nValeu, mas n\xE3o estou te devendo nada, lembrava aquela
-    vez que queriam te usar de saco de pancada no dia do alistamento? Agora estamos
-    quites, fica de cabe\xE7a baixa que n\xE3o v\xE3o nem perceber que \xE9 voc\xEA
-    no meu lugar. "
+    e vermelho est\xE3o lado a lado \r\n\r\nMe responda assim que poss\xEDvel. \r\n\r\n\r\n\r\nData:
+    25/09/1984 \r\n \r\nAssunto: RE - Vou atrasar hoje \r\n\r\nPara: Paul Pascal
+    \r\n\r\nDe: John Jughes \r\n\r\nEst\xE1 certo j\xE1, estou no meu posto, esses
+    CDFs s\xE3o um saco sempre chegam na hora, minuto e segundo certo. Vou indo pra
+    sua sala, voc\xEA me deve uma. \r\n\r\n \r\n\r\nData: 25/09/1984 \r\n \r\nAssunto:
+    Re - Vou atrasar hoje \r\n\r\nPara: John Jughes \r\n\r\nDe: Paul Pascal \r\n\r\nValeu,
+    mas n\xE3o estou te devendo nada, lembrava aquela vez que queriam te usar de
+    saco de pancada no dia do alistamento? Agora estamos quites, fica de cabe\xE7a
+    baixa que n\xE3o v\xE3o nem perceber que \xE9 voc\xEA no meu lugar. "
   - "Data:11/09/1984 \r\n\r\nAssunto: An\xE1lise breve requisitada.  \r\nPara: Cynthia
     Collins \r\n\r\nDe: John Jughes \r\n \r\n \r\nAqui est\xE1 uma compara\xE7\xE3o
     de resultados de compara\xE7\xE3o de Resultados pedida \r\n\r\n \r\n\r\n Empresa
@@ -27995,6 +27994,165 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52fa410c4df0d3c4bb960424e3edb647, type: 3}
+--- !u!1001 &661424556
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19496155
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42680943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.046131134
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69815594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.054566033
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7116927
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204103683508, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.05562685
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204154908596, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].value
+      value: 
+      objectReference: {fileID: 60889539378096551}
+    - target: {fileID: 8449949204154908596, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_ExposedReferences.m_References.Array.data[2].second
+      value: 
+      objectReference: {fileID: 1390143730}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 130.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949204554859131, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_Name
+      value: TrocarCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949205921692732, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].value
+      value: 
+      objectReference: {fileID: 60889539378096551}
+    - target: {fileID: 8449949205921692732, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_ExposedReferences.m_References.Array.data[0].second
+      value: 
+      objectReference: {fileID: 1390143730}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.398613
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17699993
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.179903
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000009313226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449949206041004069, guid: f94e98902a60cb2439d77eb59debd542,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000011175871
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f94e98902a60cb2439d77eb59debd542, type: 3}
 --- !u!1001 &662762822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40828,7 +40986,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 294933828}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1103793933
 AudioSource:
