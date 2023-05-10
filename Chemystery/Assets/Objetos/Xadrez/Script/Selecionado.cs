@@ -36,7 +36,6 @@ public class Selecionado : MonoBehaviour
     public bool trocarPecas;
     public bool mexerSelecionado;
     private bool pegarPeca;
-    public bool trocarCamera;
 
     #endregion
 

@@ -10,6 +10,5 @@ public class Chave : MonoBehaviour
     public void PegarChave() {
 
         porta.DestrancarPorta();
-
     }
 }

@@ -26,7 +26,6 @@ public class ManagerPlayer : MonoBehaviour
     float raycastRange = 3f;
 
     [Header("Outros")]
-    public Transform cameraTransform;
     public CinemachineBrain cinemachine;
     public GameObject objeto;
     Camera cam;
@@ -129,7 +128,6 @@ public class ManagerPlayer : MonoBehaviour
     }
 
     public void EstaInspecionando() {
-
         jaEstaInspecionando = !jaEstaInspecionando;
 
         if(jaEstaInspecionando == true) {
@@ -212,8 +210,6 @@ public class ManagerPlayer : MonoBehaviour
             sourceCorrendo.enabled = false;
         
         }
-
-
     }
 
     public void TravaCamera()
@@ -258,8 +254,5 @@ public class ManagerPlayer : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-
     }
-
 }

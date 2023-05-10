@@ -13,8 +13,8 @@ public class Pecas : MonoBehaviour
     public Vector3 posSair;
 
     [Header("Altura da Peça")]
-    public float alturaBaixo;
-    public float alturaAlto;
+    [SerializeField] float alturaBaixo;
+    [SerializeField] float alturaAlto;
 
     [Header("Outros")]
     public Selecionado selecionado;
@@ -31,6 +31,8 @@ public class Pecas : MonoBehaviour
     private void Awake()
     {
         posReset = gameObject.transform.position;
+        alturaBaixo = gameObject.transform.position.y;
+        alturaAlto = 1.126f;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,21 +69,21 @@ public class Pecas : MonoBehaviour
         {
             posAbaixada = selecionado.pecaSelecionada.transform.position;
             posLevantada = new Vector3(selecionado.casa.transform.position.x,
-                        selecionado.casa.transform.position.y + alturaAlto, selecionado.casa.transform.position.z);
+                        alturaAlto, selecionado.casa.transform.position.z);
             levantado = true;
         }
         else if(levantado && selecionado.sair)
         {
             posLevantada = selecionado.pecaSelecionada.transform.position;
             posAbaixada = new Vector3(selecionado.casaAnterior.transform.position.x,
-                        selecionado.casaAnterior.transform.position.y + alturaBaixo, selecionado.casaAnterior.transform.position.z);
+                        alturaBaixo, selecionado.casaAnterior.transform.position.z);
             levantado = false; 
         }
         else
         {
             posLevantada = selecionado.pecaSelecionada.transform.position;
             posAbaixada= new Vector3(selecionado.casa.transform.position.x,
-                        selecionado.casa.transform.position.y + alturaBaixo, selecionado.casa.transform.position.z);
+                         alturaBaixo, selecionado.casa.transform.position.z);
             levantado= false;
         }
     }

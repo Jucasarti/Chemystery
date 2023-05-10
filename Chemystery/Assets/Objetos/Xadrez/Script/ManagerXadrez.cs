@@ -10,6 +10,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
 {
     private bool cooldown;
     private bool comeco;
+    private bool trocandoCamera;
     public bool aberto;
     private float pecasCertas;
 
@@ -17,6 +18,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
     Collider colisao;
     ManagerPlayer player;
     Crosshair crosshair;
+    Chave chave;
 
     public bool fim;
     public Vector3 posPlayer;
@@ -27,20 +29,22 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
     {
         crosshair = FindObjectOfType<Crosshair>();
         player = FindObjectOfType<ManagerPlayer>();
-
         selecionado = FindObjectOfType<Selecionado>();
         selecionado.casa = FindObjectOfType<MeshRenderer>();
         colisao = gameObject.GetComponent<Collider>();
+        chave = GetComponent<Chave>();
         comeco = true;
         aberto = false;
+        trocandoCamera = false;
         DesativaSelecionado();
         fim = false;
     }
 
     public void Interagir()
     {
-        if (!aberto)
+        if (!aberto && !trocandoCamera)
         {
+            TrocandoCamera();
             AtivaSelecionado();
         }
     }
@@ -52,11 +56,17 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
             DesabilitaPuzzleXadrez();
         }
 
-        if (aberto)
+        if (aberto && !trocandoCamera)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                TrocandoCamera();
                 DesativaSelecionado();
+            }
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                ResetarPecas();
             }
         }
     }
@@ -65,25 +75,20 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
     {
         selecionado.gameObject.SetActive(true);
         selecionado.gameObject.GetComponent<MeshRenderer>().material.color = selecionado.cores[0];
-        if (fim)
-        {
-            ResetarPecas();
-            fim = false;
-            DesativaSelecionado();
-        }
         selecionado.gameObject.transform.position = selecionado.posInicial;
 
         crosshair.DesativarCrosshair();
 
         cameras[0].enabled = false;
         cameras[1].enabled = true;
-
+            
         player.EstaInspecionando();
         player.Andando();
 
         selecionado.mexerSelecionado = true;
         player.gameObject.transform.position = posPlayer;
-        aberto = true;
+
+        Invoke("Abrir", 2f);
     }
 
     public void DesativaSelecionado()
@@ -100,7 +105,6 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         }
         selecionado.gameObject.GetComponent<MeshRenderer>().material.color = selecionado.casa.GetComponent<MeshRenderer>().material.color;
         selecionado.pegouPeca = false;
-
         if (!comeco)
         {
             crosshair.AtivarCrosshair();
@@ -110,6 +114,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
 
             player.EstaInspecionando();
             player.Andando();
+            Invoke("Abrir", 2f);
         }
         else
         {
@@ -125,13 +130,25 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         {
             Invoke("ResetCooldown", 1.1f);
             cooldown = false;
-            selecionado.trocarCamera = false;
         } 
     }
 
     void ResetCooldown()
     {
-        cooldown = true; 
+        cooldown = true;
+    }
+
+    void Abrir()
+    {
+        if (aberto)
+        {
+            aberto = false;
+        }
+        else
+        {
+            aberto = true;
+        }
+        TrocandoCamera();
     }
 
     void DesabilitaPuzzleXadrez()
@@ -142,7 +159,6 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         }
         cooldown = false;
         selecionado.casa.enabled = true;
-        aberto = false;
         selecionado.gameObject.SetActive(false);
     }
 
@@ -156,7 +172,8 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         {
             pecasCertas--;
         }
-        if(pecasCertas == 8)
+        Debug.Log(pecasCertas);
+        if(pecasCertas == 32)
         {
             FimPuzzleXadrez();
         }
@@ -166,6 +183,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
     {
         colisao.enabled = false;
         fim = true;
+        chave.PegarChave();
         DesativaSelecionado();
     }
 
@@ -175,5 +193,12 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         {
             pecas[i].gameObject.transform.position = pecas[i].posReset;
         }
+    }
+
+    void TrocandoCamera()
+    {
+        Debug.Log(trocandoCamera + " 1");
+        trocandoCamera = !trocandoCamera;
+        Debug.Log(trocandoCamera + " 2");
     }
 }
