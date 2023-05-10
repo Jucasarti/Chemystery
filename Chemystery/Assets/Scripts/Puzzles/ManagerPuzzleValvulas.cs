@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ManagerPuzzleValvulas : MonoBehaviour
 {
     [SerializeField] GameObject gases1, gases2, gases3, gases4;
 
     Chave chave;
+
+    [SerializeField] GameObject textoPainel1, textoPainel2;
 
     private int hubValvulas1 = 0, hubValvulas2 = 0, hubValvulas3 = 0, hubValvulas4 = 0;
 
@@ -115,11 +119,21 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
             chave.PegarChave();
 
+            textoPainel1.SetActive(false);
+            textoPainel2.SetActive(true);
+
             Debug.Log("Abriu a porta final");
 
         }
     }
 
+
+    public void IrParaCutsceneFinal () {
+
+        SceneManager.LoadScene("CutsceneFinal");
+
+
+    }
 
 
 
