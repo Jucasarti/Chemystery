@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuPausa : MonoBehaviour
 {       
     public static MenuPausa instance;
 
     [SerializeField] GameObject menuPausa;
+
+    
 
     public static bool jogoPausado = false;
 

@@ -178,22 +178,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoCutscene: {fileID: 1167039823}
   continuar: {fileID: 818226543}
+  ofim: {fileID: 1993946981}
+  obrigado: {fileID: 2099089580}
+  booboots: {fileID: 274458517}
   textosDaCutscene:
-  - "Relat\xF3rio de Miss\xE3o, Agente James Hunt, Lynx \r\n\r\nDesde o meu primeiro
-    dia na f\xE1brica percebi que havia algo errado, contudo, foi no dia 27/09/84
-    que consegui descobrir o que realmente acontecia l\xE1. No ano de 1982 um cientista
-    chamado Marcos Mount descobriu um g\xE1s que poderia substituir combust\xEDveis
-    fosseis para produ\xE7\xE3o de energia, o \xFAnico problema foi que Marcos confiou
-    nas pessoas erradas, Spencer Strife fez um acordo com o governo de Caelum para
-    transformar o g\xE1s em uma arma. O Dr. Marcos e sua equipe se opuseram e foram
-    eliminados, n\xE3o por Spencer ou qualquer for\xE7a de Caelum, quem o eliminou
-    foi um dos nossos, Wazowski membro do conselho da ag\xEAncia. Wazowski j\xE1
-    vinha encobrindo as atitudes de nossos nada amig\xE1veis vizinhos, ele vinha
-    sendo pago para isso, quando Marcos atravessou a fronteira pela delatar o que
-    estava acontecendo o pr\xF3prio Wazowski se encarregou de elimin\xE1-lo. "
-  - 
-  - 
-  obrigadoPorJogar: {fileID: 0}
+  - "Relat\xF3rio de Miss\xE3o, Agente James Hunt, codinome Lynx\r\n\r\nDesde o meu
+    primeiro dia na f\xE1brica percebi que havia algo errado, contudo, foi no dia
+    27/09/84 que consegui descobrir o que realmente acontecia l\xE1. No ano de 1982
+    um cientista chamado Marcos Mount descobriu um g\xE1s que poderia substituir
+    combust\xEDveis fosseis para produ\xE7\xE3o de energia, o \xFAnico problema foi
+    que Marcos confiou nas pessoas erradas, Spencer Strife fez um acordo com o governo
+    de Caelum para transformar o g\xE1s em uma arma. O Dr. Marcos e sua equipe se
+    opuseram e foram eliminados, n\xE3o por Spencer ou qualquer for\xE7a de Caelum,
+    quem o eliminou foi um dos nossos, Wazowski membro do conselho da ag\xEAncia.
+    Wazowski j\xE1 vinha encobrindo as atitudes de nossos nada amig\xE1veis vizinhos,
+    ele vinha sendo pago para isso, quando Marcos atravessou a fronteira para delatar
+    o que estava acontecendo o pr\xF3prio Wazowski se encarregou de elimin\xE1-lo. "
+  - "Por incr\xEDvel que pare\xE7a no final das contas foi o pr\xF3prio Wazowski
+    que causou a ru\xEDna do projeto, quando percebeu que a arma j\xE1 estava quase
+    pronta ele nos deixou saber de um vazamento no rio que separa nossos pa\xEDses.
+    A ideia dele era que eu fosse enviado para coletar informa\xE7\xF5es para passar
+    a f\xF3rmula do g\xE1s X-N4 para ele, o desgra\xE7ado planejava lucrar ainda
+    mais vendendo a arma para terceiros. "
+  - "Ele s\xF3 n\xE3o contava que eu fosse descobrir o seu envolvimento, agora ele,
+    Strife e todos os outros envolvidos na cria\xE7\xE3o dessa arma ser\xE3o julgados
+    n\xE3o apenas pela morte dos cientistas, mas por crimes de guerra contra a humanidade.
+    N\xE3o \xE9 um final perfeito, sangue inocente j\xE1 foi derramado, por\xE9m
+    com base na minha experiencia, isso \xE9 o mais perto que se pode chegar de um
+    final feliz. "
 --- !u!82 &205401690
 AudioSource:
   m_ObjectHideFlags: 0
@@ -302,7 +314,7 @@ GameObject:
   - component: {fileID: 274458518}
   - component: {fileID: 274458517}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Booboots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: -120}
+  m_AnchoredPosition: {x: 0, y: 8}
   m_SizeDelta: {x: 950.0845, y: 237.5211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274458517
@@ -335,7 +347,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274458515}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -676,7 +688,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 1
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1200,7 +1212,7 @@ GameObject:
   - component: {fileID: 1993946982}
   - component: {fileID: 1993946981}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Ofim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1223,7 +1235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: 299}
+  m_AnchoredPosition: {x: -2, y: 16}
   m_SizeDelta: {x: 950.0845, y: 237.5211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993946981
@@ -1233,7 +1245,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993946979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -1404,7 +1416,7 @@ GameObject:
   - component: {fileID: 2099089581}
   - component: {fileID: 2099089580}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Obrigado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1427,7 +1439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: 105}
+  m_AnchoredPosition: {x: 0, y: 13}
   m_SizeDelta: {x: 950.0845, y: 237.5211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099089580
@@ -1437,7 +1449,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099089578}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 

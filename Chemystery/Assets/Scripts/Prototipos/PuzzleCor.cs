@@ -13,6 +13,10 @@ public class PuzzleCor : MonoBehaviour, IInteractable
     Collider colisao;
     public GameObject background;
 
+    [SerializeField] Computador pcSeguranca;
+
+    Chave chave;
+
     private Aviso aviso;
 
     public bool energiaAtivada = false;
@@ -43,6 +47,8 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         aviso = FindObjectOfType<Aviso>();
 
         crosshair = FindObjectOfType<Crosshair>();
+
+        chave = GetComponent<Chave>();
     }
 
     void Update()
@@ -125,12 +131,20 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         //Desabilitando o modo puzzle
         modoPuzzle = false;
 
+        BoxCollider collider = pcSeguranca.GetComponent<BoxCollider>();
+
         player.TravaCamera();
 
         for (int i = 0; i < quadrados.Length; i++)
         {
             quadrados[i].gameObject.SetActive(false);
         }
+
+        pcSeguranca.Interagir();
+
+        collider.enabled = true;
+        
+        chave.PegarChave();
         
         background.SetActive(false);
 

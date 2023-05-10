@@ -10,6 +10,8 @@ public class CutsceneFinal : MonoBehaviour
 
     [SerializeField] GameObject continuar;
 
+    [SerializeField] TextMeshProUGUI ofim, obrigado, booboots;
+
     [TextArea(10, 7)]
     [SerializeField] string[] textosDaCutscene;
 
@@ -22,8 +24,6 @@ public class CutsceneFinal : MonoBehaviour
     private int textoArrayIndex = 0;
 
     private bool estaEscrevendo = false;
-
-    [SerializeField] GameObject obrigadoPorJogar;
 
     void Start() {
 
@@ -55,11 +55,10 @@ public class CutsceneFinal : MonoBehaviour
 
     void EscreverTexto() {
 
-        if(textosDaCutscene[textoArrayIndex] == null) {
+        if(textoArrayIndex >= textosDaCutscene.Length) {
 
             StartCoroutine(IrProximaCena());
             return;
-
         }
 
         totalCaracteres = textosDaCutscene[textoArrayIndex].Length;
@@ -96,6 +95,8 @@ public class CutsceneFinal : MonoBehaviour
 
         textoArrayIndex++;
 
+        Debug.Log(textoArrayIndex);
+
         estaEscrevendo = false;
 
         continuar.SetActive(true);
@@ -106,11 +107,22 @@ public class CutsceneFinal : MonoBehaviour
 
     IEnumerator IrProximaCena () {
 
-        obrigadoPorJogar.SetActive(true);
+        continuar.SetActive(false);
+        textoCutscene.enabled = false;
+        
+        ofim.enabled = true;
 
+        yield return new WaitForSeconds (1.5f);
 
-        yield return new WaitForSeconds (3);
+        ofim.enabled = false;
+        obrigado.enabled = true;
 
+        yield return new WaitForSeconds (1.5f);
+
+        obrigado.enabled = false;
+        booboots.enabled = true;
+
+        yield return new WaitForSeconds (2f);
 
         SceneManager.LoadScene("MainMenu");
 

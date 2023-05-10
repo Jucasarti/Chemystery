@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c799dd99c88fd6b42aa9945478f02cd8
+guid: 0db0c8a698e24844fa84dac5936f958a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barra_loading_0
+      name: botao_sons_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 219
-        width: 2611
-        height: 140
+        x: 20
+        y: 196
+        width: 120
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2616b9ab92997f74498848094b714782
-      internalID: -146427021
+      spriteID: e5fc95ed22bcdbb4388a2d11bc8aa644
+      internalID: -875419808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barra_loading_1
+      name: botao_sons_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2615
-        height: 158
+        x: 193
+        y: 192
+        width: 120
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d825a456cb23c204fa768b0ec35851d4
-      internalID: 2041167898
+      spriteID: 68cef7fe01895b642862004978887405
+      internalID: -1802941325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao_sons_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 17
+        width: 89
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0050d4b36e84940ae39bd233443e3b
+      internalID: 207717965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao_sons_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 13
+        width: 121
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1822636076138b844b45d6e9ab48a9c3
+      internalID: 1838148196
       vertices: []
       indices: 
       edges: []
@@ -157,8 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barra_loading_0: -146427021
-      barra_loading_1: 2041167898
+      botao_sons_0: -875419808
+      botao_sons_1: -1802941325
+      botao_sons_2: 207717965
+      botao_sons_3: 1838148196
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

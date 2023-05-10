@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Blocagem.unity
     guid: 93ef872c2ffec5940835ea9b8519c8d1
+  - enabled: 1
+    path: Assets/Scenes/Menu e Cutscenes/MainMenu.unity
+    guid: 253a706a03c3c43439e9869026f8ba44
+  - enabled: 1
+    path: Assets/Scenes/Menu e Cutscenes/CutsceneInicial.unity
+    guid: 5d90bf02f2e20ed4d8908a38f8a73939
+  - enabled: 1
+    path: Assets/Scenes/Menu e Cutscenes/CutsceneFinal.unity
+    guid: d9d707a8b981c0d4d9010eb0204bf47c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

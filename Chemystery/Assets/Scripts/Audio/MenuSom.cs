@@ -9,9 +9,17 @@ public class MenuSom : MonoBehaviour
 
     [SerializeField] GameObject menuGameObject;
 
+    [SerializeField] AudioSource sourceSoundtrack;
+
+    [SerializeField] Button mutarMusicaBotao, mutarSFXBotao;
+
+    [SerializeField] Sprite botaoMusicaMutado, botaoMusicaAtiva, botaoSFXmutado, botaoSFXativo;
+
     void Start() {
 
         AudioListener.volume = sliderMasterVolume.value;
+
+        sourceSoundtrack.ignoreListenerPause = true;
 
     }
 
@@ -38,6 +46,35 @@ public class MenuSom : MonoBehaviour
     public void MutandoSFX() {
 
         AudioListener.pause = !AudioListener.pause;
+
+        if(AudioListener.pause == true) {
+
+            
+            mutarSFXBotao.image.sprite = botaoSFXmutado;
+
+        } else {
+
+            mutarMusicaBotao.image.sprite = botaoSFXativo;
+
+        }
+
+    }
+
+    public void MutandoSoundtrack () {
+
+        sourceSoundtrack.mute = !sourceSoundtrack.mute;
+
+        if(sourceSoundtrack.mute == true) {
+
+            mutarMusicaBotao.image.sprite = botaoSFXmutado;
+
+        } else {
+
+            
+
+            mutarMusicaBotao.image.sprite = botaoSFXativo;
+
+        }
 
     }
 }

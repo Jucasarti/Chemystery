@@ -30,7 +30,7 @@ public class Computador : MonoBehaviour, IInteractable
 
     [SerializeField] string[] titulosDasMensagens;
 
-    [TextArea(10, 7)]
+    [TextArea(15, 10)]
     [SerializeField] string[] textoDasMensagens;
 
     [Header("Outras variáveis")]
