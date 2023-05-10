@@ -1041,7 +1041,7 @@ RectTransform:
   - {fileID: 1016782192}
   - {fileID: 348097419}
   m_Father: {fileID: 1075414648}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5446,7 +5446,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
       propertyPath: m_Name
-      value: Pc_Cubi4
+      value: PCDarwin
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
@@ -6701,7 +6701,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
       propertyPath: m_Name
-      value: Pc_Cubi2
+      value: PCAnnie
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
@@ -17941,7 +17941,7 @@ MonoBehaviour:
   - {r: 0.90116876, g: 0.9339623, b: 0.118948035, a: 1}
   - {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
   - {r: 0.4245283, g: 0.16754606, b: 0.022027414, a: 1}
-  - {r: 1, g: 0, b: 0.82385063, a: 1}
+  - {r: 0.4433962, g: 0.035555363, b: 0.336925, a: 1}
   corCerta: 0
   numeroCerto: 1
   corInicial: 4
@@ -21596,18 +21596,19 @@ MonoBehaviour:
     preciso que voc\xEA assuma meu posto para liberar o acesso dos CDFs ao laborat\xF3rio,
     infelizmente n\xE3o posso te passar o c\xF3digo de seguran\xE7a do meu computador
     por mensagem (malditos protocolos de seguran\xE7a), ent\xE3o vou mandar umas
-    dicas: \r\n\r\nVerde n\xE3o est\xE1 \xE0 frente do azul \r\n\r\nMarrom fica ao
-    lado do amarelo \r\n\r\nRoxo e verde est\xE3o frente a frente \r\n\r\nVermelho
-    fica em uma ponta \r\n\r\nVerde e amarelo est\xE3o na mesma linha \r\n\r\nAzul
-    e vermelho est\xE3o lado a lado \r\n\r\nMe responda assim que poss\xEDvel. \r\n\r\n\r\n\r\nData:
-    25/09/1984 \r\n \r\nAssunto: RE - Vou atrasar hoje \r\n\r\nPara: Paul Pascal
-    \r\n\r\nDe: John Jughes \r\n\r\nEst\xE1 certo j\xE1, estou no meu posto, esses
-    CDFs s\xE3o um saco sempre chegam na hora, minuto e segundo certo. Vou indo pra
-    sua sala, voc\xEA me deve uma. \r\n\r\n \r\n\r\nData: 25/09/1984 \r\n \r\nAssunto:
-    Re - Vou atrasar hoje \r\n\r\nPara: John Jughes \r\n\r\nDe: Paul Pascal \r\n\r\nValeu,
-    mas n\xE3o estou te devendo nada, lembrava aquela vez que queriam te usar de
-    saco de pancada no dia do alistamento? Agora estamos quites, fica de cabe\xE7a
-    baixa que n\xE3o v\xE3o nem perceber que \xE9 voc\xEA no meu lugar. "
+    dicas: \r\n\r\nVerde n\xE3o est\xE1 na mesma coluna do azul \r\n\r\nMarrom fica
+    ao lado do amarelo, e na mesma coluna do azul\r\n\r\nRoxo e verde est\xE3o na
+    mesma coluna \r\n\r\nVermelho est\xE1 na terceira coluna, na linha de baixo \r\n\r\nVerde
+    e amarelo est\xE3o na mesma linha \r\n\r\nAzul e vermelho est\xE3o lado a lado
+    \r\n\r\nMe responda assim que poss\xEDvel. \r\n\r\n\r\n\r\nData: 25/09/1984 \r\n
+    \r\nAssunto: RE - Vou atrasar hoje \r\n\r\nPara: Paul Pascal \r\n\r\nDe: John
+    Jughes \r\n\r\nEst\xE1 certo j\xE1, estou no meu posto, esses CDFs s\xE3o um
+    saco sempre chegam na hora, minuto e segundo certo. Vou indo pra sua sala, voc\xEA
+    me deve uma. \r\n\r\n \r\n\r\nData: 25/09/1984 \r\n \r\nAssunto: Re - Vou atrasar
+    hoje \r\n\r\nPara: John Jughes \r\n\r\nDe: Paul Pascal \r\n\r\nValeu, mas n\xE3o
+    estou te devendo nada, lembrava aquela vez que queriam te usar de saco de pancada
+    no dia do alistamento? Agora estamos quites, fica de cabe\xE7a baixa que n\xE3o
+    v\xE3o nem perceber que \xE9 voc\xEA no meu lugar. "
   - "Data:11/09/1984 \r\n\r\nAssunto: An\xE1lise breve requisitada.  \r\nPara: Cynthia
     Collins \r\n\r\nDe: John Jughes \r\n \r\n \r\nAqui est\xE1 uma compara\xE7\xE3o
     de resultados de compara\xE7\xE3o de Resultados pedida \r\n\r\n \r\n\r\n Empresa
@@ -22694,7 +22695,7 @@ MonoBehaviour:
   - {r: 0.90116876, g: 0.9339623, b: 0.118948035, a: 1}
   - {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
   - {r: 0.4245283, g: 0.16754606, b: 0.022027414, a: 1}
-  - {r: 1, g: 0, b: 0.82385063, a: 1}
+  - {r: 0.4433962, g: 0.035555363, b: 0.336925, a: 1}
   corCerta: 0
   numeroCerto: 4
   corInicial: 0
@@ -26000,7 +26001,7 @@ MonoBehaviour:
   - {r: 0.90116876, g: 0.9339623, b: 0.118948035, a: 1}
   - {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
   - {r: 0.4245283, g: 0.16754606, b: 0.022027414, a: 1}
-  - {r: 1, g: 0, b: 0.82385063, a: 1}
+  - {r: 0.4433962, g: 0.035555363, b: 0.336925, a: 1}
   corCerta: 0
   numeroCerto: 2
   corInicial: 3
@@ -32767,7 +32768,7 @@ MonoBehaviour:
   - {r: 0.90116876, g: 0.9339623, b: 0.118948035, a: 1}
   - {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
   - {r: 0.4245283, g: 0.16754606, b: 0.022027414, a: 1}
-  - {r: 1, g: 0, b: 0.82385063, a: 1}
+  - {r: 0.4433962, g: 0.035555363, b: 0.336925, a: 1}
   corCerta: 0
   numeroCerto: 5
   corInicial: 2
@@ -38174,7 +38175,7 @@ MonoBehaviour:
   - {r: 0.90116876, g: 0.9339623, b: 0.118948035, a: 1}
   - {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
   - {r: 0.4245283, g: 0.16754606, b: 0.022027414, a: 1}
-  - {r: 1, g: 0, b: 0.82385063, a: 1}
+  - {r: 0.4433962, g: 0.035555363, b: 0.336925, a: 1}
   corCerta: 0
   numeroCerto: 0
   corInicial: 5
@@ -40217,10 +40218,10 @@ RectTransform:
   - {fileID: 1744919151}
   - {fileID: 13398899}
   - {fileID: 1852311923}
-  - {fileID: 21103768}
   - {fileID: 25530016}
   - {fileID: 1985535521}
   - {fileID: 78637158}
+  - {fileID: 21103768}
   m_Father: {fileID: 538854177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44367,7 +44368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1223087431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46311,7 +46312,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
       propertyPath: m_Name
-      value: Pc_Cubi1
+      value: PCCarl
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
@@ -51944,7 +51945,7 @@ MonoBehaviour:
   - {r: 0.90116876, g: 0.9339623, b: 0.118948035, a: 1}
   - {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
   - {r: 0.4245283, g: 0.16754606, b: 0.022027414, a: 1}
-  - {r: 1, g: 0, b: 0.82385063, a: 1}
+  - {r: 0.4433962, g: 0.035555363, b: 0.336925, a: 1}
   corCerta: 0
   numeroCerto: 3
   corInicial: 1
@@ -58896,7 +58897,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
       propertyPath: m_Name
-      value: Pc_Cubi 3
+      value: PCJohn
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 00eb583231336764a9a7867a57b9f6aa,
         type: 3}
@@ -59696,7 +59697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1734795994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -73348,7 +73349,7 @@ PrefabInstance:
     - target: {fileID: 2235547960584241912, guid: 3999f222ac0e6ad48aa90826e4a98fd0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2235547960584241912, guid: 3999f222ac0e6ad48aa90826e4a98fd0,
         type: 3}
@@ -73513,7 +73514,7 @@ PrefabInstance:
     - target: {fileID: 4080843771842761666, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4080843771842761666, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
@@ -73706,7 +73707,7 @@ PrefabInstance:
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
