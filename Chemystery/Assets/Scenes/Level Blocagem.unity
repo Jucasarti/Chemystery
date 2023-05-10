@@ -4408,7 +4408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &129041708
 Transform:
   m_ObjectHideFlags: 0
@@ -42180,16 +42180,16 @@ MonoBehaviour:
     alguma coisa a respeito. O que acha? \r\n\r\nAcredito que devemos nos preocupar
     com a nossa sa\xFAde e o bem-estar de todos os colaboradores da empresa. Portanto,
     vamos agir de forma proativa para solucionar esse problema o mais r\xE1pido poss\xEDvel.
-    \r\n\r\nNo aguardo de sua resposta. \r\n\r\n \r\nData: 27/09/1984 [HOJE] \r\n
-    \r\nAssunto: RE \u2013 Apague ap\xF3s Leitura \r\n\r\nPara: John Jughes \r\n\r\nDe:
-    Paul Pascal  \r\n\r\nSenti esse cheiro tamb\xE9m, j\xE1 tentei falar com o pessoal
-    l\xE1 de baixo e nada. Obrigado por compartilhar, achei que eu estava ficando
-    neur\xF3tico, desde que entendi do que pode se tratar comecei a suar frio.  Se
-    a possibilidade for essa, bom voc\xEA sabe, f****, to tentando contato com o
-    pessoal de cima, mas acho que os malditos est\xE3o em reuni\xE3o.  \r\n\r\nAssim
-    que entrar em contato com eles, ou alguma resposta do Richard te falo o que me
-    falaram, no pior caso voc\xEA sabe o que fazer. A gente cai fora e avisa a cavalaria,
-    vou tentar falar com o Spencer tamb\xE9m."
+    \r\n\r\nNo aguardo de sua resposta. \r\n\r\n \r\nData: 27/09/1984 [HOJE] \r\n\r\nAssunto:
+    RE \u2013 Apague ap\xF3s Leitura \r\n\r\nPara: John Jughes \r\n\r\nDe: Paul Pascal 
+    \r\n\r\nSenti esse cheiro tamb\xE9m, j\xE1 tentei falar com o pessoal l\xE1 de
+    baixo e nada. Obrigado por compartilhar, achei que eu estava ficando neur\xF3tico,
+    desde que entendi do que pode se tratar comecei a suar frio.  Se a possibilidade
+    for essa, bom voc\xEA sabe, f****, to tentando contato com o pessoal de cima,
+    mas acho que os malditos est\xE3o em reuni\xE3o.  \r\n\r\nAssim que entrar em
+    contato com eles, ou alguma resposta do Richard te falo o que me falaram, no
+    pior caso voc\xEA sabe o que fazer. A gente cai fora e avisa a cavalaria, vou
+    tentar falar com o Spencer tamb\xE9m."
   - "Data: 27/09/1984 [HOJE] \r\n \r\nAssunto: Resposta urgente necess\xE1ria  \r\n\r\nPara:
     Richard Reed \r\n\r\nDe: Paul Pascal \r\n\r\nEi cara, tentado entrar em contato
     com voc\xEA h\xE1 algum tempo, sem sucesso no telefone do subsolo, ningu\xE9m
