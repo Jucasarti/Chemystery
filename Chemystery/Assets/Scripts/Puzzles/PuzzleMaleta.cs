@@ -28,6 +28,8 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
     private bool puzzleAtivo = false;
 
+    [SerializeField] GameObject maletaAberta;
+
 
     private int contadorSenha = 0;
 
@@ -135,6 +137,10 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
         player.TravaCamera();
 
         crosshair.AtivarCrosshair();
+
+        maletaAberta.SetActive(true);
+
+        Destroy(gameObject);
 
     }
 

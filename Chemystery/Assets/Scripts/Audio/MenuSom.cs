@@ -45,16 +45,17 @@ public class MenuSom : MonoBehaviour
 
     public void MutandoSFX() {
 
-        AudioListener.pause = !AudioListener.pause;
-
         if(AudioListener.pause == true) {
 
+            AudioListener.pause = false;
             
-            mutarSFXBotao.image.sprite = botaoSFXmutado;
+            mutarSFXBotao.image.sprite = botaoSFXativo;
 
         } else {
 
-            mutarMusicaBotao.image.sprite = botaoSFXativo;
+            AudioListener.pause = true;
+
+            mutarSFXBotao.image.sprite = botaoSFXmutado;
 
         }
 
@@ -66,13 +67,11 @@ public class MenuSom : MonoBehaviour
 
         if(sourceSoundtrack.mute == true) {
 
-            mutarMusicaBotao.image.sprite = botaoSFXmutado;
+            mutarMusicaBotao.image.sprite = botaoMusicaMutado;
 
         } else {
 
-            
-
-            mutarMusicaBotao.image.sprite = botaoSFXativo;
+            mutarMusicaBotao.image.sprite = botaoMusicaAtiva;
 
         }
 

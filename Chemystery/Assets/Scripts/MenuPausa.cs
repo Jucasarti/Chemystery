@@ -10,8 +10,7 @@ public class MenuPausa : MonoBehaviour
 
     [SerializeField] GameObject menuPausa;
 
-    
-
+    ManagerPlayer player;
     public static bool jogoPausado = false;
 
     void Awake() {
@@ -27,6 +26,8 @@ public class MenuPausa : MonoBehaviour
             return;
 
         }
+
+        player = FindObjectOfType<ManagerPlayer>();
     }
 
 
@@ -76,7 +77,9 @@ public class MenuPausa : MonoBehaviour
 
 
     void Update()
-    {
+    {   
+        if(player.jaEstaInspecionando == false) {
+
         if(Input.GetKeyDown(KeyCode.Escape)) {
 
             if(jogoPausado) {
@@ -89,5 +92,7 @@ public class MenuPausa : MonoBehaviour
 
             }
         }
+    }
+
     }
 }

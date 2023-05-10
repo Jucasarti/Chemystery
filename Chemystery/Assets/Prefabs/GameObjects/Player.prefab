@@ -139,7 +139,6 @@ MonoBehaviour:
   jaEstaInspecionando: 0
   velJogadorNormal: 4
   velJogadorCorrendo: 8
-  cameraTransform: {fileID: 0}
   cinemachine: {fileID: 0}
   objeto: {fileID: 3835949122441838209}
   interactableMask:
@@ -164,7 +163,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 266b26f7d0441af4c9af189c54f0630d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -257,9 +256,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b1f9eac0eea4dad468abe9bce49b8409, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5f477f878f848cd458371e4f53de7589, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
