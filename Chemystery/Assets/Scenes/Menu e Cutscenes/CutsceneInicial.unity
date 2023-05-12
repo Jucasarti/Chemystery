@@ -323,7 +323,10 @@ MonoBehaviour:
     mesa. Ele se sentou e pegou um bloco de notas para come\xE7ar a anotar as informa\xE7\xF5es
     importantes da reuni\xE3o. De repente, um som alto e estridente chamou sua aten\xE7\xE3o.
     Ele olhou para seus colegas de trabalho, mas eles pareciam t\xE3o confusos quanto
-    ele.  "
+    ele.  \n\nUm aviso de evacua\xE7\xE3o \xE9 transmitido. Visivelmente abalados,
+    seus colegas come\xE7am a correr em dire\xE7\xE3o \xE0s sa\xEDdas. Lynx se levantou
+    rapidamente em busca de um abrigo para aguardar o melhor momento. Ele sabia que
+    seria a hora perfeita para entrar em a\xE7\xE3o. "
 --- !u!82 &375080641
 AudioSource:
   m_ObjectHideFlags: 0

@@ -62,6 +62,7 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
     public void DigitarSenha(string numero) {
 
+        if(contadorSenha < 6) {
         textoVisor.text += numero;
 
         contadorSenha++;
@@ -71,6 +72,7 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
             ConferirSenha();
 
         }
+    }
 
     }
 

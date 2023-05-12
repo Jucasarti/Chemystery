@@ -9,6 +9,8 @@ public class Computador : MonoBehaviour, IInteractable
 
     [SerializeField] GameObject pcUI;
     [SerializeField] TextMeshProUGUI mostrarConteudo;
+
+    Scrollbar scrollbar;
     
 
     [SerializeField] Button botaoFecharPC;
@@ -66,6 +68,8 @@ public class Computador : MonoBehaviour, IInteractable
 
         pcUI.SetActive(true);
 
+        scrollbar = FindObjectOfType<Scrollbar>();
+
         mostrarConteudo.text = "";
 
         nomeNoPCText.text = nomeDoUsuarioDoPc;
@@ -98,6 +102,7 @@ public class Computador : MonoBehaviour, IInteractable
 
             slotsMSG[i].onClick.AddListener(() => CliqueNaMensagem(aux));
 
+            slotsMSG[i].onClick.AddListener(() => ResetarScrollbar());
 
         }
 
@@ -110,6 +115,12 @@ public class Computador : MonoBehaviour, IInteractable
         mostrarConteudo.text = textoDasMensagens[numeroDaMensagem];
 
         sfxClickMouse.PlayOneShot(sfxClickMouse.clip);
+
+    }
+
+    void ResetarScrollbar() {
+
+        scrollbar.value = 1;
 
     }
 

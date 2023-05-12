@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InspectItem : MonoBehaviour, IInteractable
 {
@@ -14,6 +15,10 @@ public class InspectItem : MonoBehaviour, IInteractable
     [SerializeField] private GameObject canvasInspectItem;
 
     [SerializeField] private string qualObjeto;
+
+    [SerializeField] private string nomeObjetoText;
+
+    [SerializeField] TextMeshProUGUI nomeObjetoUI;
 
     Chave chave;
 
@@ -50,6 +55,8 @@ public class InspectItem : MonoBehaviour, IInteractable
         PodeRotacionar();
 
         canvasInspectItem.SetActive(true);
+
+        nomeObjetoUI.text = nomeObjetoText;
 
         crosshair.DesativarCrosshair();
 

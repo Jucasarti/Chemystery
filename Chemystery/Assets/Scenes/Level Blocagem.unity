@@ -40992,6 +40992,8 @@ MonoBehaviour:
   rotateSpeed: 5
   canvasInspectItem: {fileID: 1852311922}
   qualObjeto: Chave
+  nomeObjetoText: 'Inspecionando: Keycard'
+  nomeObjetoUI: {fileID: 1051569273500269569}
 --- !u!65 &1091477460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73138,6 +73140,9 @@ GameObject:
   - component: {fileID: 543450651589156096}
   - component: {fileID: 3469287837719990949}
   - component: {fileID: 1711813855001372271}
+  - component: {fileID: 3469287837719990952}
+  - component: {fileID: 3469287837719990951}
+  - component: {fileID: 3469287837719990950}
   m_Layer: 0
   m_Name: Elevador
   m_TagString: Untagged
@@ -73280,8 +73285,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1051569273044112327, guid: a3a5e781858243b498bcc5c18986ba52,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051569273880396465, guid: a3a5e781858243b498bcc5c18986ba52,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5039013874306446074, guid: a3a5e781858243b498bcc5c18986ba52,
+        type: 3}
+      propertyPath: m_Name
+      value: NomeObjetoUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3a5e781858243b498bcc5c18986ba52, type: 3}
+--- !u!114 &1051569273500269569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 380590742740295782, guid: a3a5e781858243b498bcc5c18986ba52,
+    type: 3}
+  m_PrefabInstance: {fileID: 1051569273500269568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1711813854522982790
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73512,6 +73544,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147919177658}
   m_Mesh: {fileID: -2267139801067393812, guid: b960aa205ea9016419130e24b92b0987, type: 3}
+--- !u!65 &3469287837719990950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147919177658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06471668, y: 3.5738091, z: 3.0025811}
+  m_Center: {x: -1.4672759, y: 1.7866939, z: -2.6561571e-14}
+--- !u!65 &3469287837719990951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147919177658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08933709, y: 3.5738091, z: 3.0025811}
+  m_Center: {x: 1.4549693, y: 1.7866939, z: 2.5862023e-14}
+--- !u!65 &3469287837719990952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147919177658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9992714, y: 3.5738091, z: 0.19855995}
+  m_Center: {x: 0.0000019073486, y: 1.7866939, z: -1.4020108}
 --- !u!33 &3469287838585959756
 MeshFilter:
   m_ObjectHideFlags: 0
