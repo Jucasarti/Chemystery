@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Documento : MonoBehaviour, IInteractable
 {
-    [SerializeField] private GameObject docUI;
+    [SerializeField] private Image docUI;
+
+    [SerializeField] private Sprite sprite;
     private ManagerPlayer player;
 
     private Crosshair crosshair;
@@ -13,7 +16,9 @@ public class Documento : MonoBehaviour, IInteractable
 
     public void Interagir() {
 
-        docUI.SetActive(true);
+        docUI.sprite = sprite;
+
+        docUI.gameObject.SetActive(true);
 
         player.TravaCamera();
 
@@ -38,7 +43,7 @@ public class Documento : MonoBehaviour, IInteractable
 
             if(Input.GetKeyDown(KeyCode.Space)) {
 
-                docUI.SetActive(false);
+                docUI.gameObject.SetActive(false);
 
                 player.TravaCamera();
 

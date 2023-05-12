@@ -30,6 +30,8 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
     [SerializeField] GameObject maletaAberta;
 
+    [SerializeField] AudioSource sfxAcertoMaleta, sfxErrouMaleta, sfxMaletaAbriu;
+
 
     private int contadorSenha = 0;
 
@@ -86,24 +88,9 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
         }
 
     }
-
-    //private void AcertouSenha () {
-
-        //Debug.Log("Acertou a senha");
-
-        //puzzle.SetActive(false);
-
-        //player.EstaInspecionando();
-
-        //player.TravaCamera();
-//
-        //crosshair.AtivarCrosshair();
-
-    //}
-
     private IEnumerator AcertouSenha() {
 
-        //tocar um audio
+        sfxAcertoMaleta.PlayOneShot(sfxAcertoMaleta.clip);
 
         
         yield return new WaitForSeconds(intervalo);
@@ -128,8 +115,6 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
         yield return new WaitForSeconds(2);
 
-        Debug.Log("Acertou a senha");
-
         puzzle.SetActive(false);
 
         player.EstaInspecionando();
@@ -140,17 +125,19 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
         maletaAberta.SetActive(true);
 
+        sfxMaletaAbriu.PlayOneShot(sfxMaletaAbriu.clip);
+
         Destroy(gameObject);
 
     }
 
     private IEnumerator ErrouSenha () {
 
+        sfxErrouMaleta.PlayOneShot(sfxErrouMaleta.clip);
+
         yield return new WaitForSeconds(intervalo);
 
         background.color = vermelho;
-
-        Debug.Log("Alo");
 
         yield return new WaitForSeconds(intervalo);
 
@@ -178,15 +165,6 @@ public class PuzzleMaleta : MonoBehaviour, IInteractable
 
 
     }
-
-
-    //private void ErrouSenha() {
-
-        //contadorSenha = 0;
-
-        //textoVisor.text = "";
-
-    //}
 
     void Update () {
 

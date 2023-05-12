@@ -8,6 +8,14 @@ public class MenuInicial : MonoBehaviour
    [SerializeField] GameObject menuIinicalUI, controlesUI, creditosUI;
 
 
+    void Start() {
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+
+    }
+
+
     public void BotaoJogar() {
 
         SceneManager.LoadScene("CutsceneInicial");

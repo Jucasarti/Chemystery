@@ -11,6 +11,8 @@ public class Cut : MonoBehaviour
     public GameObject managerCutscene;
     public ManagerPlayer player;
 
+    [SerializeField] Chave chave;
+
     public void AtivaCutscene()
     {
         gameObject.GetComponent<Collider>().enabled = false;
@@ -28,5 +30,7 @@ public class Cut : MonoBehaviour
         camerasCutscene[0].gameObject.SetActive(true);
         camerasCutscene[1].gameObject.SetActive(false);
         managerCutscene.SetActive(false);
+
+        chave.PegarChave();
     }
 }

@@ -10,8 +10,12 @@ public class MenuPausa : MonoBehaviour
 
     [SerializeField] GameObject menuPausa;
 
+    [SerializeField] GameObject anotacoesUI;
+
     ManagerPlayer player;
     public static bool jogoPausado = false;
+
+    SistemaObjetivos objetivos;
 
     void Awake() {
 
@@ -28,12 +32,16 @@ public class MenuPausa : MonoBehaviour
         }
 
         player = FindObjectOfType<ManagerPlayer>();
+
+        objetivos = FindObjectOfType<SistemaObjetivos>();
     }
 
 
     public void PausarJogo() {
 
         menuPausa.SetActive(true);
+
+        objetivos.MostrarObjetivoAtual();
 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
@@ -42,13 +50,13 @@ public class MenuPausa : MonoBehaviour
 
         jogoPausado = true;
 
-        AudioListener.pause = true;
-
     }
 
     public void DespausarJogo() {
 
         menuPausa.SetActive(false);
+
+        objetivos.FecharObjetivoAtual();
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -57,7 +65,6 @@ public class MenuPausa : MonoBehaviour
 
         jogoPausado = false;
 
-        AudioListener.pause = false;
     }
 
     public void BotaoMainMenu () {
@@ -71,6 +78,27 @@ public class MenuPausa : MonoBehaviour
     public void FecharJogo () {
 
         Application.Quit();
+
+    }
+
+    public void Anotacoes () {
+
+        anotacoesUI.SetActive(true);
+
+        menuPausa.SetActive(false);
+
+        objetivos.FecharObjetivoAtual();
+
+
+    }
+
+    public void VoltarAnotacoes () {
+
+        anotacoesUI.SetActive(false);
+
+        menuPausa.SetActive(true);
+
+        objetivos.MostrarObjetivoAtual();
 
     }
 

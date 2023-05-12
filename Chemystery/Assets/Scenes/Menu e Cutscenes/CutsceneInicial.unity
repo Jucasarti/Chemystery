@@ -301,8 +301,8 @@ MonoBehaviour:
     sobre novas informa\xE7\xF5es.  \r\n\r\n-Existe perigo de contamina\xE7\xE3o
     proposital do Rio, senhor. Acredito que h\xE1 mais a\xED do que parece. - Um
     dos agentes diz. \r\n\r\n-Eles est\xE3o tramando algo contra nossa na\xE7\xE3o.
-    Precisamos entender o que est\xE1 acontecendo. Complementa, outro agente. \r\n\r\n
-    O Sr. Shinra inclina sua cabe\xE7a confirmando. \r\n\r\nWazowski, voc\xEA sabe
+    Precisamos entender o que est\xE1 acontecendo. Complementa, outro agente. \r\n\r\nO
+    Sr. Shinra inclina sua cabe\xE7a confirmando. \r\n\r\nWazowski, voc\xEA sabe
     onde ele est\xE1? Pergunta Shinra. \r\n\r\n-Sim senhor, podemos notific\xE1-lo
     a qualquer momento. - Respondeu Wazowski \r\n\r\n- Fa\xE7a-o. Respondeu Shinra. "
   - "Mais Tarde, em outro lugar. (Em algum lugar de Caelum) \r\n\r\nUm Homem estava
@@ -984,7 +984,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 14
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
