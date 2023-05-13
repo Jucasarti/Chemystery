@@ -59,6 +59,8 @@ public class Computador : MonoBehaviour, IInteractable
 
         crosshair.DesativarCrosshair();
 
+        player.EstaInspecionando();
+
     }
 
         void AbrirPC () {
@@ -90,8 +92,6 @@ public class Computador : MonoBehaviour, IInteractable
 
 
         AtribuirFuncaoAoBotao();
-
-        player.EstaInspecionando();
 
         player.TirarSomAndar();
 

@@ -130,6 +130,8 @@ public class ManagerPlayer : MonoBehaviour
     public void EstaInspecionando() {
         jaEstaInspecionando = !jaEstaInspecionando;
 
+        Debug.Log(jaEstaInspecionando);
+
         if(jaEstaInspecionando == true) {
 
             interagirUI.SetActive(false);

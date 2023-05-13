@@ -30,6 +30,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
     public CinemachineBrain cinemachine;
     public Color corInicial, corFinal;
 
+    [SerializeField] AudioSource sourceErrouPuzzle;
+
     [SerializeField] CinemachineVirtualCamera[] cameras;
 
     ManagerPlayer player;
@@ -179,6 +181,7 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
             else
             {
                 ResetaPuzzle();
+                sourceErrouPuzzle.PlayOneShot(sourceErrouPuzzle.clip);
                 Debug.Log("Perdi");
             }
         }
@@ -224,6 +227,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
 
         player.EstaInspecionando();
         player.Andando();
+
+        crosshair.AtivarCrosshair();
 
 
         //player.TravaCamera();
