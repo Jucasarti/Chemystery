@@ -134,6 +134,12 @@ public class ManagerPlayer : MonoBehaviour
 
             interagirUI.SetActive(false);
 
+            TirarSomAndar();
+
+        } else {
+
+            ColocarSomAndar();
+
         }
 
     }
@@ -210,6 +216,20 @@ public class ManagerPlayer : MonoBehaviour
             sourceCorrendo.enabled = false;
         
         }
+    }
+
+    public void TirarSomAndar () {
+
+        sourceAndando.enabled = false;
+        sourceCorrendo.enabled = false;
+
+    }
+
+    public void ColocarSomAndar() {
+
+        sourceAndando.enabled = true;
+        sourceCorrendo.enabled = true;
+
     }
 
     public void TravaCamera()

@@ -30,6 +30,8 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
     public CinemachineBrain cinemachine;
     public Color corInicial, corFinal;
 
+    [SerializeField] CinemachineVirtualCamera[] cameras;
+
     ManagerPlayer player;
     Collider colisao;
 
@@ -89,13 +91,22 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
     public void Puzzle()
     {
         //Atualizando a posi��o da camera para o puzzle
-        Camera.main.transform.position = posCam;
-        Camera.main.transform.rotation = Quaternion.Euler(rotCam);
+        //Camera.main.transform.position = posCam;
+        //Camera.main.transform.rotation = Quaternion.Euler(rotCam);
 
         //Mudando a posi��o do jogador
-        player.gameObject.transform.position = posJog;
+        //player.gameObject.transform.position = posJog;
 
-        player.TravaCamera();
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+
+        //player.TravaCamera();
+
+        cameras[0].enabled = false;
+        cameras[1].enabled = true;
+            
+        player.EstaInspecionando();
+        player.Andando();
 
         //Habilitando o modo puzzle
         modoPuzzle = true;
@@ -114,7 +125,17 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
     //Fun��o para sair do puzzle em intera��o
     public void SairPuzzle()
     {
-        player.TravaCamera();
+        //player.TravaCamera();
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        
+
+        cameras[1].enabled = false;
+        cameras[0].enabled = true;
+
+        player.EstaInspecionando();
+        player.Andando();
 
         //Desabilitando o modo puzzle
         modoPuzzle = false;
@@ -193,9 +214,19 @@ public class ManagerPuzzleCubo : MonoBehaviour, IInteractable
 
     //Fun��o para finalizar o puzzle, caso ele esteja certo
     public void FimPuzzle()
-    {
+    {   
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        
 
-        player.TravaCamera();
+        cameras[1].enabled = false;
+        cameras[0].enabled = true;
+
+        player.EstaInspecionando();
+        player.Andando();
+
+
+        //player.TravaCamera();
 
         //Desabilitando o modo puzzle
         modoPuzzle = false;

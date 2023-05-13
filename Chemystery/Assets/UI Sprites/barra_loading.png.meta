@@ -105,27 +105,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barra_loading_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 219
-        width: 2611
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2616b9ab92997f74498848094b714782
-      internalID: -146427021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: barra_loading_1
       rect:
         serializedVersion: 2
@@ -134,7 +113,7 @@ TextureImporter:
         width: 2615
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +121,27 @@ TextureImporter:
       bones: []
       spriteID: d825a456cb23c204fa768b0ec35851d4
       internalID: 2041167898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra_loading_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 219
+        width: 2614
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12136a9c47e9993429bdab9e7ad0ecbc
+      internalID: 185328780
       vertices: []
       indices: 
       edges: []
@@ -159,6 +159,7 @@ TextureImporter:
     nameFileIdTable:
       barra_loading_0: -146427021
       barra_loading_1: 2041167898
+      barra_loading_2: 185328780
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

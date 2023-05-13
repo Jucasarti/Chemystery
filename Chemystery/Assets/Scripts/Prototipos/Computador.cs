@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class Computador : MonoBehaviour, IInteractable
 {
 
-    [SerializeField] GameObject pcUI;
+    [SerializeField] PCUI pcUI;
     [SerializeField] TextMeshProUGUI mostrarConteudo;
+
+    Computador essePC;
 
     Scrollbar scrollbar;
     
@@ -18,10 +20,6 @@ public class Computador : MonoBehaviour, IInteractable
     [Header("Audios")]
 
     [SerializeField] AudioSource sfxClickMouse;
-
-    [SerializeField] AudioSource sfxLigarPc;
- 
-
 
     [Header("Slot das mensagens")]
     [SerializeField] Button[] slotsMSG;
@@ -49,6 +47,8 @@ public class Computador : MonoBehaviour, IInteractable
         player = FindObjectOfType<ManagerPlayer>();
         aviso = FindObjectOfType<Aviso>();
 
+        essePC = GetComponent<Computador>();
+
         crosshair = FindObjectOfType<Crosshair>();
 
     }
@@ -61,21 +61,24 @@ public class Computador : MonoBehaviour, IInteractable
 
     }
 
-
-    public void AbrirPC () {
+        void AbrirPC () {
 
         player.TravaCamera();
 
-        pcUI.SetActive(true);
+        pcUI.LoadingScreen(essePC);
+
+
+
+    }
+
+
+    public void LigarPC() {
 
         scrollbar = FindObjectOfType<Scrollbar>();
 
         mostrarConteudo.text = "";
 
         nomeNoPCText.text = nomeDoUsuarioDoPc;
-
-        //sfxLigarPc.PlayOneShot(sfxLigarPc.clip);
-
 
         for(int i = 0; i < titulosDasMensagens.Length; i++) {
 
@@ -89,6 +92,8 @@ public class Computador : MonoBehaviour, IInteractable
         AtribuirFuncaoAoBotao();
 
         player.EstaInspecionando();
+
+        player.TirarSomAndar();
 
 
     }
@@ -134,12 +139,13 @@ public class Computador : MonoBehaviour, IInteractable
 
         }
 
-        pcUI.SetActive(false);
+        pcUI.FecharUI();
 
         crosshair.AtivarCrosshair();
 
         player.TravaCamera();
         player.EstaInspecionando();
+        player.ColocarSomAndar();
 
 
     }

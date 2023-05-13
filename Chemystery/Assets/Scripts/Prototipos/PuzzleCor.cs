@@ -75,6 +75,7 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         modoPuzzle = true;
 
         player.TravaCamera();
+        player.EstaInspecionando();
 
         //Desabilitando a colis�o com o player
         colisao.enabled = false;
@@ -95,6 +96,7 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         modoPuzzle = false;
 
         player.TravaCamera();
+        player.EstaInspecionando();
 
         //Desabilitando a colis�o com o player
         colisao.enabled = true;
@@ -139,6 +141,9 @@ public class PuzzleCor : MonoBehaviour, IInteractable
         {
             quadrados[i].gameObject.SetActive(false);
         }
+
+        player.EstaInspecionando();
+        player.TirarSomAndar();
 
         pcSeguranca.Interagir();
 

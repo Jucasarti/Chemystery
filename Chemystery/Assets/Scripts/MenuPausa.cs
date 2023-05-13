@@ -56,6 +56,8 @@ public class MenuPausa : MonoBehaviour
 
         menuPausa.SetActive(false);
 
+        anotacoesUI.SetActive(false);
+
         objetivos.FecharObjetivoAtual();
 
         Cursor.visible = false;
