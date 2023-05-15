@@ -13,8 +13,10 @@ public class Cut : MonoBehaviour
 
     [SerializeField] Chave chave;
 
+
     public void AtivaCutscene()
     {
+        Invoke("MutandoSoundtrack", 0.1f);
         gameObject.GetComponent<Collider>().enabled = false;
         camerasCutscene[0].gameObject.SetActive(false);
         camerasCutscene[1].gameObject.SetActive(true);

@@ -27,7 +27,7 @@ public class Porta : MonoBehaviour, IInteractable
 
         posFechada = transform.position;
 
-        posAberta = new Vector3(transform.position.x, transform.position.y + 10f, transform.position.z);
+        posAberta = new Vector3(transform.position.x, transform.position.y + 3.8f, transform.position.z);
 
     }
 
@@ -38,8 +38,7 @@ public class Porta : MonoBehaviour, IInteractable
 
             if(pegouChave) {
 
-                Destroy(gameObject);
-                //AbrirPorta();
+                AbrirPorta();
 
             } else {
 
@@ -49,8 +48,7 @@ public class Porta : MonoBehaviour, IInteractable
 
         } else {
 
-            //AbrirPorta();
-            Destroy(gameObject);
+            AbrirPorta();
 
         }
 
@@ -58,22 +56,33 @@ public class Porta : MonoBehaviour, IInteractable
 
     public void AbrirPorta() {
 
-        StartCoroutine(IAbrirPorta());
+        StartCoroutine(IAbrirPorta(posFechada, posAberta));
 
     }
 
-    IEnumerator IAbrirPorta () {
+    IEnumerator IAbrirPorta (Vector3 posInicial, Vector3 posFinal) {
 
-        Debug.Log("Posicao: " + transform.position.y);
+        //Calculando a distância entre os cubos
+        float distancia = Vector3.Distance(posInicial, posFinal);
 
-        //transform.position = Vector3.MoveTowards(posFechada, posAberta, intervalo);
+        //Calculando duração da "animação"
+        float duracao = distancia / 2f;
 
-        Debug.Log("Posicao depois: " + transform.position.y);
+        //Determinando tempo para calculo do fim da "animação"
+        float tempoDecorrido = 0f;
 
-        yield return new WaitForSeconds(5);
+        while (tempoDecorrido < duracao)
+        {
+            //Movendo cubo
+            transform.position = Vector3.Lerp(posInicial, posFinal, tempoDecorrido / duracao);
+            //Adicionando a variável de controle do tempo
+            tempoDecorrido += Time.deltaTime;
+            yield return null;
+        }
 
-        //transform.position = Vector3.MoveTowards(posAberta, posFechada, intervalo);
-        
+        //Determinando a posição final do cubo clicado
+        transform.position = posFinal;
+
     }
 
 
