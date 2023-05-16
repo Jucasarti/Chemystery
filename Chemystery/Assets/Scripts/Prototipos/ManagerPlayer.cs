@@ -28,7 +28,8 @@ public class ManagerPlayer : MonoBehaviour
     [Header("Outros")]
     public CinemachineBrain cinemachine;
     public GameObject objeto;
-    Camera cam;
+    public GameObject cutSceneMorte;
+    public CinemachineVirtualCamera cameraMorte;
     public LayerMask interactableMask;
     public Cut cutscene;
 
@@ -66,8 +67,6 @@ public class ManagerPlayer : MonoBehaviour
         //Desativando o cursor e travando a tela
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-
-        cam = Camera.main;
         myCamera = Camera.main.transform;
     }
 
@@ -263,8 +262,13 @@ public class ManagerPlayer : MonoBehaviour
         }
     }
 
-    public void Morrer () {
-
+    public void Morrer () 
+    {
+        myCamera = Camera.main.transform;
+        cameraMorte.transform.position = myCamera.position;
+        cameraMorte.transform.rotation = myCamera.rotation;
+        cutSceneMorte.SetActive(true);
+        Andando();
         StartCoroutine(AnimMorte());
 
     }
@@ -274,6 +278,7 @@ public class ManagerPlayer : MonoBehaviour
         sourceMorte.PlayOneShot(sourceMorte.clip);
 
         yield return new WaitForSeconds(2);
+        Andando();
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
