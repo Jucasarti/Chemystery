@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Android;
 using Cinemachine;
 using TMPro;
@@ -20,6 +21,7 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
     Crosshair crosshair;
     Chave chave;
 
+    public Text textoAjuda;
     public bool fim;
     public Vector3 posPlayer;
     public Pecas[] pecas;
@@ -77,6 +79,8 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         selecionado.gameObject.GetComponent<MeshRenderer>().material.color = selecionado.cores[0];
         selecionado.gameObject.transform.position = selecionado.posInicial;
 
+        textoAjuda.enabled = true;
+
         crosshair.DesativarCrosshair();
 
         cameras[0].enabled = false;
@@ -107,6 +111,8 @@ public class ManagerXadrez : MonoBehaviour, IInteractable
         selecionado.pegouPeca = false;
         if (!comeco)
         {
+            textoAjuda.enabled = false;
+
             crosshair.AtivarCrosshair();
 
             cameras[1].enabled = false;

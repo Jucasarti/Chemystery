@@ -104,7 +104,7 @@ public class CutsceneInicial : MonoBehaviour
 
     void IrProximaCena () {
 
-        SceneManager.LoadScene("Level Blocagem");
+        SceneManager.LoadScene("TestePP");
 
     }
 

@@ -12,11 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu e Cutscenes/CutsceneInicial.unity
     guid: 5d90bf02f2e20ed4d8908a38f8a73939
   - enabled: 1
-    path: Assets/Scenes/Level Blocagem.unity
-    guid: 93ef872c2ffec5940835ea9b8519c8d1
-  - enabled: 1
-    path: Assets/Scenes/Menu e Cutscenes/CutsceneFinal.unity
-    guid: d9d707a8b981c0d4d9010eb0204bf47c
+    path: Assets/Scenes/TestePP.unity
+    guid: c524969499e929c4daff44d5d0073c96
   - enabled: 1
     path: Assets/Scenes/AndaresFinal/Subsolo3.unity
     guid: 6b4f15317ed31bb429fda434415eb6ff
@@ -26,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AndaresFinal/Subsolo2.unity
     guid: 3301afdd2037f004da5b2a30171661d0
+  - enabled: 1
+    path: Assets/Scenes/Menu e Cutscenes/CutsceneFinal.unity
+    guid: d9d707a8b981c0d4d9010eb0204bf47c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

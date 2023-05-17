@@ -9,18 +9,20 @@ public class TrocarCena : MonoBehaviour
     public GameObject[] cutScenes;
     public string cena;
     int i;
-    //public CinemachineVirtualCamera[] cameras;
+    ManagerPlayer player;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = FindObjectOfType<ManagerPlayer>();
         FadeOut();
     }
     public void FadeIn()
     {
         cutScenes[0].SetActive(true);
         i = 0;
-        Invoke("LoadScene", 5f);
+        Destroy(player.gameObject);
+        Invoke("LoadScene", 2.5f);
     }
 
     public void FadeOut()
