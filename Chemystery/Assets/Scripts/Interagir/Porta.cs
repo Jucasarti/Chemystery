@@ -14,12 +14,16 @@ public class Porta : MonoBehaviour, IInteractable
 
     private Vector3 posAberta;
 
+    private BoxCollider portaCollider;
+
     private float intervalo = 0.8f;
 
 
     void Awake () {
 
         aviso = FindObjectOfType<Aviso>();
+
+        portaCollider = GetComponent<BoxCollider>();
 
     }
 
@@ -62,25 +66,27 @@ public class Porta : MonoBehaviour, IInteractable
 
     IEnumerator IAbrirPorta (Vector3 posInicial, Vector3 posFinal) {
 
-        //Calculando a distância entre os cubos
+        //Calculando a distï¿½ncia entre os cubos
         float distancia = Vector3.Distance(posInicial, posFinal);
 
-        //Calculando duração da "animação"
+        //Calculando duraï¿½ï¿½o da "animaï¿½ï¿½o"
         float duracao = distancia / 2f;
 
-        //Determinando tempo para calculo do fim da "animação"
+        portaCollider.enabled = false;
+
+        //Determinando tempo para calculo do fim da "animaï¿½ï¿½o"
         float tempoDecorrido = 0f;
 
         while (tempoDecorrido < duracao)
         {
             //Movendo cubo
             transform.position = Vector3.Lerp(posInicial, posFinal, tempoDecorrido / duracao);
-            //Adicionando a variável de controle do tempo
+            //Adicionando a variï¿½vel de controle do tempo
             tempoDecorrido += Time.deltaTime;
             yield return null;
         }
 
-        //Determinando a posição final do cubo clicado
+        //Determinando a posiï¿½ï¿½o final do cubo clicado
         transform.position = posFinal;
 
     }

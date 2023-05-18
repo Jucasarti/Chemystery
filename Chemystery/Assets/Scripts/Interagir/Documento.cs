@@ -21,6 +21,7 @@ public class Documento : MonoBehaviour, IInteractable
         docUI.gameObject.SetActive(true);
 
         player.TravaCamera();
+        player.EstaInspecionando();
 
         docAtivado = true;
 
@@ -46,6 +47,7 @@ public class Documento : MonoBehaviour, IInteractable
                 docUI.gameObject.SetActive(false);
 
                 player.TravaCamera();
+                player.EstaInspecionando();
 
                 docAtivado = false;
 
