@@ -16,6 +16,8 @@ public class Porta : MonoBehaviour, IInteractable
 
     private BoxCollider portaCollider;
 
+    private AudioSource portaAbrindoSFX;
+
     private float intervalo = 0.8f;
 
 
@@ -25,6 +27,7 @@ public class Porta : MonoBehaviour, IInteractable
 
         portaCollider = GetComponent<BoxCollider>();
 
+        portaAbrindoSFX = GetComponent<AudioSource>();
     }
 
     void Start() {
@@ -61,6 +64,8 @@ public class Porta : MonoBehaviour, IInteractable
     public void AbrirPorta() {
 
         StartCoroutine(IAbrirPorta(posFechada, posAberta));
+
+        portaAbrindoSFX.PlayOneShot(portaAbrindoSFX.clip);
 
     }
 

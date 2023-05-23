@@ -12,6 +12,8 @@ public class Documento : MonoBehaviour, IInteractable
 
     private Crosshair crosshair;
 
+    private AudioSource papelSFX;
+
     private bool docAtivado = false;
 
     public void Interagir() {
@@ -19,6 +21,8 @@ public class Documento : MonoBehaviour, IInteractable
         docUI.sprite = sprite;
 
         docUI.gameObject.SetActive(true);
+
+        papelSFX.PlayOneShot(papelSFX.clip);
 
         player.TravaCamera();
         player.EstaInspecionando();
@@ -34,6 +38,8 @@ public class Documento : MonoBehaviour, IInteractable
         player = FindObjectOfType<ManagerPlayer>();
 
         crosshair = FindObjectOfType<Crosshair>();
+
+        papelSFX = GetComponent<AudioSource>();
 
     }
 
