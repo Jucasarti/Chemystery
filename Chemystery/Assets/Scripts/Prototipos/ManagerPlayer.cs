@@ -21,9 +21,13 @@ public class ManagerPlayer : MonoBehaviour
     [SerializeField] private float velJogadorCorrendo;
     CharacterController characterController;
     private Vector3 entradasJogador;
-    private Transform myCamera;
+    public Transform myCamera;
+    private float raycastRange = 3f;
     private float vel;
-    float raycastRange = 3f;
+    //private float alturaSalto = 1f;
+    private float gravidade = -7.5f;
+    private float velVertical;
+    private bool podePular;
 
     [Header("Outros")]
     public CinemachineBrain cinemachine;
@@ -31,6 +35,8 @@ public class ManagerPlayer : MonoBehaviour
     public GameObject cutSceneMorte;
     public CinemachineVirtualCamera cameraMorte;
     public LayerMask interactableMask;
+    public LayerMask cenarioMask;
+    public Transform verificaChao;
     public Cut cutscene;
 
     public int numeroDeValvulas = 0;
@@ -183,9 +189,22 @@ public class ManagerPlayer : MonoBehaviour
             //SomAndar();
         }
 
-        
-
         characterController.Move(entradasJogador * Time.deltaTime * vel);
+
+        //podePular = Physics.CheckSphere(verificaChao.position, 0.3f, cenarioMask);
+
+        /*if(Input.GetKeyDown(KeyCode.Space) && verificaChao)
+        {
+            velVertical = Mathf.Sqrt(alturaSalto * -2f * gravidade);
+        }*/
+
+        if(podePular && velVertical < 0)
+        {
+            velVertical = -1f;
+        }
+
+        velVertical += gravidade * Time.deltaTime;
+        characterController.Move(new Vector3(0, velVertical, 0) * Time.deltaTime);
     }
 
     void TestandoCorrer () {

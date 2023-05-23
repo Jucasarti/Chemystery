@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
-   [SerializeField] GameObject menuIinicalUI, controlesUI, creditosUI;
+   [SerializeField] GameObject menuIinicalUI, controlesUI, creditosUI, andaresUI;
 
 
     void Start() {
@@ -46,11 +46,50 @@ public class MenuInicial : MonoBehaviour
 
         controlesUI.SetActive(false);
 
+        andaresUI.SetActive(false);
+
+    }
+
+    public void AndaresUI()
+    {
+
+        menuIinicalUI.SetActive(false);
+
+        andaresUI.SetActive(true);
+
     }
 
     public void BotaoSairDoJogo () {
 
         Application.Quit();
+
+    }
+
+    public void BotaoRecepcao()
+    {
+
+        SceneManager.LoadScene("TestePP");
+
+    }
+
+    public void BotaoSubsolo1()
+    {
+
+        SceneManager.LoadScene("Subsolo3");
+
+    }
+
+    public void BotaoAdmin()
+    {
+
+        SceneManager.LoadScene("2 Andar");
+
+    }
+
+    public void BotaoSubsolo2()
+    {
+
+        SceneManager.LoadScene("Subsolo2");
 
     }
 }
