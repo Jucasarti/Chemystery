@@ -10,6 +10,8 @@ public class Porta : MonoBehaviour, IInteractable
 
     private Aviso aviso;
 
+    private Crosshair crosshair;
+
     private Vector3 posFechada;
 
     private Vector3 posAberta;
@@ -18,16 +20,16 @@ public class Porta : MonoBehaviour, IInteractable
 
     private AudioSource portaAbrindoSFX;
 
-    private float intervalo = 0.8f;
-
 
     void Awake () {
 
-        aviso = FindObjectOfType<Aviso>();
+        //aviso = FindObjectOfType<Aviso>();
 
         portaCollider = GetComponent<BoxCollider>();
 
         portaAbrindoSFX = GetComponent<AudioSource>();
+
+        crosshair = FindObjectOfType<Crosshair>();
     }
 
     void Start() {
@@ -49,7 +51,8 @@ public class Porta : MonoBehaviour, IInteractable
 
             } else {
 
-                aviso.AvisoDaPorta();
+                //aviso.AvisoDaPorta();
+                crosshair.CrosshairCadeado();
 
                 }
 
