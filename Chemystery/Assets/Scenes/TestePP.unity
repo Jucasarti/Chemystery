@@ -22992,9 +22992,9 @@ MonoBehaviour:
   - Vou me atrasar
   - "An\xE1lise comercial para D. Cynthia"
   textoDasMensagens:
-  - "Data: 25/09/1984 \r\n \r\nAssunto: Vou atrasar hoje \r\n\r\nPara: John Jughes
-    \r\n\r\nDe: Paul Pascal  \r\n\r\nJohn vou me atrasar hoje, problema no carro,
-    preciso que voc\xEA assuma meu posto para liberar o acesso dos CDFs ao laborat\xF3rio,
+  - "Data: 25/09/1984 \r\n \r\nAssunto: Vou atrasar hoje \r\n\r\nDe: Paul Pascal 
+    \r\n\nPara: John Jughes\r\n\r\nJohn vou me atrasar hoje, problema no carro, preciso
+    que voc\xEA assuma meu posto para liberar o acesso dos CDFs ao laborat\xF3rio,
     infelizmente n\xE3o posso te passar o c\xF3digo de seguran\xE7a do meu computador
     por mensagem (malditos protocolos de seguran\xE7a), \n\n<color=#3125C8>\r<b>ent\xE3o
     vou mandar umas dicas: </b> \r\n<color=\"black\">\nVerde n\xE3o est\xE1 na mesma
@@ -23010,27 +23010,21 @@ MonoBehaviour:
     mas n\xE3o estou te devendo nada, lembrava aquela vez que queriam te usar de
     saco de pancada no dia do alistamento? Agora estamos quites, fica de cabe\xE7a
     baixa que n\xE3o v\xE3o nem perceber que \xE9 voc\xEA no meu lugar. "
-  - "Data:11/09/1984 \r\n\r\nAssunto: An\xE1lise breve requisitada.  \r\nPara: Cynthia
-    Collins \r\n\r\nDe: John Jughes \r\n \r\n \r\nAqui est\xE1 uma compara\xE7\xE3o
-    de resultados de compara\xE7\xE3o de Resultados pedida \r\n\r\n \r\n\r\n Empresa
-    deste ano em compara\xE7\xE3o ao ano passado.  \r\n\r\nNo \xFAltimo ano fiscal,
-    apresentaram desempenhos distintos em rela\xE7\xE3o a diversos indicadores de
-    desempenho. Neste relat\xF3rio, vamos comparar os resultados dos dois anos em
-    tr\xEAs \xE1reas-chave: vendas, lucratividade e satisfa\xE7\xE3o do cliente.
-    \r\n\r\nVendas No que diz respeito \xE0s vendas, a empresa esse ano apresentou
-    um crescimento de 15% em rela\xE7\xE3o ao ano anterior, alcan\xE7ando um faturamento
-    de R$ 10 milh\xF5es. Enquanto isso, ano passado tivemos um crescimento mais modesto
-    de 8%, totalizando R$ 8,5 milh\xF5es em vendas. \xC9 importante notar que, apesar
-    do crescimento mais lento, conseguimos aumentar a participa\xE7\xE3o de mercado
-    em rela\xE7\xE3o \xE0 concorr\xEAncia. \r\n\r\nLucratividade  \r\n\r\nEm rela\xE7\xE3o
-    \xE0 lucratividade, ambos os anos apresentaram resultados positivos. A margem
-    de lucro da empresa esse ano foi de 20% a mais que ano passado. A empresa conseguiu
-    alcan\xE7ar esse resultado atrav\xE9s de uma estrat\xE9gia de redu\xE7\xE3o de
-    custos e aumento da efici\xEAncia, al\xE9m do investiu mais em marketing e promo\xE7\xF5es.
-    \r\n\r\nConclus\xE3o Em resumo, a empresa teve um desempenho superior ao ano
-    passado em rela\xE7\xE3o a vendas e lucratividade. \xC9 importante notar, no
-    entanto, que adotamos estrat\xE9gias distintas para alcan\xE7ar esses resultados,
-    o que mostra que n\xE3o h\xE1 uma \xFAnica f\xF3rmula para o sucesso em administra\xE7\xE3o. "
+  - "Data: 11/09/1984 \r\n\r\nAssunto: An\xE1lise breve requisitada.  \r\n\r\nDe:
+    John Jughes\n\nPara: Cynthia Collins   \r\n\r\nAqui est\xE1 uma compara\xE7\xE3o
+    de resultados anuais requisitada. \r\n\r\nNo \xFAltimo ano fiscal, apresentaram
+    desempenhos distintos em rela\xE7\xE3o a diversos indicadores de desempenho.
+    Neste relat\xF3rio, vamos comparar os resultados dos dois anos em Duas \xE1reas-chave:
+    vendas e lucratividade. \r\n\r\nVendas: A empresa apresentou um crescimento de
+    15% nas vendas em rela\xE7\xE3o ao ano anterior, alcan\xE7ando um faturamento
+    de R$ 10 milh\xF5es este ano. No ano passado, o crescimento foi mais modesto,
+    com um total de R$ 8,5 milh\xF5es em vendas, representando um aumento de 8%.
+    \xC9 importante notar que, apesar do crescimento mais lento, conseguimos aumentar
+    nossa participa\xE7\xE3o de mercado em rela\xE7\xE3o \xE0 concorr\xEAncia. \r\n\r\nLucratividade:
+    Ambos os anos apresentaram resultados positivos em termos de lucratividade. A
+    margem de lucro da empresa este ano foi 20% maior do que no ano passado. Alcan\xE7amos
+    esse resultado atrav\xE9s de uma estrat\xE9gia de redu\xE7\xE3o de custos, aumento
+    da efici\xEAncia e investimento adicional em marketing e promo\xE7\xF5es. "
   nomeNoPCText: {fileID: 1855951828}
 --- !u!82 &461447717
 AudioSource:
@@ -23799,27 +23793,27 @@ MonoBehaviour:
   titulosDasMensagens:
   - Conversa com Julia
   textoDasMensagens:
-  - "Data:12/09/1984 \r\n\r\nAssunto: Re:Fofoca \r\n\r\nPara: Julia Harrison \r\n\r\nDe:
-    Annie Albuquerque \r\n\r\nEi, deixe esse desanimo pra l\xE1, voc\xEA que vai
+  - "Data: 12/09/1984 \r\n\r\nAssunto: RE Fofoca \r\n\r\nDe: Annie Albuquerque \r\n\r\nPara:
+    Julia Harrison \r\n\r\nEi, deixe esse des\xE2nimo pra l\xE1, voc\xEA que vai
     pagar no almo\xE7o Hahaha. \r\n\r\nN\xE3o \xE9 nada demais, te conto tudo na
     pr\xF3xima vez que sairmos. E aquele esquisito da recep\xE7\xE3o ainda tem conversado
-    com ele? \r\n \r\nAssunto: Re:Fofoca \r\n\r\nPara: Annie Albuquerque \r\n\r\nDe:
-    Julia Harrison \r \r\n\r\nEnt\xE3o, eu descobri que ele n\xE3o \xE9 t\xE3o esquisito
+    com ele? \r\n\r\nAssunto: RE Fofoca \r\n\r\nDe: Julia Harrison \r\n\r\nPara:
+    Annie Albuquerque \r\n\r\nEnt\xE3o, eu descobri que ele n\xE3o \xE9 t\xE3o esquisito
     assim. Na verdade, ele \xE9 muito legal! Eu conversei com ele hoje e ele \xE9
-    supersimp\xE1tico e engra\xE7ado. Me fez esquecer um pouco do estresse do trabalho
-    \r \r\n\r\nAssunto: Re: Quero a hist\xF3ria completa \r\nPara:  Julia Harrison
-    \r\n\r\nDe: Annie Albuquerque \r\n\r\nS\xE9rio?! N\xE3o acredito! Eu achava que
+    bem simp\xE1tico e engra\xE7ado. Me fez esquecer um pouco do estresse do trabalho.
+    \r\n\r\nAssunto: RE Quero a hist\xF3ria completa  \r\n\r\nDe: Annie Albuquerque
+    \r\n\r\nPara: Julia Harrison \r\n\r\nS\xE9rio? N\xE3o acredito! Eu achava que
     ele era meio estranho mesmo, mas se voc\xEA diz que ele \xE9 legal, eu acredito
     em voc\xEA. Que bom que voc\xEA teve a chance de conversar com ele e descobrir
     que ele n\xE3o \xE9 como a gente pensava. Mudando um pouco, mas nem tanto de
-    assunto, voc\xEA realmente tem estado bem cabisbaixa quando eu te vejo tem estado
-    com uma cara preocupada est\xE1 tudo bem? Aconteceu alguma coisa por a\xED? \r\n\r\r\r\nData:13/09/1984
-    \r\n\nAssunto: Me deixou no vaco! \r\n\r\nPara:  Julia Harrison \r\n\r\nDe: Annie
-    Albuquerque \r\n\r\nEiiii sei que voc\xEA n\xE3o gosta de falar das coisas ai
-    de cima, mas n\xE3o precisa ignorar a mensagem fico preocupada com voc\xEA. \r\n\r\r\nAssunto:
-    RE: Me deixou no vaco! \r\n\r\nPara:   Annie Albuquerque \r\n\r\nDe: Julia Harrison
-    \r\n \r\nDesculpe, foi sem querer, mas n\xE3o gosto de falar sobre, \xE9 melhor
-    vai por mim.  "
+    assunto, voc\xEA realmente tem estado bem cabisbaixa quando eu te vejo, tem estado
+    com uma cara preocupada. Est\xE1 tudo bem? Aconteceu alguma coisa por a\xED?
+    \r\n\r\nData: 13/09/1984 \r\n\r\nAssunto: Me deixou no v\xE1cuo! \r\n\r\nDe:
+    Annie Albuquerque \r\n\r\nPara: Julia Harrison \r\n\r\nEiiii, sei que voc\xEA
+    n\xE3o gosta de falar das coisas a\xED de cima, mas n\xE3o precisa ignorar a
+    mensagem, fico preocupada com voc\xEA. \r\n\r\nAssunto: RE: Me deixou no v\xE1cuo!
+    \r\n\r\nPara: Annie Albuquerque \r\n\r\nDe: Julia Harrison \r\n\r\nDesculpe,
+    foi sem querer, mas n\xE3o gosto de falar sobre, \xE9 melhor, vai por mim. "
   nomeNoPCText: {fileID: 1855951828}
 --- !u!4 &476652641
 Transform:
@@ -45286,50 +45280,51 @@ MonoBehaviour:
   - Apague depois de ler!
   - RESPONDE RICHARD!
   textoDasMensagens:
-  - "Data: 27/09/1984 [HOJE] \r\n \r\nAssunto: Apague ap\xF3s leitura \r\nPara: Paul
-    Pascal \r\n\r\nDe: John Jughes \r\n\r\nEi Paul, \r\n\r\nEu tenho notado um cheiro
-    vindo do banheiro do escrit\xF3rio e estou preocupado se isso pode estar relacionado
-    com as merdas dos gases. Gostaria de saber se voc\xEA sabe alguma coisa, voc\xEA
-    sabe qual nosso trabalho aqui. Veja o que podemos fazer para resolver essa situa\xE7\xE3o,
-    especialmente se tiver rela\xE7\xE3o com voc\xEA sabe o que. \r\n\r\nPensei em
-    conversarmos com o pessoal l\xE1 de cima ou ver se os CDFS l\xE1 de baixou sabem
-    alguma coisa a respeito. O que acha? \r\n\r\nAcredito que devemos nos preocupar
-    com a nossa sa\xFAde e o bem-estar de todos os colaboradores da empresa. Portanto,
-    vamos agir de forma proativa para solucionar esse problema o mais r\xE1pido poss\xEDvel.
-    \r\n\r\nNo aguardo de sua resposta. \r\n\r\n \r\nData: 27/09/1984 [HOJE] \r\n\r\nAssunto:
-    RE \u2013 Apague ap\xF3s Leitura \r\n\r\nPara: John Jughes \r\n\r\nDe: Paul Pascal 
-    \r\n\r\nSenti esse cheiro tamb\xE9m, j\xE1 tentei falar com o pessoal l\xE1 de
-    baixo e nada. Obrigado por compartilhar, achei que eu estava ficando neur\xF3tico,
-    desde que entendi do que pode se tratar comecei a suar frio.  Se a possibilidade
-    for essa, bom voc\xEA sabe, f****, to tentando contato com o pessoal de cima,
-    mas acho que os malditos est\xE3o em reuni\xE3o.  \r\n\r\nAssim que entrar em
-    contato com eles, ou alguma resposta do Richard te falo o que me falaram, no
-    pior caso voc\xEA sabe o que fazer. A gente cai fora e avisa a cavalaria, vou
-    tentar falar com o Spencer tamb\xE9m."
-  - "Data: 27/09/1984 [HOJE] \r\n \r\nAssunto: Resposta urgente necess\xE1ria  \r\n\r\nPara:
-    Richard Reed \r\n\r\nDe: Paul Pascal \r\n\r\nEi cara, tentado entrar em contato
+  - "Data: 27/09/1984 [HOJE] \r\n\r\nAssunto: Apague ap\xF3s leitura  \r\n\r\nDe:
+    John Jughes \r\n\r\nPara: Paul Pascal \r\n\r\nPaul, \r\n\r\nTenho percebido um
+    cheiro vindo do banheiro do escrit\xF3rio e estou preocupado se isso pode estar
+    relacionado com as merdas dos gases. Gostaria de saber se voc\xEA sabe alguma
+    coisa a respeito, considerando o que fazemos aqui. Vamos ver o que podemos fazer
+    para resolver essa situa\xE7\xE3o, especialmente se estiver relacionada a voc\xEA
+    sabe o qu\xEA. \r\n\r\nPensei em falar com o pessoal l\xE1 de cima ou verificar
+    se os CDFS l\xE1 embaixo sabem algo sobre isso. O que acha? \r\n\r\nAcredito
+    que devemos nos preocupar com nossa sa\xFAde e o bem-estar de todos os \u201Ccolaboradores
+    da empresa\u201D. Portanto, vamos agir de forma proativa para resolver esse problema
+    o mais r\xE1pido poss\xEDvel. \r\n\r\nAguardando sua resposta. \r\n\r\nData:
+    27/09/1984 [HOJE] \r\n\r\nAssunto: RE Apague ap\xF3s Leitura \r\n\r\nDe: Paul
+    Pascal  \r\n\r\nPara: John Jughes \r\n\r\nTamb\xE9m senti esse cheiro, j\xE1
+    tentei falar com as pessoas l\xE1 embaixo e n\xE3o obtive resposta. Obrigado
+    por compartilhar, achei que estava ficando neur\xF3tico desde que entendi do
+    que pode se tratar, comecei a suar frio. Se for o que estou pensando, bem, f****,
+    estou tentando entrar em contato com as pessoas l\xE1 de cima, mas acho que esses
+    malditos est\xE3o em reuni\xE3o. \r\n\r\nAssim que eu conseguir falar com eles
+    ou receber alguma resposta do Richard, te aviso sobre o que me disseram. No pior
+    caso, voc\xEA sabe o que fazer. A gente sai daqui e avisa a cavalaria, vou tentar
+    falar com o Spencer tamb\xE9m. "
+  - "Data: 27/09/1984 [HOJE] \r\n\r\nAssunto: Resposta urgente necess\xE1ria \r\n\r\nDe:
+    Paul Pascal \r\n\r\nPara: Richard Reed \r\n\r\nEi cara, tentei entrar em contato
     com voc\xEA h\xE1 algum tempo, sem sucesso no telefone do subsolo, ningu\xE9m
-    atende. Eu sei que voc\xEA \xE9 uma pessoa ocupada, mas eu preciso de sua ajuda
+    atende. Eu sei que voc\xEA \xE9 uma pessoa ocupada, mas eu preciso da sua ajuda
     urgentemente. \r\n\r\nEstamos sentindo um cheiro horr\xEDvel vindo do banheiro,
-    se voc\xEA conhece a planta voc\xEA sabe do que eu estou falando. Preciso de
-    sua resposta imediata para resolver o problema. Como disse tentei contato com
-    seus CDFs l\xE1 de baixo e nada, n\xE3o recebi nenhuma resposta. Por favor, pe\xE7o
-    que voc\xEA me responda assim que ler esta mensagem. \r\n\r\nEu entendo que voc\xEA
-    pode estar ocupado com outros assuntos, mas o que estou pedindo \xE9 mais importante
-    e voc\xEA sabe! Por favor, me ajude a resolver essa situa\xE7\xE3o o mais r\xE1pido
-    poss\xEDvel. \r\n\r\nSe voc\xEA precisar de mais informa\xE7\xF5es sobre minha
-    situa\xE7\xE3o, ficarei mais do que feliz em compartilh\xE1-las. Mas, por favor,
-    responda a esta mensagem assim que poss\xEDvel, tenho certeza de que tem dedo
-    de voc\xEAs nessa hist\xF3ria. \r\n\r\nData: 27/09/1984 [HOJE] \r\n \r\nAssunto:
-    Resposta urgente necess\xE1ria  \r\n\r\nPara: Richard Reed \r\n\r\nDe: Paul Pascal
-    \r\n\r\nAssunto: Resposta urgente ainda necess\xE1ria - Pascal \r\n\r\nRichard,
+    se voc\xEA conhece a \u201Cplanta\u201D, voc\xEA sabe do que estou falando. Preciso
+    da sua resposta imediata para resolver o problema. Como eu disse, tentei contato
+    com seus CDFs l\xE1 de baixo e nada, n\xE3o recebi nenhuma resposta. Por favor,
+    pe\xE7o que voc\xEA me responda assim que ler esta mensagem. \r\n\r\nEu entendo
+    que voc\xEA pode estar ocupado com outros assuntos, mas o que estou pedindo \xE9
+    mais importante e voc\xEA sabe! Por favor, me ajude a resolver essa situa\xE7\xE3o
+    o mais r\xE1pido poss\xEDvel. \r\n\r\nSe voc\xEA precisar de mais informa\xE7\xF5es
+    sobre minha situa\xE7\xE3o, ficarei mais do que feliz em compartilh\xE1-las.
+    Mas, por favor, responda a esta mensagem assim que poss\xEDvel, tenho certeza
+    de que tem dedo de voc\xEAs nessa hist\xF3ria. \r\n\r\nData: 27/09/1984 [HOJE]
+    \r\n\r\nAssunto: Resposta urgente necess\xE1ria \r\n\r\nDe: Paul Pascal \r\n\r\nPara:
+    Richard Reed \r\n\r\nAssunto: Resposta urgente ainda necess\xE1ria - Pascal \r\n\r\nRichard,
     \r\n\r\nJ\xE1 se passaram horas desde que enviei meu \xFAltimo e-mail pedindo
     sua ajuda. Eu ainda n\xE3o recebi resposta sua e isso \xE9 inaceit\xE1vel. Estou
     louco, cad\xEA voc\xEA? \r\n\r\nN\xE3o acredito que voc\xEA esteja ignorando
-    meus e-mails deliberadamente. Eu preciso de uma resposta urgente vou avisar eles
-    e cair fora daqui. Eu estou perdendo a paci\xEAncia e n\xE3o vou mais tolerar
+    meus e-mails deliberadamente. Eu preciso de uma resposta urgente. Vou avisar
+    eles e cair fora daqui. Estou perdendo a paci\xEAncia e n\xE3o vou mais tolerar
     nada, chega de brincar de casinha. \r\n\r\nEspero que voc\xEA responda esta mensagem
-    imediatamente, porque eu preciso de uma ajuda o mais r\xE1pido poss\xEDvel. "
+    imediatamente, porque eu preciso de ajuda o mais r\xE1pido poss\xEDvel. "
   nomeNoPCText: {fileID: 1855951828}
 --- !u!65 &1103793935
 BoxCollider:
@@ -54425,105 +54420,85 @@ MonoBehaviour:
   - A rotina dela
   - "Reclama\xE7\xE3o dos funcion\xE1rios"
   textoDasMensagens:
-  - "Data: 6/09/1984 [\xDAltima vez Atualizado] \r\n\r\nAssunto: Di\xE1rio      \r\nDe:
-    Mathew Ravens \r\n\r\nPara:Mathew Ravens \r\n\r\nHoje foi mais um dia na empresa
-    e eu passei grande parte do tempo observando-a, minha colega de trabalho, do
-    setor de Administra\xE7\xE3o, a vigio pelas c\xE2meras da recep\xE7\xE3o, ela
-    est\xE1 sempre linda quando passa por mim, resolvi registrar nesse Email para
-    mim mesmo meus pensamentos sobre ela enquanto estou livre de meus afazeres. 
-    \r\n\r\n \r\n\r\n23/07/1984: \r\n\r\n Ela \xE9 t\xE3o linda, com aquele sorriso
-    doce e olhos brilhantes que me encantam toda vez que a vejo. Eu sinto meu cora\xE7\xE3o
-    bater mais forte sempre que ela passa pela bancada da recep\xE7\xE3o, e fico
-    imaginando o que ela estaria pensando enquanto se concentra em suas tarefas,
-    ela sempre parece tensa quando v\xEA o chefe. \r\n\r\n6/08/1984: \r\n\r\nEu n\xE3o
-    consigo me concentrar em nada quando ela est\xE1 por perto. Seus cabelos ondulados
-    e sedosos. Ela \xE9 sempre t\xE3o profissional no trabalho, mas eu a vejo relaxando
-    de vez em quando, rindo com seus amigos de trabalho, e me pergunto o que ela
-    faz quando n\xE3o est\xE1 no escrit\xF3rio, reparei que ela sempre vai as 14:15,
-    pouco depois da hora do almo\xE7o para a sala do chefe. \r\n\r\n16/08/1984: \r\n\r\nA
-    cada dia que passa, me sinto mais atra\xEDdo por ela.  Eu costumava a ver sempre
-    sorrindo, mas de uns dias pra c\xE1 ela tem estado com uma cara de um pouco preocupada,
-    tentei falar com ela hoje, mas ela me pareceu muito distra\xEDda.  Eu ainda n\xE3o
-    tenho coragem de perguntar para ela o motivo, n\xE3o somos pr\xF3ximos. \r\n\r\n25/08/1984:
-    \r\n\r\nEu acho que fiz algo errado, sinto como se tivesse estragado tudo. Finalmente
-    tomei coragem e pedi para almo\xE7ar com ela hoje. Foi um momento m\xE1gico.
-    Conversamos sobre nossos gostos, nossos sonhos, e rimos juntos...at\xE9 que eu
-    perguntei sobre o chefe. O clima ficou esquisito, ela mudou de assunto e ficou
-    dif\xEDcil conversar depois disso, n\xE3o devia ter tocado no assunto. Mathew,
-    seu idiota. \r\n\r\n1/09/1984: \r\n\r\nN\xE3o acreditei, mas ela me chamou quando
-    chegou hoje para almo\xE7ar hoje.  N\xF3s almo\xE7amos juntos novamente hoje.
-    Eu disse para ela como me sinto, ela pareceu surpresa, mas n\xE3o desagradada.
-    Ela disse que n\xE3o tinha percebido que eu a via dessa maneira, mas que estava
-    feliz por termos nos conhecido melhor. Eu espero que possamos continuar nos conhecendo
-    e quem sabe, ela se abra comigo, fiquei feliz pois trocamos n\xFAmeros de celular.
-    N\xE3o consegui deixar de reparar que ela estava com bastante olheiras. Tenho
-    que parar de observar ela pelas c\xE2meras, estou ficando paranoico. ela entrou
-    na sala do chefe e saiu depois pelo elevador da recep\xE7\xE3o, esquisito demais...
-    tenho que parar de ficar acompanhando ela o dia todo, n\xE3o sou assim."
-  - "6/09/1984: \r\n\r\n07:30 - Na central de monitoramento das c\xE2meras de seguran\xE7a.
-    Fico ansioso para ver se a, Julia, chegou. Mal posso esperar para v\xEA-la de
-    novo. \r\n\r\n7:30 - Julia finalmente chega e eu come\xE7o a monitor\xE1-la.
-    Ela est\xE1 vestindo um su\xE9ter branco e uma saia l\xE1pis preta, e parece
-    ainda mais bonita do que ontem. Meu cora\xE7\xE3o bate mais r\xE1pido s\xF3 de
-    olhar para ela, ela est\xE1 com olheiras grandes e um rosto meio triste, MAS
-    ELA EST\xC1 LINDA! \r\n\r\n09:00 - Julia se levanta da sua mesa e caminha at\xE9
-    a sala de reuni\xF5es para acompanhar o Presidente Strife. Fico triste por n\xE3o
-    poder v\xEA-la por alguns minutos, mas continuo monitorando a sala de reuni\xF5es,
-    na esperan\xE7a de pegar um vislumbre dela saindo. \r\n\r\n13:30 - Julia volta
-    da reuni\xE3o e eu a vejo caminhando em dire\xE7\xE3o \xE0 sala de lazer da empresa
-    para pegar seu almo\xE7o. Meus olhos a seguem enquanto ela se move, encantado
-    com a sua gra\xE7a. \r\n\r\n14:10 - Julia volta ao trabalho e eu continuo a monitor\xE1-la
-    enquanto ela arruma sua mesa, eu odeio esse horario... ela sempre sai essa hora.
-    Meus pensamentos est\xE3o todos ocupados com ela, estou louco por ela. \r\n \r\n14:15-
-    Ela entrou na sala do Chefe, ela sempre entra na sala desse velho essa hora...
-    \r\n\r\n14:35 \u2013 Julia, apareceu nas c\xE2meras do subsolo e eu n\xE3o a
-    vi saindo da sala do chefe, NOVAMENTE, como? Como! Como ela faz isso?  Olha ela
-    chegando em sua sala novamente, como eu posso ficar bravo olha ela, t\xE3o linda.
-    Ela come\xE7a a arrumar suas coisas para ir embora. Meu cora\xE7\xE3o se aperta,
-    pois sei que terei que esperar at\xE9 amanh\xE3 para v\xEA-la de novo. \r\n\r\n17:00
-    - Enquanto estou prestes a sair da empresa, recebo um chamado inesperado para
-    ir \xE0 sala do chefe. Fico nervoso e me pergunto o que poderia ter acontecido.
-    \r\n\r\n17:45 - Chego \xE0 sala do chefe e bato na porta. O chefe me cumprimenta
-    e me pede para sentar. Sinto-me desconfort\xE1vel e ansioso para descobrir o
-    motivo pelo qual fui chamado. \r\n\r\n18:00 - O chefe come\xE7a a falar, dizendo
-    que algu\xE9m relatou que eu estava agindo de maneira esquisita no trabalho e
-    que estavam preocupados com o meu comportamento. Sinto uma onda de p\xE2nico
-    e percebo que isso poderia estar relacionado \xE0 minha obsess\xE3o por Julia.
-    \r\n\r\n18:15 - O chefe pede para que eu explique o que est\xE1 acontecendo e
-    se h\xE1 algo de errado. Fico nervoso e me esfor\xE7o para explicar que estava
-    apenas muito concentrado no meu trabalho e que talvez isso possa ter dado a impress\xE3o
-    de que estava agindo de maneira estranha. \r\n\r\n18:30 - O chefe me informa
-    que a empresa leva a seguran\xE7a e o comportamento dos funcion\xE1rios muito
-    a s\xE9rio e que qualquer comportamento suspeito deve ser comunicado imediatamente.
-    Sinto-me envergonhado e constrangido. \r\n\r\n18:45 - O chefe me diz para tomar
-    cuidado com minhas a\xE7\xF5es no futuro e para manter um comportamento profissional
-    no trabalho. Agrade\xE7o-lhe e saio da sala, sentindo-me aliviado, mas tamb\xE9m
-    chateado por ter causado preocupa\xE7\xF5es \xE0 empresa. \r\n\r\n19:00 - Saio
-    da empresa, ainda pensando na Julia e me perguntando se ela poderia ter sido
-    a pessoa que relatou meu comportamento estranho. Acho que preciso parar com isso... "
-  - "Data: 27/09/1984 [HOJE] \r\n \r\nAssunto: Reclama\xE7\xF5es sobre o cheiro do
-    banheiro \r\n\r\nPara: Sara Stuart \r\n\r\nDe: Mathew Ravens \r\n\r\n \r\n\r\nOl\xE1,
-    Srta. Stuart, \r\n\r\nEspero que este e-mail te encontre bem. Eu sou o Mathew,
-    o rapaz da recep\xE7\xE3o do primeiro andar. Recebi v\xE1rios e-mails de reclama\xE7\xF5es
-    de nossos funcion\xE1rios sobre o cheiro desagrad\xE1vel do banheiro da empresa.
-    \r\n\r\nComo voc\xEA \xE9 a recepcionista do segundo andar, eu gostaria de pedir
-    sua ajuda para repassar essa informa\xE7\xE3o para as pessoas respons\xE1veis.
-    Acredito que a manuten\xE7\xE3o deva ser informada sobre o problema, mas gostaria
-    que voc\xEA consultasse seu supervisor ou o supervisor do RH antes de tomar qualquer
-    a\xE7\xE3o. \r\n\r\nSeria bom se pud\xE9ssemos tomar medidas o mais r\xE1pido
-    poss\xEDvel, j\xE1 que o cheiro est\xE1 afetando o trabalho dos funcion\xE1rios.
-    Agrade\xE7o antecipadamente pela sua colabora\xE7\xE3o. \r\n\r\nPor favor, me
-    informe se voc\xEA tiver alguma atualiza\xE7\xE3o ou se precisar de minha ajuda
-    com alguma coisa. \r\n\r\nObrigado pela sua ajuda. \r\n\r\nAtenciosamente, \r\n\r\nMathew
-    Ravens.  \r\n \r\n \r\nAssunto: RE Reclama\xE7\xF5es sobre o cheiro do banheiro
-    \r\n\r\nOl\xE1, Mathew, \r\n\r\nObrigada por me avisar sobre as reclama\xE7\xF5es
-    dos funcion\xE1rios em rela\xE7\xE3o ao cheiro no banheiro da empresa. Eu j\xE1
-    havia notado um odor forte no segundo andar tamb\xE9m, mas n\xE3o sabia que se
-    tratava de um problema mais generalizado. \r\n\r\nEu entrarei em contato com
-    o RH e com o departamento de manuten\xE7\xE3o para relatar o problema e solicitar
-    uma a\xE7\xE3o imediata para resolv\xEA-lo. \r\n\r\nAgrade\xE7o por sua ajuda
-    em manter nosso ambiente de trabalho limpo e confort\xE1vel para todos os funcion\xE1rios.
-    \r\n\r\nAtenciosamente, \r\n\r\nSara Stuart. "
+  - "Data: 6/09/1984 [\xDAltima vez Atualizado]\r\n\r\nAssunto: Di\xE1rio\r\n\r\nDe:
+    Mathew Ravens\r\n\r\nPara: Mathew Ravens\r\n\r\nHoje, na empresa, observei a
+    Julia, minha colega de trabalho do setor de Administra\xE7\xE3o pelas c\xE2meras
+    da recep\xE7\xE3o. Ela sempre est\xE1 linda quando passa por mim. Quero registrar
+    meus pensamentos sobre ela neste email enquanto estou livre das minhas tarefas.\r\n\r\n23/07/1984:
+    Ela \xE9 linda, com um sorriso doce e olhos brilhantes que me encantam. Meu cora\xE7\xE3o
+    bate mais forte quando ela passa pela bancada da recep\xE7\xE3o. Fico imaginando
+    o que ela pensa enquanto se concentra nas tarefas. Ela parece tensa quando v\xEA
+    o chefe.\r\n\r\n6/08/1984: N\xE3o consigo me concentrar quando ela est\xE1 por
+    perto. Seus cabelos ondulados e sedosos chamam minha aten\xE7\xE3o. Ela \xE9
+    profissional no trabalho, mas \xE0s vezes relaxa e ri com seus amigos. Fico curioso
+    sobre o que ela faz fora do escrit\xF3rio. Notei que ela vai \xE0 sala do chefe
+    pouco depois da hora do almo\xE7o.\r\n\r\n16/08/1984:A cada dia, sinto uma atra\xE7\xE3o
+    maior por ela. Costumava v\xEA-la sempre sorrindo, mas ultimamente parece preocupada.
+    Tentei falar com ela hoje, mas ela parecia distra\xEDda. Ainda n\xE3o tenho coragem
+    de perguntar o motivo, j\xE1 que n\xE3o somos pr\xF3ximos.\r\n\r\n25/08/1984:Sinto
+    que fiz algo errado, como se tivesse estragado tudo. Finalmente, tive coragem
+    de convid\xE1-la para almo\xE7ar hoje. Foi um momento m\xE1gico. Conversamos
+    sobre nossos gostos, sonhos e rimos juntos... at\xE9 que toquei no assunto do
+    chefe. O clima ficou estranho, ela mudou de assunto e foi dif\xEDcil continuar
+    a conversa. Me sinto um idiota.\r\n\r\n1/09/1984:Para minha surpresa, ela me
+    chamou para almo\xE7ar hoje. Almo\xE7amos juntos novamente. Expressei meus sentimentos
+    e ela pareceu surpresa, mas n\xE3o desagradada. Ela n\xE3o tinha percebido que
+    eu a via dessa maneira, mas estava feliz por termos nos conhecido melhor. Trocamos
+    n\xFAmeros de celular. No entanto, n\xE3o pude deixar de notar que ela estava
+    com olheiras. Preciso parar de observ\xE1-la pelas c\xE2meras, estou ficando
+    paranoico. Ela entrou na sala do chefe e saiu pelo elevador da recep\xE7\xE3o,
+    algo estranho... Preciso parar de acompanh\xE1-la o dia todo, isso n\xE3o \xE9
+    certo."
+  - "6/09/1984:\r\n\r\n07:30 - Na central de monitoramento das c\xE2meras de seguran\xE7a,
+    ansiosamente \xE0 espera da chegada de Julia.\r\n\r\n7:30 - Julia finalmente
+    chega, usando um su\xE9ter branco e uma saia l\xE1pis preta. Ela parece ainda
+    mais bonita do que ontem. Fico encantado ao ver ela, apesar das olheiras e da
+    express\xE3o triste em seu rosto.\r\n\r\n09:00 - Julia se levanta da mesa e vai
+    \xE0 sala de reuni\xF5es com o Presidente Strife. Fico triste por n\xE3o poder
+    v\xEA-la por alguns minutos, mas continuo monitorando a sala, esperando um vislumbre
+    dela saindo.\r\n\r\n13:30 - Julia volta da reuni\xE3o e caminha em dire\xE7\xE3o
+    \xE0 sala de lazer para pegar seu almo\xE7o. Meus olhos a seguem, fascinado por
+    sua eleg\xE2ncia.\r\n\r\n14:10 - Julia retorna ao trabalho e eu a monitoro enquanto
+    ela arruma sua mesa. Estou obcecado por ela e meu pensamento est\xE1 completamente
+    ocupado por ela.\r\n\r\n14:15 - Ela entra na sala do chefe, como sempre faz nesse
+    hor\xE1rio.\r\n\r\n14:35 - Julia \xE9 vista nas c\xE2meras do subsolo, mas n\xE3o
+    a vejo saindo da sala do chefe novamente. Como isso \xE9 poss\xEDvel? Fico admirando
+    sua beleza enquanto ela volta para sua sala e come\xE7a a arrumar suas coisas
+    para ir embora. Sinto meu cora\xE7\xE3o apertado, pois terei que esperar at\xE9
+    amanh\xE3 para v\xEA-la novamente.\r\n\r\n17:00 - Quando estou prestes a sair
+    da empresa, sou chamado inesperadamente para ir \xE0 sala do chefe. Fico nervoso
+    e me pergunto o motivo do chamado.\r\n\r\n17:45 - Chego \xE0 sala do chefe e
+    bato na porta. Ele me cumprimenta e pede que eu me sente. Estou desconfort\xE1vel
+    e ansioso para descobrir o motivo do chamado.\r\n\r\n18:00 - O chefe come\xE7a
+    a falar, mencionando que algu\xE9m relatou meu comportamento estranho no trabalho
+    e que est\xE3o preocupados. Isso pode estar relacionado \xE0 minha obsess\xE3o
+    por Julia.\r\n\r\n18:45 - O chefe me aconselha a tomar cuidado com minhas a\xE7\xF5es
+    futuras e a manter um comportamento profissional no trabalho. Agrade\xE7o e saio
+    da sala, aliviado, mas tamb\xE9m triste.\r\n\r\n19:00 - Saio da empresa, ainda
+    pensando nela e me questionando se ela poderia ter sido a pessoa que relatou
+    meu comportamento estranho. Acho que preciso parar com isso..."
+  - "Data: 27/09/1984 [HOJE] \r\n\r\nAssunto: Reclama\xE7\xF5es sobre o cheiro do
+    banheiro \r\n\r\nDe: Mathew Ravens \r\n\r\nPara: Sara Stuart \r\n\r\nOl\xE1,
+    Srta. Stuart, \r\n\r\nRecebi v\xE1rios e-mails de reclama\xE7\xF5es de nossos
+    funcion\xE1rios sobre o cheiro desagrad\xE1vel do banheiro da empresa. Como voc\xEA
+    \xE9 a recepcionista do segundo andar, eu gostaria de pedir sua ajuda para repassar
+    essa informa\xE7\xE3o para as pessoas respons\xE1veis. Acredito que a manuten\xE7\xE3o
+    deva ser informada sobre o problema, mas gostaria que voc\xEA consultasse seu
+    supervisor ou o supervisor do RH antes de tomar qualquer a\xE7\xE3o. \r\n\r\nSeria
+    bom se pud\xE9ssemos tomar medidas o mais r\xE1pido poss\xEDvel, j\xE1 que o
+    cheiro est\xE1 afetando o trabalho dos funcion\xE1rios. Agrade\xE7o antecipadamente
+    pela sua colabora\xE7\xE3o. \r\n\r\nPor favor, me informe se voc\xEA tiver alguma
+    atualiza\xE7\xE3o ou se precisar de minha ajuda com alguma coisa. \r\n\r\nObrigado
+    pela sua ajuda. \r\n\r\nAtenciosamente, \r\n\r\nMathew Ravens. \r\n\r\nAssunto:
+    RE Reclama\xE7\xF5es sobre o cheiro do banheiro \r\n\r\nOl\xE1, Mathew, \r\n\r\nObrigada
+    por me avisar sobre as reclama\xE7\xF5es dos funcion\xE1rios em rela\xE7\xE3o
+    ao cheiro no banheiro da empresa. Eu j\xE1 havia notado um odor forte no segundo
+    andar tamb\xE9m, mas n\xE3o sabia que se tratava de um problema mais generalizado.
+    \r\n\r\nEu entrarei em contato com o RH e com o departamento de manuten\xE7\xE3o
+    para relatar o problema e solicitar uma a\xE7\xE3o imediata para resolv\xEA-lo.
+    \r\n\r\nAgrade\xE7o por sua ajuda em manter nosso ambiente de trabalho limpo
+    e confort\xE1vel para todos os funcion\xE1rios. \r\n\r\nAtenciosamente, \r\n\r\nSara
+    Stuart. "
   nomeNoPCText: {fileID: 1855951828}
 --- !u!82 &1387079303
 AudioSource:
@@ -60494,58 +60469,55 @@ MonoBehaviour:
   - ELA ACEITOU!!!
   - Cheiro bizarro
   textoDasMensagens:
-  - "11/09/09 \r\n\r\nAssunto: Convite \r\n\r\nPara: Annie Albuquerque \r\n\r\nDe: 
-    Carl Camby \r\n\r\nOi Annie, \r\n\r\nEspero que esteja tudo bem com voc\xEA!
+  - "11/09/84 \r\n\r\nAssunto: Convite \r\n\r\nDe: Carl Camby \r\n\r\nPara: Annie
+    Albuquerque \r\n\r\nOi Annie, \r\n\r\nEspero que esteja tudo bem com voc\xEA!
     rs Tenho ingressos para o jogo de beisebol no pr\xF3ximo s\xE1bado \xE0 tarde
     e gostaria de convid\xE1-la para me acompanhar. Seria \xF3timo passar um tempo
     juntos e desfrutar do jogo. \r\n\r\nO que voc\xEA acha? Topa em ir comigo? \r\n\r\nEspero
-    sua resposta! \r\n\r\nAtenciosamente, \r\n\r\nCarl \r\n \r\n \r\n12/09/1084 \r\n\r\nAssunto:
-    Re: Convite para o jogo de Beisebol \r\n\r\nPara:  Carl Camby \r\n\r\nDe:  Annie
-    Albuquerque \r\n\r\n \r\n\r\nOi Carl, \r\n\r\nFico feliz em receber seu convite
-    para o jogo. Mas n\xE3o dava s\xF3 pra levantar e me chamar? Ou sei l\xE1 falar
-    comigo na hora do almo\xE7o? Risos \r\n\r\n Seria \xF3timo ir com voc\xEA! Eu
-    amo esportes e adoraria assistir contigo. \r\n\r\nQue horas voc\xEA quer me pegar?
-    E onde fica o est\xE1dio de beisebol? Eu quero ter certeza de que chego l\xE1
-    a tempo. \r\n\r\nObrigada por me convidar, estou ansiosa para o nosso encontro
-    no s\xE1bado! \r\n\r\nAtenciosamente, \r\n\r\nAnnie \r\n\r\nPS: apaga esse email
-    da sua caixa. Vou apagar aqui.  "
-  - "12/09/1984 \r\n\r\nAssunto: Convidei ela  \r\n\r\nDE: Carl Camby \r\n\r\nPara:
-    Darwin Bendis \r\n\r\nDARWIN CARA, \r\n\r\nEu finalmente tomei coragem e convidei
-    a Annie para sair! Eu estou realmente ansioso para passar algum tempo com ela
-    fora do ambiente de trabalho. \r\n\r\nEu decidi convid\xE1-la para um jogo de
-    beisebol. Eu sei que ela \xE9 f\xE3 do esporte e eu achei que seria uma \xF3tima
-    maneira de come\xE7armos a conversar sobre nossos interesses. Al\xE9m disso,
-    eu consegui comprar lugares perto do campo, ent\xE3o acho que vamos ter uma \xF3tima
-    vista do jogo. \r\n\r\nEu estou um pouco nervoso, mas tamb\xE9m muito animado.
-    Voc\xEA sabe que eu tenho uma queda enorme pela Annie a um tempo j\xE1.  Eu espero
-    que esse encontro possa nos dar a oportunidade de nos conhecermos melhor, AAAAAAA
-    tomara que d\xEA tudo certo, cruza os dedos a\xED no seu cub\xEDculo e v\xEA
-    se n\xE3o fala nada. \r\n\r\nVoc\xEA ajudou muito nos conselhos, n\xE3o sabia
-    que voc\xEA tinha tanta experiencia, valeu mesmo.   \r\n\r\nMal posso esperar
-    para te contar tudo sobre o encontro quando voltar ao trabalho na pr\xF3xima
-    semana! \r\n\r\nAtenciosamente, Carl  "
-  - "Data: 27/09/1984 [HOJE] \r\nAssunto: Cheiro esquisito no banheiro da empresa
-    \r\n\r\nPara: Darwin Bendis \r\n\r\nDe: Carl Camby \r\n\r\nOi,  Darwin, \r\n\r\nQueria
-    compartilhar uma coisa com voc\xEA. Ultimamente, tenho notado um cheiro muito
-    estranho vindo do banheiro da empresa. \xC9 dif\xEDcil descrever, mas \xE9 um
-    cheiro muito desagrad\xE1vel e forte, n\xE3o \xE9 exatamente cheiro de... banheiro,
-    saca? Estou preocupado que possa ser um problema de encanamento ou algo assim.
-    \r\n\r\nEu n\xE3o sei se voc\xEA tamb\xE9m notou esse cheiro, mas eu queria te
-    perguntar se voc\xEA sabe de alguma coisa sobre isso ou se acha que devemos relatar
-    esse problema. \xC9 realmente dif\xEDcil trabalhar em um ambiente com um cheiro
-    t\xE3o desagrad\xE1vel. \r\n\r\nO que voc\xEA acha que devemos fazer? \r\n \r\nAssunto:
-    Re: Cheiro esquisito no banheiro da empresa \r\n\r\nOi, Carl, \r\n\r\nSim, eu
-    tamb\xE9m tenho notado o mesmo cheiro estranho vindo do banheiro da empresa.
-    \xC9 realmente desagrad\xE1vel e eu n\xE3o tenho certeza do que pode estar causando
-    isso. Acho que seria uma boa ideia relatar isso ao seguran\xE7a ou pro cara da
-    recep\xE7\xE3o, para que possamos descobrir a causa do problema e resolv\xEA-lo
-    o mais r\xE1pido poss\xEDvel. \r\n\r\nN\xE3o est\xE1 agrad\xE1vel chegar nem
-    perto do banheiro, eu ia fazer uma piada sobre o cheiro nunca ter sido muito
-    bom no banheiro hahahaha. \r\n\r\nMas trabalhar em um ambiente com um odor t\xE3o
-    forte e desagrad\xE1vel. Talvez possamos falar com outros colegas de trabalho
-    para ver se eles tamb\xE9m notaram esse cheiro e se eles t\xEAm alguma ideia
-    sobre o que poderia estar causando isso. \r\n\r\nObrigado por compartilhar isso
-    comigo e vamos trabalhar juntos para resolver esse problema. "
+    sua resposta! \r\n\r\nAtenciosamente, \r\n\r\nCarl \r\n\r\n12/09/1984 \r\n\r\nAssunto:
+    RE Convite para o jogo de Beisebol \r\n\r\nDe: Annie Albuquerque \r\n\r\nPara:
+    Carl Camby \r\n\r\nOi Carl, \r\n\r\nFico feliz em receber seu convite para o
+    jogo. Mas n\xE3o dava s\xF3 para levantar e me chamar? Ou sei l\xE1, falar comigo
+    na hora do almo\xE7o? Risos \r\n\r\nSeria \xF3timo ir com voc\xEA! Eu amo esportes
+    e adoraria assistir contigo. \r\n\r\nQue horas voc\xEA quer me pegar? E onde
+    fica o est\xE1dio de beisebol? Eu quero ter certeza de que chego l\xE1 a tempo.
+    \r\n\r\nObrigada por me convidar, estou ansiosa para o nosso encontro no s\xE1bado!
+    \r\n\r\nAtenciosamente, \r\n\r\nAnnie \r\n\r\nPS: Apaga esse email da sua caixa.
+    Vou apagar aqui. "
+  - "12/09/1984 \r\n\r\nAssunto: Convidei ela \r\n\r\nDe: Carl Camby \r\n\r\nPara:
+    Darwin Bendis \r\n\r\nDARWIN CARA, \r\n\r\nFinalmente convidei a Annie para sair!
+    Estou ansioso para passar tempo com ela fora do trabalho. \r\n\r\nDecidi convid\xE1-la
+    para um jogo de beisebol, j\xE1 que ela curte esportes. Acredito que seja uma
+    \xF3tima maneira de iniciar uma conversa sobre nossos interesses. Conseguimos
+    lugares pr\xF3ximos ao campo, ent\xE3o teremos uma excelente vista do jogo. \r\n\r\nEstou
+    um pouco nervoso, mas tamb\xE9m animado. Voc\xEA sabe que tenho uma queda enorme
+    pela Annie h\xE1 algum tempo. Espero que esse encontro nos d\xEA a oportunidade
+    de nos conhecermos melhor. Tor\xE7a por mim no seu cub\xEDculo e evite comentar
+    qualquer coisa. \r\n\r\nSeus conselhos foram muito \xFAteis, n\xE3o sabia que
+    voc\xEA tinha tanta experi\xEAncia. Agrade\xE7o de verdade. \r\n\r\nMal posso
+    esperar para compartilhar tudo do encontro quando voltarmos ao trabalho na pr\xF3xima
+    semana! \r\n\r\nAtenciosamente,  \r\n\r\nCarl. "
+  - "Data: 27/09/1984 [HOJE]  \r\n\r\nAssunto: Cheiro esquisito no banheiro da empresa
+    \r\n\r\nDe: Carl Camby \r\n\r\nPara: Darwin Bendis \r\n\r\nOi, Darwin, \r\n\r\nQueria
+    te contar algo importante. Recentemente, tenho percebido um cheiro muito estranho
+    vindo do banheiro da empresa. \xC9 dif\xEDcil explicar, mas \xE9 um cheiro extremamente
+    desagrad\xE1vel e intenso, que n\xE3o se parece com o cheiro usual de um banheiro.
+    Estou preocupado que possa ser um problema de encanamento ou algo do tipo. \r\n\r\nN\xE3o
+    sei se voc\xEA tamb\xE9m notou esse cheiro, mas gostaria de saber se tem alguma
+    informa\xE7\xE3o a respeito ou se devemos reportar o problema. Trabalhar em um
+    ambiente com um odor t\xE3o desagrad\xE1vel est\xE1 sendo realmente dif\xEDcil.
+    \r\n\r\nQual \xE9 a sua opini\xE3o sobre o que devemos fazer? \r\n\r\n \r\n\r\nAssunto:
+    Re: Cheiro esquisito no banheiro da empresa \r\n\r\nDe: Darwin Bendis \r\n\r\nPara: 
+    Carl Camby \r\n\r\nOi, Carl, \r\n\r\nSim, eu tamb\xE9m tenho percebido o mesmo
+    cheiro estranho vindo do banheiro da empresa. \xC9 realmente desagrad\xE1vel
+    e n\xE3o tenho certeza da causa. Acredito que seria uma boa ideia informar o
+    seguran\xE7a ou o recepcionista, para que possamos descobrir a origem do problema
+    e resolv\xEA-lo o mais r\xE1pido poss\xEDvel. \r\n\r\nN\xE3o \xE9 nada agrad\xE1vel
+    nem se aproximar do banheiro. Ia at\xE9 fazer uma piada sobre o cheiro nunca
+    ter sido bom hahahaha. \r\n\r\nNo entanto, trabalhar em um ambiente com um odor
+    t\xE3o forte e desagrad\xE1vel n\xE3o \xE9 nada agrad\xE1vel. Talvez possamos
+    conversar com outros colegas de trabalho para ver se eles tamb\xE9m perceberam
+    o cheiro e se t\xEAm alguma ideia sobre o que pode estar causando isso. "
   nomeNoPCText: {fileID: 1855951828}
 --- !u!82 &1557293957
 AudioSource:
@@ -79785,15 +79757,15 @@ MonoBehaviour:
   - "Mudan\xE7a na seguran\xE7a"
   textoDasMensagens:
   - "25/09/1984 \r\n\r\nAssunto: Mudan\xE7a na seguran\xE7a \r\n\r\nDe: Darwin Bendis
-    \r\n\r\nPara: Matthew Ravens \r\n\r\nEi, Matthew \xE9 impress\xE3o minha ou quem
-    est\xE1 na sala de seguran\xE7a hoje \xE9 o John? \r\n\r\n \r\n\r\n25/09/1984
-    \r\n\r\nAssunto: RE - Mudan\xE7a na seguran\xE7a \r\n\r\nDe: Matthew Ravens \r\n\r\nPara:
-    Darwin Bendis \r\n\r\nQuando eu cheguei o John j\xE1 estava l\xE1, n\xE3o sei
-    o porqu\xEA e nem quero saber. Melhor deixar quieto voc\xEA sabe como esses dois
-    podem dar medo as vezes. \r\n\r\n \r\n\r\n25/09/1984 \r\n\r\nAssunto: RE - Mudan\xE7a
-    na seguran\xE7a \r\n\r\nDe: Darwin Bendis \r\n\r\nPara: Matthew Ravens \r\n\r\nOk
-    vou ficar na minha, o Paul chegou e o John voltou pra sala dele, estranho, mas
-    tudo bem. "
+    \r\n\r\nPara: Matthew Ravens \r\n\r\nEi, Matthew, estou com a impress\xE3o de
+    que John est\xE1 na sala de seguran\xE7a hoje. \r\n\r\n25/09/1984 \r\n\r\nAssunto:
+    RE - Mudan\xE7a na seguran\xE7a \r\n\r\nDe: Matthew Ravens \r\n\r\nPara: Darwin
+    Bendis \r\n\r\nQuando cheguei, o John j\xE1 estava l\xE1. N\xE3o sei por qu\xEA
+    e nem quero saber. \xC9 melhor deixar isso pra l\xE1. Voc\xEA sabe como esses
+    dois podem ser assustadores \xE0s vezes. \r \r\n\r\n25/09/1984 \r\n\r\nAssunto:
+    RE - Mudan\xE7a na seguran\xE7a \r\n\r\nDe: Darwin Bendis \r\n\r\nPara: Matthew
+    Ravens \r\n\r\r\nTudo bem, vou ficar quieto. Paul chegou e John voltou para a
+    sua sala. \xC9 estranho, mas tudo bem. "
   nomeNoPCText: {fileID: 1855951828}
 --- !u!82 &2077252738
 AudioSource:
@@ -83107,6 +83079,11 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 2282.463
       objectReference: {fileID: 0}
+    - target: {fileID: 4080843771794474658, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4080843771838842672, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: sourceSoundtrack
@@ -83222,6 +83199,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4080843772021231087, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1182f199200c694d97f330f768a0e1e,
+        type: 2}
+    - target: {fileID: 4080843772021231087, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2354025138194279642, guid: a1182f199200c694d97f330f768a0e1e,
+        type: 2}
     - target: {fileID: 4080843772157240114, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -83260,17 +83249,17 @@ PrefabInstance:
     - target: {fileID: 4080843772170234358, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4080843772170234358, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4080843772170234358, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4080843773053388397, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
@@ -83280,12 +83269,12 @@ PrefabInstance:
     - target: {fileID: 4080843773441166970, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4080843773441166970, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4080843773611455453, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
@@ -83324,6 +83313,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075414648}
     m_Modifications:
+    - target: {fileID: 4617144101662305205, guid: c736e93a8beb58a4282774161a4cb4a5,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1182f199200c694d97f330f768a0e1e,
+        type: 2}
+    - target: {fileID: 4617144101662305205, guid: c736e93a8beb58a4282774161a4cb4a5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2354025138194279642, guid: a1182f199200c694d97f330f768a0e1e,
+        type: 2}
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
       propertyPath: m_Pivot.x
@@ -83362,12 +83363,12 @@ PrefabInstance:
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 690.2581
       objectReference: {fileID: 0}
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 96.8154
       objectReference: {fileID: 0}
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
@@ -83407,12 +83408,12 @@ PrefabInstance:
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 84
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -389
+      value: -457
       objectReference: {fileID: 0}
     - target: {fileID: 4617144101662305206, guid: c736e93a8beb58a4282774161a4cb4a5,
         type: 3}

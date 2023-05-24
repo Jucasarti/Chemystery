@@ -15,7 +15,7 @@ public class MenuSom : MonoBehaviour
 
     [SerializeField] Sprite botaoMusicaMutado, botaoMusicaAtiva, botaoSFXmutado, botaoSFXativo;
 
-    void Start() {
+    void Awake() {
 
         AudioListener.volume = sliderMasterVolume.value;
 
