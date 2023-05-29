@@ -26172,8 +26172,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1075414648}
-  m_Father: {fileID: 1601099306}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &539653869 stripped
 Transform:
@@ -30258,7 +30258,7 @@ PrefabInstance:
     - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8449949204554859130, guid: f94e98902a60cb2439d77eb59debd542,
         type: 3}
@@ -62737,9 +62737,8 @@ Transform:
   m_Children:
   - {fileID: 1014055870}
   - {fileID: 1120548432}
-  - {fileID: 538854177}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1601414723 stripped
 Transform:
@@ -82993,7 +82992,7 @@ PrefabInstance:
     - target: {fileID: 3485726618124057826, guid: 64b16175bebfb114b866aa9c258d710c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3485726618124057826, guid: 64b16175bebfb114b866aa9c258d710c,
         type: 3}
@@ -83075,6 +83074,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075414648}
     m_Modifications:
+    - target: {fileID: 961693149369744008, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 961693149369744008, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 961693149369744008, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961693149369744008, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961693149369744008, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961693149369744008, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2119234192704538590, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: MaxDistance
@@ -83200,6 +83229,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4080843771993665203, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080843771993665203, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080843771993665203, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080843771993665203, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080843771993665212, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4080843772021231087, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
       propertyPath: m_fontAsset
@@ -83290,6 +83344,11 @@ PrefabInstance:
         de investigar a empresa por completo. Preciso descer para o laborat\xF3rio,
         para isso vou ter que conseguir acesso ao computador da sala de seguran\xE7a.
         \r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097102287097275017, guid: c619236ebbe9b884ba4fa1f123c0b047,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7573648600290591027, guid: c619236ebbe9b884ba4fa1f123c0b047,
         type: 3}
@@ -83573,6 +83632,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075414648}
     m_Modifications:
+    - target: {fileID: 1316654250681519256, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946229107691412527, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5108207589501184137, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188196814880308, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188197023911527, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188197025366436, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188197265006741, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5587188197301703874, guid: 228998cea2058974087aa01129753308,
         type: 3}
       propertyPath: m_Pivot.x
@@ -83688,6 +83782,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5587188197596570689, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5587188197768067481, guid: 228998cea2058974087aa01129753308,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -83701,9 +83800,29 @@ PrefabInstance:
     - target: {fileID: 5587188197768067481, guid: 228998cea2058974087aa01129753308,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.58031976
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188197904734984, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5587188197973100629, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188197973100631, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188198048544988, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587188198258576072, guid: 228998cea2058974087aa01129753308,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -83738,9 +83857,19 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4291306801
       objectReference: {fileID: 0}
+    - target: {fileID: 5587188198395167782, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5897702786706360234, guid: 228998cea2058974087aa01129753308,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397477528843512685, guid: 228998cea2058974087aa01129753308,
+        type: 3}
+      propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -83864,7 +83993,7 @@ PrefabInstance:
     - target: {fileID: 6061432070091467079, guid: e5189756b4e2f66488250ff4d02cec34,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6061432070091467079, guid: e5189756b4e2f66488250ff4d02cec34,
         type: 3}
