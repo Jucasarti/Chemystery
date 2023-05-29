@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class ManagerPuzzleValvulas : MonoBehaviour
 {
     [SerializeField] GameObject gases1, gases2, gases3, gases4;
+    AudioSource sourcefimpuzzle;
 
     Chave chave;
 
@@ -17,6 +18,7 @@ public class ManagerPuzzleValvulas : MonoBehaviour
     void Awake () {
 
         chave = FindObjectOfType<Chave>();
+        sourcefimpuzzle = GetComponent<AudioSource>();
 
     }
 
@@ -121,6 +123,7 @@ public class ManagerPuzzleValvulas : MonoBehaviour
 
             textoPainel1.SetActive(false);
             textoPainel2.SetActive(true);
+            sourcefimpuzzle.PlayOneShot(sourcefimpuzzle.clip);
 
             Debug.Log("Abriu a porta final");
 
